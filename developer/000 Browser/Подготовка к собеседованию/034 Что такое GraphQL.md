@@ -1,5 +1,5 @@
-##### Небольшой курс по GraphQL (ссылка на youtube.com)
-![](https://www.youtube.com/watch?v=kZs7CXrtT-s&list=PLNkWIWHIRwMF2sVLwzRef0Cu5kzAOeRcu)
+##### GraphQL
+![](https://www.youtube.com/watch?v=BVEm3IjrgGI)
 
 #### Ответ
 
