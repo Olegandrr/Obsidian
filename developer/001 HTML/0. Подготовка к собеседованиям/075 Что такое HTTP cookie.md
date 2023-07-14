@@ -8,7 +8,7 @@
 
 Получив HTTP-запрос, вместе с откликом сервер может отправить заголовок Set-Cookie с ответом. Cookie обычно запоминаются браузером и посылаются в значении заголовка HTTP Cookie с каждым новым запросом к одному и тому же серверу. Можно задать срок действия cookie, а также срок его жизни, после которого cookie не будет отправляться. Также можно указать ограничения на путь и домен, то есть указать, в течении какого времени и к какому сайту оно отсылается.
 
-Подробней: [https://developer.mozilla.org/ru/docs/Web/HTTP/Куки](https://developer.mozilla.org/ru/docs/Web/HTTP/%D0%9A%D1%83%D0%BA%D0%B8)
+Подробней: [https://developer.mozilla.org/ru/docs/Web/HTTP/Куки](https://developer.mozilla.org/ru/docs/Web/HTTP/%D0%9A%D1%83%D0%BA%D0%B8), [Современный подход к работе с куки](https://habr.com/ru/companies/ruvds/articles/556742/)
 
 ___
 #HTTP #Cookie 
