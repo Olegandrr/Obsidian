@@ -8,7 +8,7 @@
 
 Синтаксис метода `Object.create()` выглядит следующим образом:
 
-```
+```javascript
 Object.create(proto, [propertiesObject])
 ```
 
@@ -16,7 +16,7 @@ Object.create(proto, [propertiesObject])
 
 Вот пример использования метода `Object.create()`:
 
-```
+```javascript
 const person = {
   firstName: 'John',
   lastName: 'Doe',

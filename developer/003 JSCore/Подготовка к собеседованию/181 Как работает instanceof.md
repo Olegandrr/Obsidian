@@ -4,7 +4,7 @@
 
 Синтаксис оператора `instanceof` выглядит следующим образом:
 
-```
+```javascript
 object instanceof class
 ```
 
@@ -14,7 +14,7 @@ object instanceof class
 
 Вот пример использования оператора `instanceof`:
 
-```
+```javascript
 class Person {
   constructor(firstName, lastName) {
     this.firstName = firstName;

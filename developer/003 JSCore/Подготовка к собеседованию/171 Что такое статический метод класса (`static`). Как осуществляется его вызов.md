@@ -10,7 +10,7 @@
 
 Для определения статического метода класса используется ключевое слово `static`, перед объявлением метода:
 
-```
+```javascript
 class MyClass {
   static myStaticMethod() {
     console.log('This is a static method.');
@@ -20,13 +20,13 @@ class MyClass {
 
 Для вызова статического метода класса необходимо обратиться к классу напрямую, используя имя класса и оператор точки:
 
-```
+```javascript
 MyClass.myStaticMethod(); // 'This is a static method.'
 ```
 
 Обратите внимание, что вызов статического метода класса доступен только на самом классе, а не на его экземплярах. Попытка вызова статического метода через экземпляр класса приведет к ошибке:
 
-```
+```javascript
 var myInstance = new MyClass();
 myInstance.myStaticMethod(); // TypeError: myInstance.myStaticMethod is not a function
 ```
@@ -38,4 +38,4 @@ ___
 
 ___
 
-#### [[000 Browser|Назад]]
+#### [[003 JSCore|Назад]]

@@ -18,7 +18,7 @@
 
 Вот пример использования операторов `typeof` и `instanceof`:
 
-```
+```javascript
 class Person {
   constructor(firstName, lastName) {
     this.firstName = firstName;
