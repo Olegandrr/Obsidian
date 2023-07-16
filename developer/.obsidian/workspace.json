@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "().md",
+                "file": "0. Подготовка к собеседованию/003 JSCore.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "003 JSCore/1000 Интересные задачи/Квизы на понимание `this`.md",
+                "file": "0. Подготовка к собеседованию/003 JSCore.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "003 JSCore/1000 Интересные задачи/Квизы на понимание `this`.md",
+                "file": "0. Подготовка к собеседованию/003 JSCore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "003 JSCore/1000 Интересные задачи/Квизы на понимание `this`.md"
+                "file": "0. Подготовка к собеседованию/003 JSCore.md"
               }
             }
           },
@@ -166,7 +167,7 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "90bdc45de9a9c625",
+  "active": "670e0a2357792c6a",
   "lastOpenFiles": [
     "().md",
     "003 JSCore/1000 Интересные задачи/Квизы на понимание `this`.md",
