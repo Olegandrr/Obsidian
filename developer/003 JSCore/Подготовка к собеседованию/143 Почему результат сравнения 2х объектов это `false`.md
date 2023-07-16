@@ -10,7 +10,7 @@
 
 Например, рассмотрим следующий код:
 
-```
+```javascript
 const obj1 = { name: "John", age: 30 };
 const obj2 = { name: "John", age: 30 };
 

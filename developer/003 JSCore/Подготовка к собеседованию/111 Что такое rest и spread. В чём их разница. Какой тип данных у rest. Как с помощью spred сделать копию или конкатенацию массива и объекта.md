@@ -10,7 +10,7 @@ Rest и Spread - это два оператора в JavaScript, которые 
 
 Пример:
 
-```
+```javascript
 function myFunction(a, b, ...rest) {
   console.log(a); // 1
   console.log(b); // 2
@@ -28,7 +28,7 @@ myFunction(1, 2, 3, 4, 5);
 
 Пример:
 
-```
+```javascript
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
 
@@ -43,7 +43,7 @@ console.log(arr3); // [1, 2, 3, 4, 5, 6]
 
 Пример:
 
-```
+```javascript
 const arr1 = [1, 2, 3];
 const arr2 = [...arr1];
 

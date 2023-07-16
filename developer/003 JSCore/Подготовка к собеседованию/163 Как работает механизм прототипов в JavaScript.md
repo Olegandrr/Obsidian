@@ -10,7 +10,7 @@
 
 Например, если мы создадим объект `person` и установим его прототипом объект `human`, то объект `person` будет наследовать свойства и методы объекта `human`:
 
-```
+```javascript
 var human = {
   species: 'Homo sapiens',
   walk: function() {
