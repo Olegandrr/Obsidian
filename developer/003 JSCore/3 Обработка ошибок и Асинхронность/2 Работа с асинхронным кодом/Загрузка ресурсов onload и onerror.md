@@ -19,8 +19,8 @@ _____
 Допустим, нам нужно загрузить сторонний скрипт и вызвать функцию, которая объявлена в этом скрипте.
 
 Мы можем загрузить этот скрипт динамически:
-~~~
-`let script = document.createElement('script'); 
+~~~javascript
+let script = document.createElement('script'); 
 script.src = "my.js";  
 document.head.append(script);`
 ~~~
@@ -35,8 +35,7 @@ document.head.append(script);`
 Главный помощник – это событие `load`. Оно срабатывает после того, как скрипт был загружен и выполнен.
 
 Например:
-~~~
-`
+~~~javascript
 let script = document.createElement('script');  // мы можем загрузить любой скрипт с любого домена 
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js" 
 document.head.append(script);  _
@@ -52,8 +51,7 @@ alert(_.VERSION); // отображает версию библиотеки };_`
 Ошибки, которые возникают во время загрузки скрипта, могут быть отслежены с помощью события `error`.
 
 Например, давайте запросим скрипт, которого не существует:
-~~~
-`
+~~~javascript
 let script = document.createElement('script'); 
 script.src = "https://example.com/404.js"; // такого файла не существует 
 document.head.append(script);  _
@@ -72,8 +70,7 @@ script.onerror = function() {
 События `load` и `error` также срабатывают и для других ресурсов, а вообще, для любых ресурсов, у которых есть внешний `src`.
 
 Например:
-~~~
-``
+~~~javascript
 let img = document.createElement('img'); img.src = "https://js.cx/clipart/train.gif"; // (*)  img.onload = function() {   
 	alert(`Изображение загружено, размеры ${img.width}x${img.height}`); };  
 	img.onerror = function() {   
@@ -101,21 +98,21 @@ let img = document.createElement('img'); img.src = "https://js.cx/clipart/train.
 `// 📁 error.js noSuchFunction();`
 
 Теперь загрузим этот скрипт с того же сайта, на котором он лежит:
-~~~
-``<script> window.onerror = function(message, url, line, col, errorObj) {   
+~~~javascript
+<script> window.onerror = function(message, url, line, col, errorObj) {   
 	alert(`${message}\n${url}, ${line}:${col}`); }; 
 </script> 
 
 <script src="/article/onload-onerror/crossorigin/error.js"></script>``
 ~~~
 Мы видим нормальный отчёт об ошибке:
-~~~
-`Uncaught ReferenceError: noSuchFunction is not defined 
+~~~javascript
+Uncaught ReferenceError: noSuchFunction is not defined 
 https://javascript.info/article/onload-onerror/crossorigin/error.js, 1:1`
 ~~~
 А теперь загрузим этот же скрипт с другого домена:
-~~~
-``<script> window.onerror = function(message, url, line, col, errorObj) {   
+~~~javascript
+<script> window.onerror = function(message, url, line, col, errorObj) {   
 alert(`${message}\n${url}, ${line}:${col}`); }; 
 </script> 
 
@@ -151,8 +148,7 @@ alert(`${message}\n${url}, ${line}:${col}`); };
 Мы можем выбрать `"anonymous"` (куки не отправляются, требуется один серверный заголовок) или `"use-credentials"` (куки отправляются, требуются два серверных заголовка) в качестве значения атрибута.
 
 Если куки нас не волнуют, тогда смело выбираем `"anonymous"`:
-~~~
-``
+~~~javascript
 <script> window.onerror = function(message, url, line, col, errorObj) {   
 alert(`${message}\n${url}, ${line}:${col}`); }; 
 </script> 

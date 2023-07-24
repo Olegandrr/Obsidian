@@ -2,13 +2,6 @@ ____
 
 tags: #JavaScript #promise 
 
-links: [[]]
-
-youtube: 
-1. 
-
-keywords:
-
 _____
 
 ## Введение
@@ -50,7 +43,7 @@ _____
 Promise должен предоставлять метод #then для доступа к его текущему или возможному значению или причине.  
   
 Метод then обещания принимает два аргумента:
-~~~
+~~~javascript
 promise.then(onFulfilled, onRejected)
 ~~~
 
@@ -76,7 +69,7 @@ promise.then(onFulfilled, onRejected)
 * Если/когда обещание отклонено, все соответствующие обратные вызовы onRejected должны выполняться в порядке исходных вызовов then.  
 
 2.2.7 then должен вернуть обещание [3.3].  
-~~~
+~~~javascript
 promise2 = promise1.then(onFulfilled, onRejected);
 ~~~
 

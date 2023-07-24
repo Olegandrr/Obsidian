@@ -21,14 +21,14 @@
 `arg1`, `arg2`…  Аргументы, передаваемые в функцию
 
 Например, данный код вызывает `sayHi()` спустя одну секунду:
-~~~
-`function sayHi() {   
-	alert('Привет'); }  _
-	setTimeout(sayHi, 1000);_`
+~~~javascript
+function sayHi() {   
+	alert('Привет'); }
+	setTimeout(sayHi, 1000);
 ~~~
 С аргументами:
-~~~
-`function sayHi(phrase, who) {   
+~~~javascript
+function sayHi(phrase, who) {   
 	alert( phrase + ', ' + who ); }  _
 	setTimeout(sayHi, 1000, "Привет", "Джон"); // Привет, Джон_`
 ~~~
@@ -44,11 +44,11 @@
 ###### Рекурсивный setTimeout
 
 Применение вложенного `setTimeout`:
-~~~
-`let i = 1; 
+~~~javascript
+let i = 1; 
 setTimeout(function run() {   
 	func(i);   
-	setTimeout(run, 100); }, 100);`
+	setTimeout(run, 100); }, 100);
 ~~~
 
 Ниже представлено изображение, показывающее процесс работы рекурсивного `setTimeout`:
@@ -60,8 +60,8 @@ setTimeout(function run() {
 ###### Отличие setInterval и рекурсивного setTimeout
 
 Применение  `setInterval`:
-~~~
-`let i = 1; 
+~~~javascript
+let i = 1; 
 setInterval(function() {   
 	func(i); }, 100);`
 ~~~
@@ -83,12 +83,14 @@ setInterval(function() {
 
 В коде ниже планируем вызов функции и затем отменяем его (просто передумали). 
 В результате ничего не происходит:
-~~~
+
+~~~javascript
 let timerId = setTimeout(() => alert("ничего не происходит"), 1000); 
 alert(timerId); // идентификатор таймера  
 clearTimeout(timerId); 
 alert(timerId); // тот же идентификатор (не принимает значение null после отмены)`
 ~~~
+
 Как мы видим из вывода `alert`, в браузере идентификатором таймера является число. В других средах это может быть что-то ещё. Например, Node.js возвращает объект таймера с дополнительными методами.
 
 Повторюсь, что нет единой спецификации на эти методы, поэтому такое поведение является нормальным.

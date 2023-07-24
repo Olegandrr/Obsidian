@@ -10,7 +10,7 @@
 
 Пример callback hell:
 
-```
+```javascript
 loadDataFromServer(function(data) {
   processData(data, function(result) {
     saveResult(result, function() {

@@ -2,9 +2,6 @@ ____
 
 tags: #JavaScript #promise #
 
-youtube: 
-1. 
-
 _____
 
 ## Как работают #promise 
@@ -13,7 +10,7 @@ _____
 
 #Promise — это специальный объект в #JavaScript, который связывает «создающий» и «потребляющий» коды вместе которая соответствует стандарту Promises/A+ [https://promisesaplus.com/](https://promisesaplus.com/)
 
-```
+```javascript
 new Promise((resolve, reject) => {...})
 ```
 Конструктор получает 2 аргумента: #resolve для выполнения обещания и #reject для его отклонения.
@@ -24,7 +21,7 @@ new Promise((resolve, reject) => {...})
 Как только обещание меняет свое состояние с ожидания на выполнение или отклонение, его нельзя изменить снова.
 ![В ожидании => выполнено, в ожидании => отклонено](https://res.cloudinary.com/practicaldev/image/fetch/s--MVkW1duV--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aqjwbm1vsl2vh1fjd9us.png)
 
-```
+```javascript
 const result = new Promise((resolve, reject) => {
   resolve(1); // pending => fulfilled with value === 1
   resolve(2); // promise is already fulfilled. No effect
@@ -35,7 +32,7 @@ result.then((value) => console.log(value)); // 1
 ```
 
 Здесь мы используем #then, один из самых важных элементов промисов:  
-```
+```javascript
 function onResolve(value) {}
 function onReject(reason) {}
 new Promise((resolve, reject) => {...}).then(onResolve, onReject)
@@ -48,7 +45,7 @@ new Promise((resolve, reject) => {...}).then(onResolve, onReject)
 1.  Обещание выполняется
 2.  Промис был выполнен до того, как мы вызвали `.then`, поэтому обратный вызов будет выполнен в #microtask после того, как мы достигнем конца текущей задачи и выполним ранее запланированные микрозадачи.
 
-```
+```javascript
 // Запускаем основную задачу
 let resolve; 
 const result = new Promise((_resolve) => {
@@ -95,7 +92,7 @@ result.then(value => console.log(2)); // Вставим новый обратн�
 Микрозадачи откладывают выполнение макрозадач
 Бесконечная цепочка обещаний может «заморозить» вкладку:
 
-```
+```javascript
 function freeze(value) {
   console.log(value)
   return Promise.resolve(value + 1)
@@ -112,7 +109,7 @@ freeze(1);
 Чтобы обработать ошибку, мы можем либо предоставить второй обратный вызов #then методу, либо использовать #catch.  
 Вообще говоря `.catch`, это псевдоним для .then без первого аргумента:
 
-```
+```javascript
 .catch(onReject)
 // равно:
 .then(value => value, onReject)
@@ -120,7 +117,7 @@ freeze(1);
 
 Когда промис отклоняется, он игнорирует все `onResolve` обратные вызовы до первого `onReject` обработчика
 
-```
+```javascript
 Promise.reject('fail')
  .then(value => console.log(1)) // Ничего не выполняется
  .then(value => console.log(2)) // Ничего не выполняется
@@ -128,7 +125,7 @@ Promise.reject('fail')
 ```
 
 `.catch`, `.then` с обратным вызовом onReject возвращает обещание. Если вы не отклоните обещание снова, оно будет выполнено:
-```
+```javascript
 Promise.reject('fail')
  .catch(reason => console.log(reason)) // выведет "Провалено", вернет `undefined`
  .then(value => console.log(value)) // выведет `undefined`
@@ -138,7 +135,7 @@ Promise.reject('fail')
 Это похоже на `try{}catch(e){}` блоки. Если вы попадаете в `catch(e) {}` блокировку, вам нужно повторно выдать ошибку, если вы хотите обработать ее позже. То же самое работает с обещаниями.
 
 Вместо `error`события необработанные отказы от обещаний создают `unhandledrejection`событие.
-```
+```javascript
 globalThis.addEventListener("unhandledrejection", (event) => {
   console.warn(`unhandledrejection: ${event.reason}`);
 });
@@ -148,21 +145,21 @@ Promise.reject('test');
 ```
 
 Добавление кода микрозадачи отклонит обещание:  
-```
+```javascript
 Promise.resolve(1)
   .then(value => {throw value + 1})
   .catch(reason => console.log(reason)) // Выведет 2
 ```
 
 В качестве альтернативы вы можете вернуть Promise.reject:  
-```
+```javascript
 Promise.resolve(1)
   .then(value => Promise.reject(value + 1))
   .catch(reason => console.log(reason)) // Выведет 2
 ```
 
 Когда вы разрешаете обещание, разрешение его с помощью Promise. #reject также отклонит его:  
-```
+```javascript
 new Promise(resolve => resolve(Promise.reject(1)))
   .then(value => Promise.reject(2))
   .catch(reason => console.log(reason)) // prints 1
@@ -172,7 +169,7 @@ new Promise(resolve => resolve(Promise.reject(1)))
 
 📝Promise.all позволяет ждать до того, как все обещания изменят свое состояние на выполненное или хотя бы одно обещание будет отклонено  
 
-```
+```javascript
 const a = Promise.resolve(1);
 const b = new Promise((resolve) => {
   setTimeout(() => resolve('foo'), 1000);
@@ -186,7 +183,7 @@ Promise.all([a, b, c]).then(console.log); // [1, 'foo', 'bar']
 
 Если какое-либо из обещаний будет отклонено, Promise.all также будет отклонен:  
 
-```
+```javascript
 const a = Promise.reject(1); // Now we reject the promise
 const b = new Promise((resolve) => {
   setTimeout(() => resolve('foo'), 1000);
@@ -200,7 +197,7 @@ Promise.all([a, b, c])
 
 📝 Promise.allSettled ожидает, что все промисы изменят свое состояние. Он возвращает массив со значениями и статусами обещаний.  
 
-```
+```javascript
 const a = Promise.reject(1); // rejected promise
 
 // 2 resolved promises
@@ -219,7 +216,7 @@ Promise.allSettled([a, b, c]).then(console.log);
 
 📝 Метод Promise.race() возвращает обещание, которое выполняется или отклоняется, как только одно из обещаний выполняется или отклоняется со значением или причиной из этого обещания.  
 
-```
+```javascript
 const a = Promise.reject(1); // rejected promise
 
 // 2 resolved promises
@@ -237,7 +234,7 @@ Promise.race([a, b, c])
 
 Итак, если мы изменим `Promise.race([a,b,c])`первый пример на , `Promise.race([b,c,a])`возвращенное обещание будет выполнено со значением «bar»:  
 
-```
+```javascript
 const a = Promise.reject(1); // rejected promise
 
 // 2 resolved promises
@@ -278,21 +275,21 @@ _Подводя итог, в этой статье рассматриваютс�
 Однако мы можем использовать его `Promise.race`для проверки текущего статуса промиса. Для этого мы можем использовать функцию `Promise.race`:
 
 📝 Promise.race проверяет обещания в их порядке. Например:  
-```
+```javascript
 const a = Promise.resolve(1);
 const b = Promise.resolve(2);
 Promise.race([a, b]).then(console.log); // 1
 ```
 
 И в то время:  
-```
+```javascript
 const a = Promise.resolve(1);
 const b = Promise.resolve(2);
 Promise.race([b, a]).then(console.log); // 2
 ```
 
 📝 Этот код проверяет статус обещания:  
-```
+```javascript
 const pending = {
   state: 'pending',
 };
@@ -317,7 +314,7 @@ function getPromiseState(promise) {
 
 Использование [https://codesandbox.io/s/restless-sun-njun1?file=/src/index.js](https://codesandbox.io/s/restless-sun-njun1?file=/src/index.js)  
 
-```
+```javascript
 (async function () {
   let result = await getPromiseState(Promise.resolve("resolved hello world"));
   console.log(result);
@@ -335,7 +332,7 @@ function getPromiseState(promise) {
 
 Помимо проверки, эта функция `Promise.race`может быть полезна для запуска некоторого кода с тайм-аутами. Например:  
 
-```
+```javascript
 const TIMEOUT = 5000;
 const timeout = new Promise((_, reject) => setTimeout(() => reject('timeout'), TIMEOUT));
 
@@ -357,7 +354,7 @@ const result = Promise.race([someAsyncCode(), timeout]);
 
 Давайте проверим этот кодовый блок:  
 
-```
+```javascript
 class Queue {
   // По умолчанию очередь пуста
   queue = Promise.resolve();
@@ -383,7 +380,7 @@ class Queue {
 
 Давайте проверим это:  
 
-```
+```javascript
 // Рабочий симулятор
 const emulateWork = (name, time) => () => {
     console.log(`Start ${name}`);
@@ -414,7 +411,7 @@ queue.enqueue(emulateWork('F', 900));
 
 Чтобы исправить ситуацию, мы можем предоставить обратный вызов для конструктора:  
 
-```
+```javascript
 class Queue {
   _queue = Promise.resolve();
 
@@ -441,7 +438,7 @@ class Queue {
 
 Или мы можем перевооружить обещание!  
 
-```
+```javascript
 class Queue {
   _queue = Promise.resolve();
 
@@ -502,7 +499,7 @@ Promise в #JavaScript — это способ обработки асинхро
 
 ### Явно сохраните ссылку на промис:
 
-```
+```javascript
 const promise = new Promise((resolve, reject) => {...});
 ```
 
@@ -512,7 +509,7 @@ const promise = new Promise((resolve, reject) => {...});
 
 ### Удалите ссылки на функции обещания, разрешения и отклонения:
 
-```
+```javascript
 let promiseWithoutResolve = new Promise((resolve) => {
   setTimeout(() => {
     console.log("Timeout for the promise that keeps no refs");
@@ -532,7 +529,7 @@ promiseWithoutResolve = null;
 
 В реальных кодовых базах вы можете найти что-то похожее на:  
 
-```
+```javascript
 let resolve;
 let promise = new Promise((_resolve) => { 
   resolve = _resolve;
@@ -549,7 +546,7 @@ promise = null;
 
 Чтобы проверить это поведение, мы можем разработать эксперимент:  
 
-```
+```javascript
 let promiseWithResolve = new Promise((resolve) => {
   setTimeout(() => {
     resolve();
@@ -562,7 +559,7 @@ promiseWithResolve = null;
 
 Для такого эксперимента у нас есть выход:  
 
-```
+```javascript
 Promise  which keeps resolve function. Time taken: 155765. 
 ```
 
@@ -573,13 +570,13 @@ Promise  which keeps resolve function. Time taken: 155765.
 
 Повседневный вариант использования:  
 
-```
+```javascript
 new Promise(() => {}).then(() => {/* Some async code */}) 
 ```
 
 Эксперимент для проверки:  
 
-```
+```javascript
 let promiseWithThen = new Promise(() => {});
 let then = promiseWithThen.then(() => {
   console.log("then reached");
@@ -593,7 +590,7 @@ promiseWithThen = then = null;
 
 Выход:  
 
-```
+```javascript
 Promise  with `then` chain. Time taken: 191. 
 Promise  then callback. Time taken: 732. 
 ```
@@ -614,7 +611,7 @@ Promise  then callback. Time taken: 732.
 
 Иногда в коде встречаются цепочки .then:  
 
-```
+```javascript
 Promise.resolve()
   .then(asyncCode1)
   .then(asyncCode2)

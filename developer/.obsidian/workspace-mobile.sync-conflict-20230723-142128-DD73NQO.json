@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "6c5104dfb3036e2d",
+    "type": "split",
+    "children": [
+      {
+        "id": "d80f61abf4fbfa0e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc02a7a5087fbfc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "003 JSCore/Подготовка к собеседованию/094 Что такое this.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e1472b333607cf50",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f9d4f2b7a76334e3",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "7cd8a086b42f0a08",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "tag:#SOAP",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "6446a09073f80705",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "da12cd7bad2fd1e1",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "6305a8d0eb347dfe",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "d3d1e8ad4fb2d4db",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "003 JSCore/Подготовка к собеседованию/094 Что такое this.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "52e7e537e20c21a9",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "003 JSCore/Подготовка к собеседованию/094 Что такое this.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "404e219ce143b71f",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "003 JSCore/Подготовка к собеседованию/094 Что такое this.md"
+          }
+        }
+      },
+      {
+        "id": "0bac0c09f81b0323",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "dc02a7a5087fbfc0",
+  "lastOpenFiles": [
+    "003 JSCore/2 Прототипы и классы/2 Прототипы и классы/Контекст (this) в JS.md",
+    "003 JSCore/Подготовка к собеседованию/094 Что такое this.md",
+    "0. Подготовка к собеседованию/003 JSCore.md",
+    "003 JSCore/1000 Интересные задачи/Квизы на понимание `this`.md",
+    "0. Подготовка к собеседованию/004 React + Redux.md",
+    "003 JSCore/Подготовка к собеседованию/096 Как работает контекст выполнения (execution context) в JavaScript.md",
+    "003 JSCore/Подготовка к собеседованию/172 Что делает bind. Что возвращает bind. Какие параметры есть у bind.md",
+    "003 JSCore/Подготовка к собеседованию/159 Что такое цепочка прототипов.md",
+    "003 JSCore/Подготовка к собеседованию/157 Что такое прототип (Prototype) объекта.md",
+    "003 JSCore/Подготовка к собеседованию/154 Что такое MapWeak и SetWeak.md",
+    "003 JSCore/Подготовка к собеседованию/152 Назовите основные типы утечек памяти в JavaScript.md",
+    "003 JSCore/Подготовка к собеседованию/151 Что такое утечки памяти.md",
+    "003 JSCore/Подготовка к собеседованию/112 Что такое деструктуризация.md",
+    "003 JSCore/Подготовка к собеседованию/150 Разница между глубокой (deep) и поверхностной (shallow) копиями объекта. Как сделать каждую из них.md",
+    "003 JSCore/Подготовка к собеседованию/Как сделать глубокое копирование объекта.md",
+    "003 JSCore/Подготовка к собеседованию/111 Что такое rest и spread. В чём их разница. Какой тип данных у rest. Как с помощью spred сделать копию или конкатенацию массива и объекта.md",
+    "003 JSCore/Подготовка к собеседованию/149 Как преобразовать список пар ключ-значение в объект.md",
+    "003 JSCore/Подготовка к собеседованию/148 Как проверить наличия свойства у объекта. Как отличить отсутствующее свойство от свойства со значением undefined.md",
+    "003 JSCore/Подготовка к собеседованию/147 Что произойдет при вызове несуществующего свойства у объекта.md",
+    "003 JSCore/Подготовка к собеседованию/146 Можно ли удалять что-то из объекта.md",
+    "003 JSCore/Подготовка к собеседованию/145 Можно ли перебирать свойства объекта.md",
+    "003 JSCore/Подготовка к собеседованию/143 Почему результат сравнения 2х объектов это `false`.md",
+    "003 JSCore/Подготовка к собеседованию/164 Что такое полифил (polyfill).md",
+    "003 JSCore/Подготовка к собеседованию/144 Как в JavaScript создать объект.md",
+    "003 JSCore/Подготовка к собеседованию/167 Разница между функцией и методом.md",
+    "003 JSCore/Подготовка к собеседованию/165 Что такое метод, что такое свойство объекта.md",
+    "000 Browser/Шпаргалка (Как работает интернет).canvas",
+    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/WordpressWhite.svg",
+    "sidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Kia.svg",
+    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Task.svg",
+    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Bmw.svg",
+    "sidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Codersrank.svg",
+    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Authy.svg",
+    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Invoiceninja.svg",
+    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Abstract.svg",
+    "sidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Exordo.svg",
+    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Debian.svg"
+  ]
+}

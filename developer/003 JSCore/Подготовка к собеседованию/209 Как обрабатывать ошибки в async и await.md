@@ -2,7 +2,7 @@
 
 Обработка ошибок в `async/await` происходит с помощью конструкции `try-catch`. Если внутри функции, помеченной как `async`, происходит ошибка, то она будет выброшена в виде исключения. Для обработки ошибок можно использовать конструкцию `try-catch`, как в примере ниже:
 
-```
+```javascript
 async function getData() {
   try {
     const response = await fetch('https://example.com/data');
@@ -19,7 +19,7 @@ async function getData() {
 
 Кроме того, можно использовать метод `finally` для выполнения каких-либо действий после завершения операции, независимо от того, была ли она выполнена успешно или с ошибкой:
 
-```
+```javascript
 async function getData() {
   try {
     const response = await fetch('https://example.com/data');
