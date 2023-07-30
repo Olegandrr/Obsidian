@@ -8,7 +8,7 @@
 
 Чтобы получить случайное целое число в определенном диапазоне, можно использовать следующую формулу:
 
-```
+```javascript
 Math.floor(Math.random() * (max - min + 1)) + min;
 ```
 
@@ -16,7 +16,7 @@ Math.floor(Math.random() * (max - min + 1)) + min;
 
 Например, чтобы сгенерировать случайное целое число от 1 до 10:
 
-```
+```javascript
 const randomNum = Math.floor(Math.random() * 10) + 1;
 console.log(randomNum); // Выводит случайное целое число от 1 до 10
 ```

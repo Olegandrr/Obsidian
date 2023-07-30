@@ -6,7 +6,7 @@
 
 `undefined` - это значение, которое получает переменная, если ей не было присвоено никакого значения. Например:
 
-```
+```javascript
 let example;
 console.log(example); // undefined
 ```
@@ -15,7 +15,7 @@ console.log(example); // undefined
 
 `null` - это значение, которое может быть присвоено переменной явно, для обозначения отсутствия значения. Например:
 
-```
+```javascript
 let example = null;
 console.log(example); // null
 ```

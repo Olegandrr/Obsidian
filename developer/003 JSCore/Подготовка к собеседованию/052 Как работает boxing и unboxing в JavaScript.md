@@ -10,7 +10,7 @@ Boxing и unboxing - это процессы преобразования меж
 
 Например:
 
-```
+```javascript
 const str = "Hello, world!";
 const strObj = new String(str); // явное создание объектной обертки
 const length = str.length; // неявное создание объектной обертки
@@ -26,7 +26,7 @@ console.log(typeof length); // "number"
 
 Например:
 
-```
+```javascript
 const numObj = new Number(42);
 const num = numObj.valueOf();
 

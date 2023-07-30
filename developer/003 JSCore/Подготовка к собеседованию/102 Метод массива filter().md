@@ -4,7 +4,7 @@
 
 Синтаксис метода `filter()` выглядит следующим образом:
 
-```
+```javascript
 const newArray = array.filter(function(element, index, array) {
   // функция-предикат
 });
@@ -14,7 +14,7 @@ const newArray = array.filter(function(element, index, array) {
 
 Пример использования метода `filter()`:
 
-```
+```javascript
 const numbers = [1, 2, 3, 4, 5];
 
 const evenNumbers = numbers.filter(function(number) {

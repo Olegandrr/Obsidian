@@ -4,7 +4,7 @@
 
 Синтаксис метода `reduce()` выглядит следующим образом:
 
-```
+```javascript
 array.reduce(function(accumulator, currentValue, index, array) {
   // функция обратного вызова
 }, initialValue);
@@ -14,7 +14,7 @@ array.reduce(function(accumulator, currentValue, index, array) {
 
 Пример использования метода `reduce()`:
 
-```
+```javascript
 const numbers = [1, 2, 3, 4, 5];
 
 const sum = numbers.reduce(function(accumulator, currentValue) {

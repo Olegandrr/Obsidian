@@ -12,7 +12,7 @@
 
 Вот пример функции, которая складывает два числа:
 
-```
+```javascript
 function add(x, y) {
   return x + y;
 }
@@ -20,7 +20,7 @@ function add(x, y) {
 
 Мы можем применить каррирование к этой функции, чтобы получить новую функцию, которая будет принимать только один аргумент:
 
-```
+```javascript
 function addCurried(x) {
   return function(y) {
     return x + y;
@@ -30,7 +30,7 @@ function addCurried(x) {
 
 Теперь мы можем вызвать эту функцию таким образом:
 
-```
+```javascript
 addCurried(2)(3);
 ```
 

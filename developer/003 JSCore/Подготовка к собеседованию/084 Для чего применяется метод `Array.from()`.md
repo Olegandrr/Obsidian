@@ -8,7 +8,7 @@
 
 Пример использования метода `Array.from()` для создания нового массива из строки:
 
-```
+```javascript
 const str = 'hello';
 const arr = Array.from(str);
 console.log(arr); // ['h', 'e', 'l', 'l', 'o']
@@ -16,7 +16,7 @@ console.log(arr); // ['h', 'e', 'l', 'l', 'o']
 
 Пример использования метода `Array.from()` с функцией-маппером:
 
-```
+```javascript
 const arr = [1, 2, 3];
 const mappedArr = Array.from(arr, function(item) {
   return item * 2;
