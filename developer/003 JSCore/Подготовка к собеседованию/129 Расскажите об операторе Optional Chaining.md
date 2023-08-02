@@ -10,7 +10,7 @@
 
 Синтаксис оператора Optional Chaining:
 
-```
+```javascript
 object?.property
 object?.method()
 ```
@@ -21,7 +21,7 @@ object?.method()
 
 Пример использования оператора Optional Chaining:
 
-```
+```javascript
 const person = {
   name: 'John',
   address: {
@@ -43,7 +43,7 @@ console.log(street); // Вывод: undefined
 
 Оператор Optional Chaining также можно использовать для безопасного вызова методов объектов:
 
-```
+```javascript
 const person = {
   name: 'John',
   getAddress() {

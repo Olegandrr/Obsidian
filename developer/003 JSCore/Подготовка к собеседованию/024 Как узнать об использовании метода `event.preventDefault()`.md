@@ -12,7 +12,7 @@
 
 Например, в JavaScript коде, который выглядит примерно так:
 
-```
+```javascript
 document.querySelector('a').addEventListener('click', function(event) {
   event.preventDefault();
   // ваш код
@@ -24,7 +24,7 @@ document.querySelector('a').addEventListener('click', function(event) {
 Если вы используете фреймворк, такой как jQuery или React, то в нем также может быть свой способ использования `preventDefault()`. Поэтому, для более конкретной информации о том, как именно применяется `event.preventDefault()` в вашем коде, вам следует обратиться к документации фреймворка, которым вы пользуетесь.
 
 ___
-#DOM #preventDefault 
+#DOM #preventDefault #browser 
 
 ___
 

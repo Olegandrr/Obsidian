@@ -10,7 +10,7 @@
 
 Пример использования `DOMContentLoaded`:
 
-```
+```javascript
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM fully loaded and parsed');
   // дополнительный код для обработки страницы после загрузки DOM
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 Пример использования `load`:
 
-```
+```javascript
 window.addEventListener('load', function() {
   console.log('All assets are loaded');
   // дополнительный код для обработки страницы после загрузки всех ресурсов
@@ -30,10 +30,8 @@ window.addEventListener('load', function() {
 
 В этом примере мы используем метод `addEventListener()` для добавления обработчика события `load` на объект `window`. Затем мы используем `console.log()` для вывода сообщения в консоль после загрузки всех ресурсов на странице.
 
-В целом, `DOMContentLoaded` используется для выполнения дополнительных действий на странице после загрузки DOM, а `load` используется для выполнения дополнительных действий на странице после загрузки всех ресурсов. Оба события могут быть полезны при обработке загрузки страницы в JavaScript.
-
 ___
-#DOM #DOMContentLoaded #load
+#DOM #DOMContentLoaded #load #browser 
 
 ___
 

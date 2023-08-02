@@ -8,7 +8,7 @@
 
 Синтаксис цикла `for...of` выглядит следующим образом:
 
-```
+```javascript
 for (let value of iterable) {
   // тело цикла
 }
@@ -18,7 +18,7 @@ for (let value of iterable) {
 
 Пример использования цикла `for...of` для перебора элементов массива:
 
-```
+```javascript
 const arr = [1, 2, 3];
 
 for (let value of arr) {

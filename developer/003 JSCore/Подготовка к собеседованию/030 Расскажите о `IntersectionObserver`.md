@@ -10,7 +10,7 @@
 
 Пример использования `IntersectionObserver` в JavaScript:
 
-```
+```javascript
 <div class="box"></div>
 
 <script>
@@ -43,7 +43,7 @@ observer.observe(boxEl);
 Таким образом, `IntersectionObserver` позволяет эффективно отслеживать, когда элементы на веб-странице появляются или исчезают в области видимости пользователя, что может быть полезно для оптимизации производительности и реактивности веб-приложений.
 
 ___
-#DOM #IntersectionObserver #API 
+#DOM #IntersectionObserver #API #browser 
 
 ___
 

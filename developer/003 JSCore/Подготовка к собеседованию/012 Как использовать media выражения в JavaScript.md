@@ -10,7 +10,7 @@
 
 Вот пример использования метода `window.matchMedia()`:
 
-```
+```javascript
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 
 function handleMediaQueryChange(event) {
@@ -29,7 +29,7 @@ handleMediaQueryChange(mediaQuery);
 
 Также, можно использовать метод `window.matchMedia()` вместе с объектом `MediaQueryList` для проверки состояния media-выражения в любое время:
 
-```
+```javascript
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 
 if (mediaQuery.matches) {
@@ -42,7 +42,7 @@ if (mediaQuery.matches) {
 В этом примере мы проверяем, соответствует ли текущее состояние media-выражения условию `matches`, и выполняем соответствующее действие.
 
 ___
-#DOM #media-queries #matchMedia
+#DOM #media-queries #matchMedia #browser #media
 
 ___
 

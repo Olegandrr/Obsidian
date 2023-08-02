@@ -14,7 +14,7 @@ HTMLCollection и NodeList - это два объекта, которые пре
 
 Вот примеры использования HTMLCollection и NodeList:
 
-```
+```javascript
 // Получение всех элементов с тегом "div" в HTMLCollection
 const divs = document.getElementsByTagName('div');
 console.log(divs.length); // выводит количество элементов в коллекции
@@ -31,7 +31,7 @@ divNodes.forEach(function(element) {
 В этом примере мы используем метод `getElementsByTagName()` для получения всех элементов с тегом "div" в HTMLCollection, и метод `querySelectorAll()` для получения всех элементов с тегом "div" в NodeList. Затем мы используем методы и свойства HTMLCollection и NodeList для доступа к элементам коллекции.
 
 ___
-#DOM #HTMLCollection #NodeList
+#DOM #HTMLCollection #NodeList #browser 
 
 ___
 

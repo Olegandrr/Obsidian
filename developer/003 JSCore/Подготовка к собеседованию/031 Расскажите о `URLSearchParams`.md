@@ -20,7 +20,7 @@
 
 Пример использования `URLSearchParams`:
 
-```
+```javascript
 const urlParams = new URLSearchParams(window.location.search);
 
 // Получение значения параметра
@@ -50,7 +50,7 @@ const paramsString = urlParams.toString();
 Класс `URLSearchParams` может быть полезен, например, при работе с API, который принимает данные в формате строки запроса, или при реализации поисковой функциональности на веб-сайте, когда параметры запроса могут содержать поисковые фильтры и параметры сортировки.
 
 ___
-#DOM #URLSearchParams 
+#DOM #URLSearchParams #browser 
 
 ___
 

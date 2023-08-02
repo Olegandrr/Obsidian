@@ -10,13 +10,13 @@
 
 Пример использования `innerHTML`:
 
-```
+```javascript
 <div id="example">
   <p>Hello, world!</p>
 </div>
 ```
 
-```
+```javascript
 const example = document.querySelector('#example');
 console.log(example.innerHTML); // выводит: <p>Hello, world!</p>
 example.innerHTML = '<p>Goodbye, world!</p>';
@@ -28,13 +28,13 @@ example.innerHTML = '<p>Goodbye, world!</p>';
 
 Пример использования `outerHTML`:
 
-```
+```javascript
 <div id="example">
   <p>Hello, world!</p>
 </div>
 ```
 
-```
+```javascript
 const example = document.querySelector('#example');
 console.log(example.outerHTML); // выводит: <div id="example"><p>Hello, world!</p></div>
 example.outerHTML = '<div id="new-example"><p>Goodbye, world!</p></div>';
@@ -45,7 +45,7 @@ example.outerHTML = '<div id="new-example"><p>Goodbye, world!</p></div>';
 В целом, `innerHTML` используется для доступа к HTML-содержимому элемента без самого элемента, а `outerHTML` используется для доступа к HTML-коду элемента со всем его содержимым включая его тег. Оба свойства могут быть полезны при работе с HTML-содержимым элементов в JavaScript. Однако, изменение `outerHTML` может привести к удалению и пересозданию элемента, что может повлиять на его состояние и связанные с ним события.
 
 ___
-#DOM #innerHTML #outerHTML
+#DOM #innerHTML #outerHTML #browser 
 
 ___
 

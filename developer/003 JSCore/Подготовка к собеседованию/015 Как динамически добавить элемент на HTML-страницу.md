@@ -8,7 +8,7 @@
 
 Вот пример использования функции `createElement()` для создания нового элемента `div`, и метода `appendChild()` для добавления его в конец родительского элемента:
 
-```
+```javascript
 const parentElement = document.getElementById('parent');
 const newDiv = document.createElement('div');
 newDiv.innerHTML = 'Новый элемент';
@@ -19,7 +19,7 @@ parentElement.appendChild(newDiv);
 
 Если вы хотите добавить новый элемент перед определенным элементом, можно использовать метод `insertBefore()` вместо `appendChild()`. Вот пример:
 
-```
+```javascript
 const parentElement = document.getElementById('parent');
 const existingElement = document.getElementById('existing');
 const newDiv = document.createElement('div');
@@ -30,7 +30,7 @@ parentElement.insertBefore(newDiv, existingElement);
 В этом примере мы используем метод `getElementById()` для получения родительского элемента и существующего элемента, перед которым мы хотим добавить новый элемент. Затем мы используем функцию `createElement()` для создания нового элемента `div`, устанавливаем его содержимое, и используем метод `insertBefore()` родительского элемента, чтобы добавить новый элемент перед существующим элементом.
 
 ___
-#DOM #createElement #add #createTextNode #appendChild #getElementById 
+#DOM #createElement #add #createTextNode #appendChild #getElementById #browser 
 
 ___
 

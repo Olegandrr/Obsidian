@@ -8,7 +8,7 @@
 
 Например, следующий код приведет к ошибке:
 
-```
+```javascript
 const x = 10;
 x = 5; // TypeError: Assignment to constant variable.
 ```
@@ -17,7 +17,7 @@ x = 5; // TypeError: Assignment to constant variable.
 
 Например, следующий код будет работать:
 
-```
+```javascript
 const person = {
   name: 'John',
   age: 30

@@ -8,7 +8,7 @@
 
 Символы объявляются с помощью функции `Symbol()`, которая возвращает новый уникальный символ каждый раз при вызове:
 
-```
+```javascript
 const symbol1 = Symbol();
 const symbol2 = Symbol();
 console.log(symbol1 === symbol2); // Вывод: false
@@ -18,7 +18,7 @@ console.log(symbol1 === symbol2); // Вывод: false
 
 Символы могут также иметь описатель (description), который используется для создания более понятных имен символов:
 
-```
+```javascript
 const symbol = Symbol('My symbol');
 console.log(symbol.description); // Вывод: "My symbol"
 ```
@@ -27,7 +27,7 @@ console.log(symbol.description); // Вывод: "My symbol"
 
 Символы могут быть использованы для создания уникальных свойств объектов, которые не могут быть перезаписаны или скрыты другими свойствами:
 
-```
+```javascript
 const symbol = Symbol('My symbol');
 
 const obj = {

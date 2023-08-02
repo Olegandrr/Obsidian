@@ -8,7 +8,7 @@
 
 Пример использования `event.target`:
 
-```
+```javascript
 document.addEventListener('click', function(event) {
   console.log(event.target); // выводит элемент, на который был совершен клик
 });
@@ -18,7 +18,7 @@ document.addEventListener('click', function(event) {
 
 Пример использования `event.currentTarget`:
 
-```
+```javascript
 document.querySelector('.parent').addEventListener('click', function(event) {
   console.log(event.currentTarget); // выводит элемент, на котором был установлен обработчик
   // дополнительный код для выполнения действий на родительском элементе
@@ -30,7 +30,7 @@ document.querySelector('.parent').addEventListener('click', function(event) {
 В целом, `event.target` используется для определения элемента, на котором произошло событие, а `event.currentTarget` используется для выполнения дополнительных действий на элементе, на котором был установлен обработчик события. Оба свойства могут быть полезны при обработке событий в JavaScript.
 
 ___
-#DOM #event #target #currentTarget 
+#DOM #event #target #currentTarget #browser 
 
 ___
 

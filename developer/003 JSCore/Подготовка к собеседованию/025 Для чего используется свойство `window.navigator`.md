@@ -19,7 +19,7 @@
 Обратите внимание, что свойство `window.navigator` доступно только в браузерной среде и не может быть использовано в других средах, таких как Node.js.
 
 ___
-#DOM #window #navigator 
+#DOM #window #navigator #browser 
 
 ___
 

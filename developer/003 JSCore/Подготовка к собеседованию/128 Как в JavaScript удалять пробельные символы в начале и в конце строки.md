@@ -10,7 +10,7 @@
 
 Синтаксис метода `.trim()`:
 
-```
+```javascript
 string.trim()
 ```
 
@@ -18,7 +18,7 @@ string.trim()
 
 Пример использования метода `.trim()`:
 
-```
+```javascript
 const str = '   hello world    ';
 
 const trimmedStr = str.trim();
@@ -32,7 +32,7 @@ console.log(trimmedStr); // Вывод: "hello world"
 
 Синтаксис метода `.trimStart()`:
 
-```
+```javascript
 string.trimStart()
 ```
 
@@ -40,7 +40,7 @@ string.trimStart()
 
 Синтаксис метода `.trimEnd()`:
 
-```
+```javascript
 string.trimEnd()
 ```
 
@@ -48,7 +48,7 @@ string.trimEnd()
 
 Пример использования методов `.trimStart()` и `.trimEnd()`:
 
-```
+```javascript
 const str = '   hello world    ';
 
 const trimmedStartStr = str.trimStart();
