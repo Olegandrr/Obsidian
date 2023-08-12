@@ -8,7 +8,7 @@
 
 Вместо использования `setState()` в конструкторе, инициализируйте состояние в конструкторе напрямую, без вызова `setState()`. Например:
 
-```
+```jsx
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);

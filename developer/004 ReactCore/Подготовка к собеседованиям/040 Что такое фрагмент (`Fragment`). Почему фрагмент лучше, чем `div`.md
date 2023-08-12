@@ -12,7 +12,7 @@
 
 Например, чтобы вернуть несколько элементов из компонента `MyComponent` без использования `Fragment`, мы могли бы написать следующий код:
 
-```
+```jsx
 class MyComponent extends React.Component {
   render() {
     return (
@@ -30,7 +30,7 @@ class MyComponent extends React.Component {
 
 Вместо этого, мы можем использовать `Fragment`, чтобы избежать создания лишнего DOM-узла:
 
-```
+```jsx
 class MyComponent extends React.Component {
   render() {
     return (

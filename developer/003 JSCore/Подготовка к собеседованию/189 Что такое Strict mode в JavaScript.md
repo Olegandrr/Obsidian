@@ -20,7 +20,7 @@
 
 Вот пример использования директивы `"use strict"`:
 
-```
+```javascript
 "use strict";
 
 function doSomething() {

@@ -10,7 +10,7 @@
 
 Пример:
 
-```
+```jsx
 import React, { lazy, Suspense } from 'react';
 
 const MyLazyComponent = lazy(() => import('./MyComponent'));

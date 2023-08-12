@@ -12,7 +12,7 @@
 
 Вот пример реализации двустороннего связывания данных для текстового поля в React:
 
-```
+```jsx
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);

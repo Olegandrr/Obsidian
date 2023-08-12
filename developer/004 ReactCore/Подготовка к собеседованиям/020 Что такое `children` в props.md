@@ -2,8 +2,6 @@
 
 #### Ответ
 
-Подробнее: [props.children в React](https://codeburst.io/a-quick-intro-to-reacts-props-children-cb3d2fce4891)
-
 ![[Pasted image 20230704173937.png|600]]
 
 `React.Children` предоставляет функции для работы с непрозрачной структурой данных `this.props.children`.
@@ -113,6 +111,8 @@ render () {
 > Вместо того, чтобы вызывать компонент с самозакрывающимся тегом, `<Picture />`если вы вызываете его с полными открывающими и закрывающими тегами, `<Picture> </Picture>`вы можете разместить между ними дополнительный код.
 
 > Это отделяет `<Picture>`компонент от его содержимого и делает его более пригодным для повторного использования.
+
+Подробнее: [props.children в React](https://codeburst.io/a-quick-intro-to-reacts-props-children-cb3d2fce4891)
 
 ____
 #React #props #children 

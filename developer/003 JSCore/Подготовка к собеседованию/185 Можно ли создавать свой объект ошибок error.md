@@ -6,8 +6,8 @@ JavaScript позволяет вызывать `throw` с любыми арг�
 
 сс `Error` встроенный, вот его примерный код, просто чтобы мы понимали, что расширяем:
 
-~~~
-`// "Псевдокод" встроенного класса Error, определённого самим JavaScript 
+~~~javascript
+// "Псевдокод" встроенного класса Error, определённого самим JavaScript 
 
 class Error {   
 	constructor(message) {     
@@ -18,8 +18,8 @@ class Error {
 
 Теперь давайте унаследуем от него `ValidationError` и попробуем новый класс в действии:
 
-~~~
-`_class ValidationError extends Error {_   
+~~~javascript
+_class ValidationError extends Error {_   
 	constructor(message) {     
 		super(message); // (1)     
 		this.name = "ValidationError"; // (2)   } }  
@@ -40,8 +40,8 @@ try {   test();
 
 Попробуем использовать его в `readUser(json)`:
 
-~~~
-`class ValidationError extends Error {   
+~~~javascript
+class ValidationError extends Error {   
 	constructor(message) {     
 		super(message);     
 		this.name = "ValidationError";   } }  // Использование function 

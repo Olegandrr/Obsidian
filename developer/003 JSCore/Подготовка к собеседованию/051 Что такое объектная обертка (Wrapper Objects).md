@@ -10,7 +10,7 @@
 
 Рассмотрим пример использования объектной обертки `String`:
 
-```
+```javascript
 const str = "Hello, world!";
 const strObj = new String(str); // создаем объектную обертку
 

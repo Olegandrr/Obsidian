@@ -36,7 +36,8 @@ example.innerHTML = '<p>Goodbye, world!</p>';
 
 ```javascript
 const example = document.querySelector('#example');
-console.log(example.outerHTML); // выводит: <div id="example"><p>Hello, world!</p></div>
+console.log(example.outerHTML); 
+// выводит: <div id="example"><p>Hello, world!</p></div>
 example.outerHTML = '<div id="new-example"><p>Goodbye, world!</p></div>';
 ```
 

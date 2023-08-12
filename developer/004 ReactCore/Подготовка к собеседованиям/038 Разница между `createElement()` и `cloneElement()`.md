@@ -10,7 +10,7 @@
 
 Например, чтобы создать элемент `div` с классом `my-class` и текстом `Hello, world!`, мы можем использовать метод `createElement()` следующим образом:
 
-```
+```jsx
 const element = React.createElement('div', { className: 'my-class' }, 'Hello, world!');
 ```
 
@@ -18,7 +18,7 @@ const element = React.createElement('div', { className: 'my-class' }, 'Hello, wo
 
 Например, чтобы клонировать элемент `element` и добавить ему новый класс `new-class`, мы можем использовать метод `cloneElement()` следующим образом:
 
-```
+```jsx
 const newElement = React.cloneElement(element, { className: 'new-class' });
 ```
 

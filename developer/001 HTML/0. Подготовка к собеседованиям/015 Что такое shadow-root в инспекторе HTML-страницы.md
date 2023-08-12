@@ -8,7 +8,7 @@ Shadow root в инспекторе HTML-страницы представляе
 
 Вот пример элемента с использованием Shadow DOM:
 
-```
+```html
 <div>
   #shadow-root (open)
     <style>

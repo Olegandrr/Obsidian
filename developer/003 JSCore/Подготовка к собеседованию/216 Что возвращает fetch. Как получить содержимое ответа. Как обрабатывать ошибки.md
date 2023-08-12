@@ -6,8 +6,8 @@
 Он не поддерживается старыми (можно использовать полифил), но поддерживается всеми современными браузерами.
 
 Базовый синтаксис:
-~~~
-`let promise = fetch(url, [options])`
+~~~javascript
+let promise = fetch(url, [options])`
 ~~~
 -   **`url`** – URL для отправки запроса.
 -   **`options`** – дополнительные параметры: метод, заголовки и так далее
@@ -23,7 +23,7 @@
 		-   **`ok`** – логическое значение: будет `true`, если код HTTP-статуса в диапазоне 200-299.
 
 Например:
-~~~
+~~~javascript
 let response = await fetch(url);  
 
 if (response.ok) { 
@@ -45,13 +45,13 @@ if (response.ok) {
 		-   помимо этого, `response.body` – это объект [ReadableStream](https://streams.spec.whatwg.org/#rs-class), с помощью которого можно считывать тело запроса по частям. Мы рассмотрим и такой пример несколько позже.
 
 Типичный запрос с помощью `fetch` состоит из двух операторов `await`:
-~~~
+~~~javascript
 let response = await fetch(url, options); // завершается с заголовками ответа 
 let result = await response.json(); // читать тело ответа в формате JSON`
 ~~~
 
 Или, без `await`:
-~~~
+~~~javascript
 fetch(url, options)   
 	.then(response => response.json())   
 	.then(result => /* обрабатываем результат */)`

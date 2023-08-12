@@ -8,7 +8,7 @@ XMLHttpRequest был впервые реализован в Internet Explorer 5
 
 Пример использования XMLHttpRequest в JavaScript для отправки GET-запроса на сервер и обработки ответа в формате JSON:
 
-```
+```javascript
 const xhr = new XMLHttpRequest();
 xhr.open('GET', 'http://example.com/data.json');
 xhr.onload = function() {

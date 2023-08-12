@@ -10,7 +10,7 @@
 
 Например, чтобы отобразить HTML-код `<p>Hello, world!</p>` в компоненте `MyComponent`, мы можем использовать `dangerouslySetInnerHTML` следующим образом:
 
-```
+```jsx
 class MyComponent extends React.Component {
   render() {
     const html = '<p>Hello, world!</p>';

@@ -16,7 +16,7 @@
 
 Например, представим, что у нас есть компонент `UserList`, который отображает список пользователей. Мы можем разделить его на два компонента: `UserListContainer` и `UserListPresentation`.
 
-```
+```jsx
 class UserListContainer extends React.Component {
   constructor(props) {
     super(props);
