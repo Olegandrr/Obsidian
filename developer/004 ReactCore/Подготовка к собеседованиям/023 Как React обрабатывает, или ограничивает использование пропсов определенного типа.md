@@ -38,7 +38,7 @@ export default MyComponent;
 
 Пример использования типизации с помощью TypeScript:
 
-```jsx
+```tsx
 import React from 'react';
 
 interface MyComponentProps {

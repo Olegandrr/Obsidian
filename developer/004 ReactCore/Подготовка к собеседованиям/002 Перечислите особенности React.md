@@ -14,7 +14,7 @@
 Подробнее: [React Server-Side Rendering (SSR)](https://habr.com/ru/articles/551948/)
 
 ____
-#React #DOM #JSX #VirtualDOM 
+#React #DOM #JSX #VirtualDOM #SSR 
 
 ____
 
