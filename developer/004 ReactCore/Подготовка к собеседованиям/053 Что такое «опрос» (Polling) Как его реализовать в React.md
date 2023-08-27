@@ -10,7 +10,7 @@
 
 Пример реализации опроса (Polling) в React:
 
-```
+```jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 

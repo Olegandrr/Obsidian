@@ -20,7 +20,7 @@ tags: #React #Hooks #useContext
 
 Пример использования Context API в React:
 
-```
+```jsx
 import React, { createContext, useState, useContext } from 'react';
 
 // Создание контекста
@@ -77,7 +77,7 @@ _____
 Для того, чтобы создать контекст, используем :
 
 const { Provider , Consumer } = React.createService()
-~~~
+~~~jsx
 <Provider value={someValue}>
 	.. // провайдер оборачивает часть приложения
 
@@ -87,7 +87,7 @@ const { Provider , Consumer } = React.createService()
 </Provider>
 ~~~
 
-```
+```jsx
 <Consumer> {
 	(someValue) => <MyComponent data={someValue} />
 
@@ -105,7 +105,7 @@ const { Provider , Consumer } = React.createService()
 Контекст позволяет передавать данные через дерево компонентов без необходимости передавать пропсы на промежуточных уровнях.
 
 Для того, чтобы создать контекст, используем:
-```
+```jsx
 const MyContext = React.createContext(defaultValue);
 ```
 
@@ -115,7 +115,7 @@ const MyContext = React.createContext(defaultValue);
 
 ##### Context.Provider
 
-```
+```jsx
 <MyContext.Provider value={/* некоторое значение */}>
 ```
 
@@ -132,7 +132,7 @@ const MyContext = React.createContext(defaultValue);
 
 ##### Class.contextType
 
-```
+```jsx
 class MyClass extends React.Component {
   componentDidMount() {
     let value = this.context;
@@ -174,7 +174,7 @@ class MyClass extends React.Component {
 
 ##### Context.Consumer
 
-```
+```jsx
 <MyContext.Consumer>
   {value => /* отрендерить что-то, используя значение контекста */}
 </MyContext.Consumer>
@@ -194,7 +194,7 @@ class MyClass extends React.Component {
 
 К примеру, следующий компонент будет отображаться под именем MyDisplayName в DevTools:
 
-```
+```jsx
 const MyContext = React.createContext(/* некоторое значение */);
 MyContext.displayName = 'MyDisplayName';
 <MyContext.Provider> // "MyDisplayName.Provider" в DevTools
@@ -207,7 +207,7 @@ MyContext.displayName = 'MyDisplayName';
 
 **theme-context.js**
 
-```
+```jsx
 export const themes = {
   light: {
     foreground: '#000000',
@@ -224,7 +224,7 @@ export const ThemeContext = React.createContext(  themes.dark // значени�
 
 **themed-button.js**
 
-```
+```jsx
 import {ThemeContext} from './theme-context';
 
 class ThemedButton extends React.Component {
@@ -244,7 +244,7 @@ export default ThemedButton;
 
 **app.js**
 
-```
+```jsx
 import {ThemeContext, themes} from './theme-context';
 import ThemedButton from './themed-button';
 
@@ -296,7 +296,7 @@ root.render(<App />);
 
 **theme-context.js**
 
-```
+```jsx
 // Убедитесь, что форма значения по умолчанию,
 // передаваемого в createContext, совпадает с формой объекта,
 // которую ожидают потребители контекста.
@@ -306,7 +306,7 @@ export const ThemeContext = React.createContext({
 
 **theme-toggler-button.js**
 
-```
+```jsx
 import {ThemeContext} from './theme-context';
 
 function ThemeTogglerButton() {
@@ -327,7 +327,7 @@ export default ThemeTogglerButton;
 
 **app.js**
 
-```
+```jsx
 import {ThemeContext, themes} from './theme-context';
 import ThemeTogglerButton from './theme-toggler-button';
 
@@ -375,7 +375,7 @@ root.render(<App />);
 
 Чтобы последующие рендеры (связанные с контекстом) были быстрыми, React делает каждого потребителя контекста отдельным компонентом в дереве.
 
-```
+```jsx
 // Контекст UI-темы, со светлым значением по умолчанию
 const ThemeContext = React.createContext('light');
 
@@ -417,7 +417,7 @@ function Content() {
 
 Контекст использует сравнение по ссылкам, чтобы определить, когда запускать последующий рендер. Из-за этого существуют некоторые подводные камни, например, случайные повторные рендеры потребителей, при перерендере родителя Provider-компонента. В следующем примере будет происходить повторный рендер потребителя каждый повторный рендер Provider-компонента, потому что новый объект, передаваемый в `value`, будет создаваться каждый раз:
 
-```
+```jsx
 class App extends React.Component {
   render() {
     return (
@@ -430,7 +430,7 @@ class App extends React.Component {
 
 Один из вариантов решения этой проблемы — хранение этого объекта в состоянии родительского компонента:
 
-```
+```jsx
 class App extends React.Component {
   constructor(props) {
     super(props);

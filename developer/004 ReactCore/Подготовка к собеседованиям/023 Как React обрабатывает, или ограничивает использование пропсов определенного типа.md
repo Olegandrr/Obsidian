@@ -60,6 +60,8 @@ export default MyComponent;
 
 В этом примере мы создали компонент `MyComponent`, который принимает два пропса: `title` и `text`. Мы определили типы пропсов с помощью интерфейса `MyComponentProps`. Если тип пропса не соответствует ожидаемому, то TypeScript выведет ошибку во время компиляции.
 
+Подробнее: [Проверка типов с помощью PropTypes](https://ru.legacy.reactjs.org/docs/typechecking-with-proptypes.html#gatsby-focus-wrapper)
+
 ____
 #React #props #propTypes 
  

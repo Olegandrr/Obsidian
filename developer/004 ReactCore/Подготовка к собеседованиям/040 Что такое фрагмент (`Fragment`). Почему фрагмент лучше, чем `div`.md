@@ -46,6 +46,8 @@ class MyComponent extends React.Component {
 
 Здесь мы используем `Fragment`, чтобы группировать три элемента `p` без создания лишнего DOM-узла. Фрагменты позволяют вернуть несколько элементов из компонента без обертки в общий элемент, что делает код более чистым и понятным.
 
+Подробнее: [Фрагменты](https://ru.legacy.reactjs.org/docs/fragments.html)
+
 ____
 #React #Fragment #div 
 

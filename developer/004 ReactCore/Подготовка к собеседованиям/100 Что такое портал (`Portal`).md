@@ -12,7 +12,7 @@
 
 Например, для создания портала, который будет отображать компонент `Modal` в элементе `modal-root`, который находится вне корневого элемента React-приложения, можно использовать следующий код:
 
-```
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -27,6 +27,8 @@ export default Modal;
 ```
 
 В этом примере компонент `Modal` создает портал, который отображает его дочерние компоненты в элементе с идентификатором `modal-root`. Этот элемент может быть создан где угодно на странице, и компонент `Modal` будет отображаться внутри него, независимо от того, где находится корневой элемент React-приложения.
+
+Подробнее: [createPortal()](https://ru.legacy.reactjs.org/docs/react-dom.html#createportal) , [Portal](https://habr.com/ru/companies/smartprogress/articles/306096/)
 
 ____
 #React #portal

@@ -12,7 +12,7 @@
 
 Пример использования предохранителей (Error Boundaries) в React:
 
-```
+```jsx
 import React, { Component } from 'react';
 
 class ErrorBoundary extends Component {

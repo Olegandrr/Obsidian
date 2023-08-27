@@ -71,6 +71,8 @@ class ChildB extends React.Component {
 
 Поднятие состояния вверх позволяет избежать дублирования логики и обеспечивает более простую и единообразную обработку данных между компонентами.
 
+Подробнее: [Подъём состояния](https://ru.legacy.reactjs.org/docs/lifting-state-up.html)
+
 ____
 #React #state
 

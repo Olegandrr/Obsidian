@@ -48,6 +48,8 @@ ReactDOM.render(<MyComponent />, document.getElementById("root"));
 
 В целом, свойства (`props`) используются для передачи данных от родительских компонентов к дочерним, а состояние (`state`) используется для управления изменениями внутри компонента.
 
+Подробнее: [Состояние компонента](https://ru.legacy.reactjs.org/docs/faq-state.html)
+
 ____
 #React #state #props 
 

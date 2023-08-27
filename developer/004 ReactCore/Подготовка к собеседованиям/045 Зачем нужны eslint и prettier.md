@@ -17,8 +17,9 @@
 2.  `lint:fix` - проверяет и исправляет те ошибки, которые может
 3.  `format` - форматирует все файлы с помощью prettier
 
+Подробнее: [ESLint](https://habr.com/ru/companies/domclick/articles/743384/) , [Prettier](https://habr.com/ru/companies/ruvds/articles/428173/)
 ____
-#React
+#React #ESLint #Prettier 
 
 ____
 
