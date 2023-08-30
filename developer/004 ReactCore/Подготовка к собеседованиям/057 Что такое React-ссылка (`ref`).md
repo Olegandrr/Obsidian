@@ -12,7 +12,7 @@ React-ссылка создается с помощью функции `React.c
 
 Пример использования React-ссылки:
 
-```
+```jsx
 import React, { Component } from 'react';
 
 class MyComponent extends Component {
