@@ -10,7 +10,7 @@ _____
 
 Передайте в проп `className` строку:
 
-```
+```jsx
 render() {
   return <span className="menu navigation-menu">Меню</span>
 }
@@ -18,7 +18,7 @@ render() {
 
 Обычно CSS-классы зависят от пропсов или состояния:
 
-```
+```jsx
 render() {
   let className = 'menu';
   if (this.props.isActive) {
