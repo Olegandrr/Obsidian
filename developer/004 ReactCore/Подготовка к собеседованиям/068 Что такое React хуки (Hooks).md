@@ -34,6 +34,8 @@ export default MyComponent;
 В данном примере мы используем хук `useState()` для добавления состояния `count` в функциональный компонент `MyComponent`. 
 *Хук `useState()` возвращает массив, в котором первый элемент - текущее значение состояния, а второй элемент - функция для обновления состояния.* В данном случае мы используем деструктуризацию массива, чтобы извлечь текущее значение состояния и функцию для обновления состояния.
 
+*useState() всегда обновляет обьект полностью, а не отдельные поля, как setState().* При этом, useState() может принимать в себе, в качестве начального значения, состояния state, так и в результате, функцию-обработчик.
+
 ##### useEffect()
 
 *Хук `useEffect()`* используется для добавления эффектов в функциональный компонент:
@@ -91,6 +93,44 @@ useEffect(() => {
 	}
 }, [state1])
 ```
+
+###### useEffect() на практике
+
+~~~ jsx
+useEffect (() => {
+	console.log(a + b + c);
+	return () => console.log('cleanup')
+}, [a , b, c]);
+~~~
+
+Если вернуть функцию , она будет вызываться для очистки предыдущего эффекта (похоже на #componentWillUnmount())
+
+~~~ jsx
+useEffect(() => console.log('mount') , [] );
+useEffect(() => console.log('update'));
+useEffect(() => () => console.log('unmount'), []);
+~~~
+
+// effect + cleanup ( mount + unmount )
+
+~~~ jsx
+useEffect(() => {
+	const timeout = setTimeout(setVisible, 10, false);
+	return () => clearTimeout(timeout);
+}, []);
+~~~
+
+Если данные зависят от параметра (например, ID ресурса) - обязательно укажите его в массиве > Promise нельзя отменить, но можно проигнорировать результат:
+
+~~~ jsx
+useEffect(() => {
+	let cancelled = false;
+	fetch(`/users/${id}`)
+		.then(res => res.json())
+		.then(data => !cancelled && setName(data.name));
+	return () => cancelled = true; }, [id]
+);
+~~~
 
 ###### Как осуществлять обработку данных из списка?
 

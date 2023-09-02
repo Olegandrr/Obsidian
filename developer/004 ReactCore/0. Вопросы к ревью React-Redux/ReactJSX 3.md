@@ -35,7 +35,7 @@ const usePlanetName = (id) => {
 
 Синтаксис useState в том, что :  определена переменная . Внутри переменной определено начальное состояние и измененное .
 
-~~~
+~~~ jsx
 const [color , setColor ] = useState ('pink')
 const [ age, setAge ] = useState(25)
 
@@ -52,7 +52,7 @@ setNum(100);
 
 Есть возможность передавать функцию внутрь #useState  . Это полезно когда вы используете как начальное значение задачу, которая требует значительных вычислений. 
 
-```
+``` jsx
 const [state, setState] = useState(() => {
 	console.log("initial state");
 	return 100;
@@ -63,7 +63,7 @@ const [state, setState] = useState(() => {
 
 Вы можете использовать функцию, когда вам нужно обновить состояние основываясь на данных, которые в данный момент находятся в состоянии.
 
-```
+``` jsx
 onClick={() => {
 	// Аргумент value это текущее состояние 
 	setState((value) => {
@@ -78,13 +78,13 @@ onClick={() => {
 
 Контекст создается с помощью функции createContext, которая принимает начальное значение контекста в качестве аргумента:
 
-```
+```  jsx
 const MyContext = React.createContext(defaultValue);
 ```
 
 Затем можно использовать компонент Provider для передачи значения контекста вниз по иерархии компонентов:
 
-```
+``` jsx
 <MyContext.Provider value={value}>
   <ChildComponent />
 </MyContext.Provider>
@@ -92,7 +92,7 @@ const MyContext = React.createContext(defaultValue);
 
 Чтобы получить доступ к значению контекста из функционального компонента, необходимо использовать хук useContext:
 
-```
+``` jsx
 const value = useContext(MyContext);
 ```
 
@@ -125,7 +125,7 @@ function ParentComponent() {
 
 #useEffect хук имеет 2 части, первая – это функция, и вторая – это массив зависимости.
 
-```
+``` jsx
 useEffect(()=>{},[])
 ```
 
