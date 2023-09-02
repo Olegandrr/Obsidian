@@ -19,7 +19,8 @@
       }
     }
   ],
-  "countComments": false,
+  "countComments": true,
   "collectStats": true,
+  "displaySectionCounts": false,
   "pageWords": 300
 }

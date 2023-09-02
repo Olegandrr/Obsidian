@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": false,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"000 Browser\"",
@@ -36,7 +36,7 @@
       }
     },
     {
-      "query": "path:\"004 ReactCore\"",
+      "query": "path:\"004 React + Redux\"",
       "color": {
         "a": 1,
         "rgb": 8867271
@@ -89,5 +89,5 @@
   "linkStrength": 1,
   "linkDistance": 300,
   "scale": 0.0972597734668837,
-  "close": false
+  "close": true
 }
