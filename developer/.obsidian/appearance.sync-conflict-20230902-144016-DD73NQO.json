@@ -1,0 +1,10 @@
+{
+  "accentColor": "#766e41",
+  "cssTheme": "Border",
+  "baseFontSize": 18,
+  "theme": "obsidian",
+  "interfaceFontFamily": "Century Gothic",
+  "textFontFamily": "Century Gothic",
+  "nativeMenus": false,
+  "translucency": true
+}
