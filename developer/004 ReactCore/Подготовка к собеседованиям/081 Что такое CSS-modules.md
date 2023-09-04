@@ -33,10 +33,9 @@ export default MyComponent;
 
 CSS модули - это удобный и безопасный способ стилизации компонентов в React. Они позволяют избежать конфликтов имен классов и упрощают поддержку кода.
 
-```javascript
 Кроме того, любой компонент может иметь настоящую зависимость, например:
+```javascript
 
-javascript
 import buttons from "./buttons.css";
 import padding from "./padding.css";
 

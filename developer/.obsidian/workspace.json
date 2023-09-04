@@ -8,20 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "313f205cec6ce932",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "004 ReactCore/Подготовка к собеседованиям/079 Что такое «опрос» (Polling) Как его реализовать в React.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "60567740a080e6c7",
+            "id": "dbf80328db357781",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#JavaScript",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -157,7 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 607.5
+    "width": 611.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,37 +152,40 @@
       "switcher:Меню быстрого перехода": false,
       "templates:Вставить шаблон": false,
       "daily-notes:Сегодняшняя заметка": false,
-      "command-palette:Открыть палитру команд": false
+      "command-palette:Открыть палитру команд": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "60567740a080e6c7",
+  "active": "dbf80328db357781",
   "lastOpenFiles": [
-    "004 ReactCore/Подготовка к собеседованиям/079 Что такое «опрос» (Polling) Как его реализовать в React.md",
-    "0. Подготовка к собеседованию/004 React + Redux.md",
-    "004 ReactCore/Подготовка к собеседованиям/078 В чем разница между createRef и useRef.md",
-    "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/075 Что такое `useReducer()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/080 Как предотвратить повторный рендеринг в React.md",
-    "004 ReactCore/Подготовка к собеседованиям/074 Когда происходит ререндер состояния.md",
-    "004 ReactCore/Подготовка к собеседованиям/071 Правила (ограничения) использования хуков.md",
-    "0. Подготовка к собеседованию/005 TypeScript.md",
-    "004 ReactCore/Подготовка к собеседованиям/072 Разница между `useEffect()` и `componentDidMount()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/069 Преимущества хуков.md",
-    "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
-    "004 ReactCore/Подготовка к собеседованиям/064 Что такое предохранители (Error Boundaries).md",
-    "004 ReactCore/3.2 React-хуки/Все хуки и концепты React.md",
-    "004 ReactCore/Подготовка к собеседованиям/082 Что такое Компонент высшего порядка (Higher-Order Component).md",
-    "004 ReactCore/Подготовка к собеседованиям/083 Что такое React-миксины.md",
-    "0. Подготовка к собеседованию/007 Скрипты.md",
-    "004 ReactCore/Подготовка к собеседованиям/081 Что такое CSS-modules.md",
-    "004 ReactCore/Подготовка к собеседованиям/084 Техники оптимизации перфоманса React.md",
-    "004 ReactCore/Подготовка к собеседованиям/066 Что такое React Fiber.md",
-    "0. Подготовка к собеседованию/006 Node.js.md",
     "0. Подготовка к собеседованию/003 JSCore.md",
-    "0. Подготовка к собеседованию/001 HTML.md",
-    "0. Подготовка к собеседованию/002 CSS.md",
-    "004 ReactCore/3.3 Стилизация/Стилизация и CSS.md",
-    "004 ReactCore/3.3 Стилизация/Компоненты высшего порядка.md",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Открытые решения.md",
+    "004 ReactCore/Подготовка к собеседованиям/077 Разница между `memo` и `useMemo`.md",
+    "0. Подготовка к собеседованию/004 React + Redux.md",
+    "Синхронизация с эффектами.md",
+    "004 ReactCore/Подготовка к собеседованиям/066 Что такое React Fiber.md",
+    "004 ReactCore/Подготовка к собеседованиям/075 Что такое `useReducer()`.md",
+    "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
+    "004 ReactCore/Подготовка к собеседованиям/085 Что такое события указателя (Pointer Events).md",
+    "004 ReactCore/Подготовка к собеседованиям/084 Техники оптимизации перфоманса React.md",
+    "004 ReactCore/Подготовка к собеседованиям/083 Что такое React-миксины.md",
+    "004 ReactCore/Подготовка к собеседованиям/082 Что такое Компонент высшего порядка (Higher-Order Component).md",
+    "004 ReactCore/Подготовка к собеседованиям/081 Что такое CSS-modules.md",
+    "004 ReactCore/Подготовка к собеседованиям/080 Как предотвратить повторный рендеринг в React.md",
+    "004 ReactCore/Подготовка к собеседованиям/079 Что такое «опрос» (Polling) Как его реализовать в React.md",
+    "004 ReactCore/Подготовка к собеседованиям/078 В чем разница между createRef и useRef.md",
+    "Pasted image 20230904222547.png",
+    "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
+    "004 ReactCore/3.2 React-хуки/3.2.10 Правила и ограничения хуков.md",
+    "Без названия.canvas",
+    "0. Подготовка к собеседованию/005 TypeScript.md",
+    "004 ReactCore/Подготовка к собеседованиям/074 Когда происходит ререндер состояния.md",
+    "004 ReactCore/Подготовка к собеседованиям/073 Как реализовать однократное выполнение операции при начальном рендеринге.md",
+    "004 ReactCore/Подготовка к собеседованиям/072 Разница между `useEffect()` и `componentDidMount()`.md",
+    "004 ReactCore/Подготовка к собеседованиям/071 Правила (ограничения) использования хуков.md",
+    "004 ReactCore/Подготовка к собеседованиям/070 Недостатки хуков.md",
+    "004 ReactCore/3.2 React-хуки/3.2.9 useCallback() и useMemo().md",
+    "004 ReactCore/3.2 React-хуки/3.2.8 Создание собственных хуков.md",
     "003 JSCore/Без названия.canvas",
     "img/Pasted image 20230818025351.png",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
@@ -211,7 +200,6 @@
     "img/Pasted image 20230814012620.png",
     "0. Подготовка к собеседованию/other themes/Собеседования",
     "img/Pasted image 20230806001030.png",
-    "img/Pasted image 20230806001027 1.png",
     "000 Browser/Шпаргалка (Как работает интернет).canvas",
     "Без названия 1.canvas",
     "001 HTML/2 Семантическая разметка SEO. Доступность/~syncthing~Особенности кроссбраузерной вёрстки.sync-conflict-20230707-172327-2GIJL36.md.tmp",
