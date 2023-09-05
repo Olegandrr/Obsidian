@@ -15,6 +15,8 @@
 
 Таким образом, метод `render()` в React-компонентах может возвращать различные типы данных, но основным типом являются элементы React.
 
+Подробнее: [Что такое Render Props](https://reactdev.ru/archive/react16/render-props/#be-careful-when-using-render-props-with-reactpurecomponent)
+
 ____
 #React #render #JSX #portals 
 

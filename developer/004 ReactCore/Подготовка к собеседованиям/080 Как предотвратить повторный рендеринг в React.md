@@ -58,7 +58,7 @@ export default MyComponent;
 [Задача №1](https://codesandbox.io/s/react-senior-rerender-nfdgns)
 
 ____
-#React
+#React #shouldComponentUpdate #pureComponent #useCallback #useMemo #memo 
 
 ____
 

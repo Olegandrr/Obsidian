@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Подготовка к собеседованию/004 React + Redux.md",
+                "file": "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "0. Подготовка к собеседованию/004 React + Redux.md",
+            "file": "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "0. Подготовка к собеседованию/004 React + Redux.md",
+            "file": "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "0. Подготовка к собеседованию/004 React + Redux.md"
+            "file": "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md"
           }
         }
       },
@@ -132,6 +132,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -142,34 +143,34 @@
   },
   "active": "dc02a7a5087fbfc0",
   "lastOpenFiles": [
-    "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
     "0. Подготовка к собеседованию/004 React + Redux.md",
-    "004 ReactCore/Подготовка к собеседованиям/074 Когда происходит ререндер состояния.md",
-    "004 ReactCore/Подготовка к собеседованиям/072 Разница между `useEffect()` и `componentDidMount()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/073 Как реализовать однократное выполнение операции при начальном рендеринге.md",
-    "004 ReactCore/3.2 React-хуки/Все хуки и концепты React.md",
-    "004 ReactCore/Подготовка к собеседованиям/082 Что такое Компонент высшего порядка (Higher-Order Component).md",
-    "004 ReactCore/Подготовка к собеседованиям/081 Что такое CSS-modules.md",
-    "004 ReactCore/3.3 Стилизация/Стилизация и CSS.md",
-    "004 ReactCore/Подготовка к собеседованиям/084 Техники оптимизации перфоманса React.md",
+    "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
     "004 ReactCore/Подготовка к собеседованиям/067 Назовите основную цель React Fiber.md",
     "004 ReactCore/Подготовка к собеседованиям/066 Что такое React Fiber.md",
+    "004 ReactCore/Подготовка к собеседованиям/085 Что такое события указателя (Pointer Events).md",
+    "004 ReactCore/Подготовка к собеседованиям/084 Техники оптимизации перфоманса React.md",
+    "004 ReactCore/Подготовка к собеседованиям/083 Что такое React-миксины.md",
+    "004 ReactCore/Подготовка к собеседованиям/082 Что такое Компонент высшего порядка (Higher-Order Component).md",
+    "004 ReactCore/Подготовка к собеседованиям/081 Что такое CSS-modules.md",
+    "004 ReactCore/Подготовка к собеседованиям/080 Как предотвратить повторный рендеринг в React.md",
+    "004 ReactCore/Подготовка к собеседованиям/079 Что такое «опрос» (Polling) Как его реализовать в React.md",
+    "004 ReactCore/Подготовка к собеседованиям/078 В чем разница между createRef и useRef.md",
+    "004 ReactCore/Подготовка к собеседованиям/077 Разница между `memo` и `useMemo`.md",
+    "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
+    "004 ReactCore/Подготовка к собеседованиям/075 Что такое `useReducer()`.md",
+    "004 ReactCore/Подготовка к собеседованиям/074 Когда происходит ререндер состояния.md",
+    "004 ReactCore/Подготовка к собеседованиям/073 Как реализовать однократное выполнение операции при начальном рендеринге.md",
+    "004 ReactCore/Подготовка к собеседованиям/072 Разница между `useEffect()` и `componentDidMount()`.md",
+    "004 ReactCore/Подготовка к собеседованиям/071 Правила (ограничения) использования хуков.md",
+    "004 ReactCore/Подготовка к собеседованиям/070 Недостатки хуков.md",
+    "004 ReactCore/Подготовка к собеседованиям/069 Преимущества хуков.md",
+    "Синхронизация с эффектами.md",
+    "0. Подготовка к собеседованию/003 JSCore.md",
+    "004 ReactCore/4 React-routing/4.2 Основы React-routing.md",
+    "004 ReactCore/3.4 Redux/3.4.17 Асинхронное изменение state.md",
+    "004 ReactCore/3.4 Redux/3.4.16 Как работает Middleware.md",
     "500. Литература/TypeScript/Эффективный TypeScript. 62 способа улучшить код - Дэн Вандеркам (2020).pdf",
     "500. Литература/TypeScript/Профессиональный TypeScript - Черный Борис (2021).pdf",
-    "004 ReactCore/Подготовка к собеседованиям/100 Что такое портал (`Portal`).md",
-    "004 ReactCore/Подготовка к собеседованиям/042 Когда происходит ререндер состояния.md",
-    "004 ReactCore/Подготовка к собеседованиям/049 Методы жизненного цикла компонента в React.md",
-    "004 ReactCore/Подготовка к собеседованиям/048 Стадии жизненного цикла компонента в React.md",
-    "004 ReactCore/Подготовка к собеседованиям/025 Разница между классовым и функциональным компонентами.md",
-    "004 ReactCore/Подготовка к собеседованиям/046 Что возвращает fetch. Как получить содержимое ответа. Как обрабатывать ошибки.md",
-    "003 JSCore/Подготовка к собеседованию/218 XMLHttpRequest.md",
-    "0. Подготовка к собеседованию/003 JSCore.md",
-    "003 JSCore/Подготовка к собеседованию/217 Плюсы и минусы использовании AJAX.md",
-    "003 JSCore/Подготовка к собеседованию/216 Что такое AJAX.md",
-    "004 ReactCore/Подготовка к собеседованиям/026 В чем разница между super() и super(props) в React с использованием классов ES6.md",
-    "0. Подготовка к собеседованию/004 React + Redux.sync-conflict-20230830-105340-2GIJL36.md",
-    "0. Подготовка к собеседованию/007 Скрипты.md",
-    "004 ReactCore/0. Вопросы к ревью React-Redux/ReactJSX 2.md",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
     "000 Browser/Шпаргалка (Как работает интернет).canvas",
     "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/WordpressWhite.svg",

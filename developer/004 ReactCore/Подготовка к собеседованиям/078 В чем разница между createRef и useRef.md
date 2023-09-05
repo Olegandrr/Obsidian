@@ -66,6 +66,53 @@ function MyComponent() {
 В этом примере, `useRef()` используется для создания рефа `myRef`. Реф передается в DOM элемент через атрибут `ref`.
 
 *`useRef()` в функциональных компонентах используются не только для доступа к DOM элементам, но еще и как стабильное хранилище данных.*
+###### Как переслать несколько ссылок?
+
+Чтобы переслать несколько ссылок с помощью React, мы можем передать ссылки в объекте.  
+  
+Например, мы пишем:
+
+```jsx
+import React, { useRef } from "react";
+
+const Child = React.forwardRef((props, ref) => {
+  const { ref1, ref2 } = ref.current;
+  console.log(ref1, ref2);
+
+  return (
+    <>
+      <p ref={ref1}>foo</p>
+      <p ref={ref2}>bar</p>
+    </>
+  );
+});
+
+export default function App() {
+  const ref1 = useRef();
+  const ref2 = useRef();
+  const ref = useRef({ ref1, ref2 });
+
+  return <Child ref={ref} />;
+}
+```
+
+У нас есть `Child` компонент, который принимает ссылки с тех пор, как мы создали его, вызвав `forwardRef` с помощью функции компонента.
+
+В функции мы деструктурируем ссылки, которые мы передаем, используя:
+
+```jsx
+const { ref1, ref2 } = ref.current;
+```
+
+Затем мы присваиваем `ref1` и `ref2` элементам p.  
+В приложении мы создаем ссылки с помощью useRef-хука.  
+Мы создаем `ref`, вызывая `useRef` с объектом, созданным из существующих ссылок.
+
+И, наконец, мы устанавливаем `ref` prop `Child` элемента на `ref`.
+
+Следовательно, из `console.log()` мы можем видеть, что текущее свойство `ref1` и `ref2` присвоено элементам абзаца в дочернем элементе.
+
+Подробнее: [Самые загадочные хуки - useImperativeHandle и forwardRef](https://www.youtube.com/watch?v=X1Skt2n7y3U), [Как переслать несколько ссылок?](https://thewebdev.info/2021/11/14/how-to-forward-multiple-refs-with-react/) , [Объединение ref'ов в React | React Hooks - useCombinedRef](https://www.youtube.com/watch?v=2GwcfFSLxbg)
 
 ____
 #React #createRef #useRef #Hooks 
