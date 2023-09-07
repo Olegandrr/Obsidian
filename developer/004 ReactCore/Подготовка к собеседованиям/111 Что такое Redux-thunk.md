@@ -35,6 +35,8 @@ export const fetchPosts = () => {
 
 В этом примере действие fetchPosts возвращает функцию, которая делает запрос к API и обновляет состояние приложения после получения данных. Функция использует методы dispatch и getState, переданные ей Redux Thunk, чтобы диспетчеризовать новые действия fetchPostsRequest, fetchPostsSuccess и fetchPostsFailure в зависимости от результата запроса.
 
+Подробнее: [Как делать асинхронные Redux экшены используя Redux-Thunk](https://habr.com/ru/articles/483314/)
+
 ____
 #React #redux #redux-thunk #Middleware 
 

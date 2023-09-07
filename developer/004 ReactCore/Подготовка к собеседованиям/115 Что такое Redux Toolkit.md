@@ -12,7 +12,7 @@
 
 Redux Toolkit предоставляет множество других утилит и функций, которые могут упростить работу с Redux и улучшить производительность приложений. Она также обеспечивает совместимость с существующими приложениями Redux, что позволяет постепенно внедрять ее в проекты.
 
-Подробнее: [Redux Toolkit](https://redux-toolkit.js.org/) , [Redux Toolkit как средство эффективной Redux-разработки](https://habr.com/ru/companies/inobitec/articles/481288/) , [Справочник Redux Toolkit](https://reactdev.ru/libs/redux-toolkit/)
+Подробнее: [Redux Toolkit](https://redux-toolkit.js.org/) , [Redux Toolkit как средство эффективной Redux-разработки](https://habr.com/ru/companies/inobitec/articles/481288/) , [Справочник Redux Toolkit](https://reactdev.ru/libs/redux-toolkit/) , [RTK query: что мы от него хотим и зачем](https://habr.com/ru/companies/alfa/articles/705640/)
 
 ____
 #React #redux #redux-toolkit

@@ -13,6 +13,8 @@
 
 Это только некоторые рекомендации по построению хорошей архитектуры React-проекта. В целом, хорошая архитектура должна быть гибкой, расширяемой и удобной для сопровождения.
 
+Подробнее: [Архитектура современного React приложения](https://it-dev-journal.ru/articles/arhitektura-sovremennogo-react-prilozheniya) , [The Clean Architecture на TypeScript и React. Часть 1: Основы](https://habr.com/ru/articles/499078/) , [Организация разработки крупномасштабных React-приложений](https://habr.com/ru/companies/ruvds/articles/515682/) , [Структурирование React-приложений](https://habr.com/ru/companies/ruvds/articles/460793/)
+
 ____
 #React
 

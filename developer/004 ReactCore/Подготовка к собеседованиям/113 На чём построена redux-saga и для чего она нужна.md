@@ -38,6 +38,8 @@ export default userSaga;
 
 В этом примере создается сага userSaga, которая следит за действием FETCH_USER_DATA_REQUEST и запускает функцию fetchUserData для выполнения запроса на сервер. Функция fetchUserData использует генераторные функции call и put для выполнения операции и отправки результатов в Redux-хранилище. Если происходит ошибка, то функция генерирует действие fetchUserDataError, которое также отправляется в хранилище.
 
+Подробнее: [Redux-saga: обзорная экскурсия](https://habr.com/ru/companies/usetech/articles/735914/)
+
 ____
 #React #redux #redux-saga #side-effect 
 

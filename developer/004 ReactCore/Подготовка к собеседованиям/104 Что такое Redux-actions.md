@@ -33,6 +33,8 @@ const reducer = handleActions(
 
 В результате использования Redux-actions код становится более читаемым и понятным, а также более простым в сопровождении и тестировании.
 
+Подробнее: [Actions](https://rajdee.gitbooks.io/redux-in-russian/content/docs/basics/Actions.html)
+
 ____
 #React #redux #actions 
 

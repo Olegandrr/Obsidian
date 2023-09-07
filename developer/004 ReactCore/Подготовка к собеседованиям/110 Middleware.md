@@ -28,6 +28,8 @@ const store = createStore(reducer, applyMiddleware(myMiddleware));
 
 В этом примере middleware логирует каждое действие и новое состояние приложения после обновления. Middleware получает доступ к store и может использовать его для получения текущего состояния или диспетчеризации новых действий.
 
+Подробнее: [Middleware](https://rajdee.gitbooks.io/redux-in-russian/content/docs/advanced/Middleware.html)
+
 ____
 #React #redux #Middleware 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
+                "file": "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
+            "file": "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
+            "file": "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md"
+            "file": "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md"
           }
         }
       },
@@ -144,14 +144,6 @@
   "active": "dc02a7a5087fbfc0",
   "lastOpenFiles": [
     "0. Подготовка к собеседованию/004 React + Redux.md",
-    "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
-    "004 ReactCore/Подготовка к собеседованиям/067 Назовите основную цель React Fiber.md",
-    "004 ReactCore/Подготовка к собеседованиям/066 Что такое React Fiber.md",
-    "004 ReactCore/Подготовка к собеседованиям/085 Что такое события указателя (Pointer Events).md",
-    "004 ReactCore/Подготовка к собеседованиям/084 Техники оптимизации перфоманса React.md",
-    "004 ReactCore/Подготовка к собеседованиям/083 Что такое React-миксины.md",
-    "004 ReactCore/Подготовка к собеседованиям/082 Что такое Компонент высшего порядка (Higher-Order Component).md",
-    "004 ReactCore/Подготовка к собеседованиям/081 Что такое CSS-modules.md",
     "004 ReactCore/Подготовка к собеседованиям/080 Как предотвратить повторный рендеринг в React.md",
     "004 ReactCore/Подготовка к собеседованиям/079 Что такое «опрос» (Polling) Как его реализовать в React.md",
     "004 ReactCore/Подготовка к собеседованиям/078 В чем разница между createRef и useRef.md",
@@ -164,6 +156,14 @@
     "004 ReactCore/Подготовка к собеседованиям/071 Правила (ограничения) использования хуков.md",
     "004 ReactCore/Подготовка к собеседованиям/070 Недостатки хуков.md",
     "004 ReactCore/Подготовка к собеседованиям/069 Преимущества хуков.md",
+    "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
+    "004 ReactCore/Подготовка к собеседованиям/067 Назовите основную цель React Fiber.md",
+    "004 ReactCore/Подготовка к собеседованиям/066 Что такое React Fiber.md",
+    "004 ReactCore/Подготовка к собеседованиям/085 Что такое события указателя (Pointer Events).md",
+    "004 ReactCore/Подготовка к собеседованиям/084 Техники оптимизации перфоманса React.md",
+    "004 ReactCore/Подготовка к собеседованиям/083 Что такое React-миксины.md",
+    "004 ReactCore/Подготовка к собеседованиям/082 Что такое Компонент высшего порядка (Higher-Order Component).md",
+    "004 ReactCore/Подготовка к собеседованиям/081 Что такое CSS-modules.md",
     "Синхронизация с эффектами.md",
     "0. Подготовка к собеседованию/003 JSCore.md",
     "004 ReactCore/4 React-routing/4.2 Основы React-routing.md",

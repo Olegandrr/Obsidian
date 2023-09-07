@@ -15,7 +15,7 @@ render(
 );
 ```
 
-Подробнее: [Профилирование производительности React-приложений](https://habr.com/ru/companies/ruvds/articles/497988/)
+Подробнее: [Профилирование производительности React-приложений](https://habr.com/ru/companies/ruvds/articles/497988/), [React Profiler](https://ru.legacy.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html)
 
 ____
 #React #Profiler
