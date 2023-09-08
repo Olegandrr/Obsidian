@@ -6,7 +6,7 @@
 
 ##### Введение
 
-Redux - это библиотека для управления состоянием JS-приложения, которое может быть общим для нескольких компонентов приложения. 
+*Redux* - это библиотека для управления состоянием JS-приложения, которое может быть общим для нескольких компонентов приложения. 
 
 Для создания проекта на Redux :
 ~~~
@@ -16,7 +16,7 @@ Redux - это библиотека для управления состояни
 npm i redux react-redux
 ~~~
 
-Redux - библиотека для работы с redux . react-redux - библиотека, которая упрощает интеграцию между React и Redux .
+*react-redux* - библиотека, которая упрощает интеграцию между React и Redux .
 
 *В React рендеринг, действия ( actions) , логика ( reducer), state могут находиться в одном компоненте.* Для управления состояниями Redux предоставляет одно глобальное место, которое доступно из любой его части называемое "хранилищем" `store`.  Хранилище содержит состояние приложения и методы для его изменения. 
 
@@ -24,30 +24,50 @@ Redux - библиотека для работы с redux . react-redux - биб
 
 ![[Pasted image 20230424203458.png]]
 
-Рассмотрим подробнее инструменты управления Redux  :
+Без пакета **React-redux** в React приложениях выглядит не очень красиво.
 
-##### 1. actions 
+##### `Provider`
+
+Для использование store в компоненте вам необходимо передавать его в пропсы:  
+
+```jsx
+ReactDOM.render(<Main store={store} />, document.getElementById('root'));
+```
+
+И после использовать в компоненте: this.props.state. Для этого react-redux предоставляет метод Provider:  
+  
+```jsx
+ReactDOM.render(
+    <Provider store={store}>
+        <Main />
+    </Provider>, 
+document.getElementById('root'));
+```
+  
+Таким образом метод `connect` сможет использовать store. В противном случае вы получите ошибку: `Error: Could not find «store» in the context of «Connect(Main)». Either wrap the root component in a , or pass a custom React context provider to and the corresponding React context consumer to Connect(Main) in connect options.  `
+  
+Также можно передать store напрямую в компонент, не оборачивая его в Provider и это будет работать. Но лучше всё-таки используйте Provider.
+
+Рассмотрим подробнее инструменты управления Redux .
+
+##### 1. `actions` 
 
 *`Actions` и `Action Creators` являются ключевыми концепциями в Redux, позволяющими управлять состоянием приложения.*
 
-*`Action` - это простой объект, который описывает какое-то действие, которое нужно выполнить в приложении.* Action может содержать различные свойства, но обязательно должно быть свойство "type", которое указывает на тип действия, которое нужно выполнить.
+*`Actions` - это константы, описывающие событие.* 
 
-Пример Action:
-```javascript
-{
-  type: 'ADD_TODO',
-  payload: {
-    id: 1,
-    text: 'Buy milk'
-  }
-}
+```JSX
+const ACTION_1 = "ACTION_1"; 
+
+export default ACTION_1;
 ```
 
-*`Action Creator `- это функция, которая создает Action. Она принимает данные и возвращает объект Action, который затем передается в Redux Store для обновления состояния приложения.*
+*`Action Creator`- это функция, которая создает `Action`. Она принимает данные и возвращает объект `Action`, который затем передается в Redux Store для обновления состояния приложения.*
 
-Пример Action Creator, который создает Action для добавления задачи в список задач:
+`Action Creators` может содержать различные свойства, но обязательно должно быть свойство "`type"`, которое указывает на тип действия, которое нужно выполнить.
 
-```javascript
+Пример `Action Creator`:
+```JSX
 function addTodoActionCreator(id, text) {
   return {
     type: 'ADD_TODO',
@@ -59,25 +79,26 @@ function addTodoActionCreator(id, text) {
 }
 ```
 
-В этом примере функция addTodoActionCreator принимает два параметра - id и text, и возвращает объект Action с типом "ADD_TODO" и данными о новой задаче.
+В этом примере функция `addTodoActionCreator` принимает два параметра - id и text, и возвращает объект Action с типом "ADD_TODO" и данными о новой задаче.
 
 _Вы можете использовать функцию [`bindActionCreators()`](https://rajdee.gitbooks.io/redux-in-russian/content/docs/api/bindActionCreators.html) для автоматического привязывания большого количества генераторов экшенов (action creators) к функции `dispatch()`._
+
 Созданные таким способом функции делают сразу два действия - создание действия (action) и отправка action в dispatch()
 
 *Action Creators позволяют абстрагироваться от создания объекта Action и упрощают процесс управления состоянием в Redux. Они также могут использоваться для асинхронных операций, таких как получение данных из API, используя middleware, такой как Redux Thunk или Redux Saga.*
 
-##### 2. Reducer 
+##### 2. `reducer` 
 
 *Редюсер (`reducer`) — это чистая функция, которая принимает предыдущее состояние и экшен (`state` и `action`) и возвращает следующее состояние (новую версию предыдущего).*
 
-```jsx
+``` jsx
 (previousState, action) => newState
 ```
 Если previousState - underfined , то нужно вернуть первоначальный (initial) state .
 
 Функция называется редюсером (reducer) потому, что ее можно передать в [`Array.prototype.reduce(reducer, ?initialValue)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce). 
 
-В reducer никогда нельзя:
+В `reducer` никогда нельзя:
 -   Непосредственно изменять то, что пришло в аргументах функции;
 -   Выполнять какие-либо сайд-эффекты: обращаться к API или осуществлять переход по роутам;
 -   Вызывать не чистые функции, например `Date.now()` или `Math.random()`.
@@ -99,7 +120,9 @@ function counterReducer(state = 0, action) {
 
 В этом примере функция counterReducer принимает текущее значение состояния счетчика и объект Action, который содержит тип действия. В зависимости от типа действия, reducer обновляет состояние счетчика и возвращает новое значение.
 
-*`Reducer` в Redux является ключевым элементом в управлении состоянием приложения и позволяет обрабатывать действия, которые изменяют состояние приложения. Он может быть объединен с другими reducer'ами с помощью функции `combineReducers` для управления состоянием всего приложения.*
+*`Reducer` является ключевым элементом в управлении состоянием приложения и позволяет обрабатывать действия, которые изменяют состояние приложения. Он может быть объединен с другими reducer'ами с помощью функции `combineReducers` для управления состоянием всего приложения.*
+
+**Когда вы разбиваете базовый reducer на несколько, то название каждого из них должно соответствовать полю которое он обновляет в store.**
 
 ##### 3. store 
 
@@ -109,12 +132,22 @@ function counterReducer(state = 0, action) {
 import { createStore } from 'redux'
 import initReducer from './reducers'
 
-const store = createStore(reducer);
+const store = createStore(reducer, initialState);
 ~~~
 
 Стор берет на себя следующие задачи:
 -   содержит состояние приложения (application state);
 -   предоставляет доступ к состоянию с помощью [`getState()`](https://rajdee.gitbooks.io/redux-in-russian/content/docs/api/Store.html#getState);
+
+```JSX
+store.getState()
+```
+вернёт значение полей хранилища. К примеру что бы посмотреть значение поля value_1 необходимо будет вызвать  
+
+```JSX
+store.getState().value_1
+```
+
 -   предоставляет возможность обновления состояния с помощью [`dispatch(action)`](https://rajdee.gitbooks.io/redux-in-russian/content/docs/api/Store.html#dispatch);
 -   Обрабатывает отмену регистрации слушателей с помощью функции, возвращаемой [`subscribe(listener)`](https://rajdee.gitbooks.io/redux-in-russian/content/docs/api/Store.html#subscribelistener)
 
@@ -125,7 +158,9 @@ store.subscribe(() => {
 });
 ~~~
 
-React должен "знать" когда нужно обновлять компоненты (store.subscribe сообщает о том, что state обновился и обновляет UI) store.dispatch() используется для обновления состояния.
+React должен "знать" когда нужно обновлять компоненты (`store.subscribe` сообщает о том, что state обновился и обновляет UI) `store.dispatch()` используется для обновления состояния.
+
+*`initialState`* — объект, представляющий начальное состояние хранилища. Он является вторым не обязательным аргументом метода `createStore()`.
 
 #####  4. dispatch 
 

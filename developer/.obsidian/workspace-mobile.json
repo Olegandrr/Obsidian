@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
+                "file": "0. Подготовка к собеседованию/004 React + Redux.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
+            "file": "0. Подготовка к собеседованию/004 React + Redux.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
+            "file": "0. Подготовка к собеседованию/004 React + Redux.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md"
+            "file": "0. Подготовка к собеседованию/004 React + Redux.md"
           }
         }
       },
@@ -141,25 +141,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dc02a7a5087fbfc0",
+  "active": "f9d4f2b7a76334e3",
   "lastOpenFiles": [
+    "004 ReactCore/Подготовка к собеседованиям/085 Что такое события указателя (Pointer Events).md",
     "0. Подготовка к собеседованию/004 React + Redux.md",
-    "004 ReactCore/Подготовка к собеседованиям/080 Как предотвратить повторный рендеринг в React.md",
-    "004 ReactCore/Подготовка к собеседованиям/079 Что такое «опрос» (Polling) Как его реализовать в React.md",
     "004 ReactCore/Подготовка к собеседованиям/078 В чем разница между createRef и useRef.md",
     "004 ReactCore/Подготовка к собеседованиям/077 Разница между `memo` и `useMemo`.md",
     "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
+    "004 ReactCore/Подготовка к собеседованиям/080 Как предотвратить повторный рендеринг в React.md",
     "004 ReactCore/Подготовка к собеседованиям/075 Что такое `useReducer()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/074 Когда происходит ререндер состояния.md",
-    "004 ReactCore/Подготовка к собеседованиям/073 Как реализовать однократное выполнение операции при начальном рендеринге.md",
     "004 ReactCore/Подготовка к собеседованиям/072 Разница между `useEffect()` и `componentDidMount()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/071 Правила (ограничения) использования хуков.md",
-    "004 ReactCore/Подготовка к собеседованиям/070 Недостатки хуков.md",
-    "004 ReactCore/Подготовка к собеседованиям/069 Преимущества хуков.md",
     "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
     "004 ReactCore/Подготовка к собеседованиям/067 Назовите основную цель React Fiber.md",
     "004 ReactCore/Подготовка к собеседованиям/066 Что такое React Fiber.md",
-    "004 ReactCore/Подготовка к собеседованиям/085 Что такое события указателя (Pointer Events).md",
+    "004 ReactCore/Подготовка к собеседованиям/079 Что такое «опрос» (Polling) Как его реализовать в React.md",
+    "004 ReactCore/Подготовка к собеседованиям/074 Когда происходит ререндер состояния.md",
+    "004 ReactCore/Подготовка к собеседованиям/073 Как реализовать однократное выполнение операции при начальном рендеринге.md",
+    "004 ReactCore/Подготовка к собеседованиям/071 Правила (ограничения) использования хуков.md",
+    "004 ReactCore/Подготовка к собеседованиям/070 Недостатки хуков.md",
+    "004 ReactCore/Подготовка к собеседованиям/069 Преимущества хуков.md",
     "004 ReactCore/Подготовка к собеседованиям/084 Техники оптимизации перфоманса React.md",
     "004 ReactCore/Подготовка к собеседованиям/083 Что такое React-миксины.md",
     "004 ReactCore/Подготовка к собеседованиям/082 Что такое Компонент высшего порядка (Higher-Order Component).md",
