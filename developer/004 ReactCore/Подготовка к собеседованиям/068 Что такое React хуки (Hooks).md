@@ -2,7 +2,7 @@
 
 #### Ответ
 
-Подробнее: [[Все хуки и концепты React]]
+Подробнее: [[Все хуки и концепты React]] , [Вопросы для собеседования по хукам React](https://habr.com/ru/articles/534632/)
 
 ![[Pasted image 20230704185145.png|600]]
 
@@ -101,6 +101,19 @@ const onClick1 = () => {
   setCount(v => v + 1);
   setCount(v => v + 1);
   setCount(v => v + 1);
+};
+```
+
+**Ещё немного про `batching`**
+
+```jsx
+function ExampleComponent() { 
+	const [count, setCount] = useState(0); 
+	const handleClick = () => { 
+	// Несколько вызовов `setCount` будут сгруппированы в один батч 
+	setCount(count + 1); 
+	setCount(count + 2); 
+	setCount(count + 3); 
 };
 ```
 
@@ -216,6 +229,48 @@ useEffect(() => {
 ###### Как осуществлять обработку данных из списка?
 
 Подробнее: [DATA FETCHING WITH REACT HOOKS](https://www.robinwieruch.de/react-hooks-fetch-data/)
+
+###### Как пропустить `useEffect()` при первом рендеринге
+
+Мы можем использовать `useRef()` для сохранения любого изменяемого значения, которое мы хотим, чтобы отслеживать, выполняется ли `useEffect()` впервые.
+
+Если мы хотим, чтобы эффект выполнялся на той же фазе, что и `componentDidUpdate()` выполняется, мы можем использовать [`useLayoutEffect()`](https://reactjs.org/docs/hooks-reference.html#uselayouteffect) вместо этого.
+
+```jsx
+const { useState, useRef, useLayoutEffect } = React;
+
+function ComponentDidUpdateFunction() {
+  const [count, setCount] = useState(0);
+
+  const firstUpdate = useRef(true);
+  useLayoutEffect(() => {
+    if (firstUpdate.current) {
+      firstUpdate.current = false;
+      return;
+    }
+
+    console.log("componentDidUpdateFunction");
+  });
+
+  return (
+    <div>
+      <p>componentDidUpdateFunction: {count} times</p>
+      <button
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        Click Me
+      </button>
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <ComponentDidUpdateFunction />,
+  document.getElementById("app")
+);
+```
 
 ##### useContext()
 

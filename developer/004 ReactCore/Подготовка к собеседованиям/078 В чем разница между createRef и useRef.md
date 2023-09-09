@@ -23,8 +23,8 @@ class MyComponent extends React.Component {
 
 В этом примере, `createRef()` используется для создания рефа `myRef`. Реф передается в DOM элемент через атрибут `ref`.
 
-Также в атрибут `ref` можно передавать не только объект вида 
-`{ current: T }`, но и функцию, которая единственным аргументом принимает ссылку на элемент, этот прием называется `ref callback`:
+*Также в атрибут `ref` можно передавать не только объект вида 
+`{ current: T }`, но и функцию, которая единственным аргументом принимает ссылку на элемент, этот прием называется `ref callback`:*
 
 ``` jsx
 class ClassComponent extends Component {
@@ -41,11 +41,15 @@ class ClassComponent extends Component {
 }
 ```
 
-*Главная задача ref callback - это создание массива ссылок на DOM элементы и react компоненты.*
+*Главная задача `ref callback` - это создание массива ссылок на DOM элементы и react компоненты.*
 
 ##### `useRef()`
 
 *`useRef`* - это хук в React, который позволяет создавать рефы (refs) для доступа к DOM элементам и другим компонентам в функциональных компонентах.
+
+```jsx
+const ref = useRef(initialValue);
+```
 
 При попытке получить ссылку на функциональный компонент мы получим другой результат нежели при использовании `createRef()`.
 А в консоли увидим следующее предупреждение и получим `undefined` вместо данных компонента.
@@ -66,6 +70,7 @@ function MyComponent() {
 В этом примере, `useRef()` используется для создания рефа `myRef`. Реф передается в DOM элемент через атрибут `ref`.
 
 *`useRef()` в функциональных компонентах используются не только для доступа к DOM элементам, но еще и как стабильное хранилище данных.*
+
 ###### Как переслать несколько ссылок?
 
 Чтобы переслать несколько ссылок с помощью React, мы можем передать ссылки в объекте.  
@@ -112,10 +117,10 @@ const { ref1, ref2 } = ref.current;
 
 Следовательно, из `console.log()` мы можем видеть, что текущее свойство `ref1` и `ref2` присвоено элементам абзаца в дочернем элементе.
 
-Подробнее: [Самые загадочные хуки - useImperativeHandle и forwardRef](https://www.youtube.com/watch?v=X1Skt2n7y3U), [Как переслать несколько ссылок?](https://thewebdev.info/2021/11/14/how-to-forward-multiple-refs-with-react/) , [Объединение ref'ов в React | React Hooks - useCombinedRef](https://www.youtube.com/watch?v=2GwcfFSLxbg)
+Подробнее: [Самые загадочные хуки - useImperativeHandle и forwardRef](https://www.youtube.com/watch?v=X1Skt2n7y3U), [Как переслать несколько ссылок?](https://thewebdev.info/2021/11/14/how-to-forward-multiple-refs-with-react/) , [Объединение ref'ов в React | React Hooks - useCombinedRef](https://www.youtube.com/watch?v=2GwcfFSLxbg) , [useRef()](https://reactdev.ru/reference/useRef/)
 
 ____
-#React #createRef #useRef #Hooks 
+#React #createRef #useRef #Hooks  #refCallback
 
 ____
 

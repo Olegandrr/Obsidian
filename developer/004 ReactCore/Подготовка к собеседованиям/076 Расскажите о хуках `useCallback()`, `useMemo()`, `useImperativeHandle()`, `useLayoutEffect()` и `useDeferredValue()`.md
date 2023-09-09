@@ -9,6 +9,8 @@
 ##### *`useCallback()`:*
 
  *`useCallback()` возвращает мемоизированную версию функции, которая не будет пересоздаваться при каждом рендеринге компонента, если ее зависимости не изменились.*
+ 
+*`useCallback()` под капотом тот же `useMemo()` и по сути является синтаксическим сахаром.*
 
 ```jsx
 const memoizedCallback = useCallback(() => {
@@ -18,9 +20,116 @@ const memoizedCallback = useCallback(() => {
 
 В этом примере, `memoizedCallback` - это мемоизированная версия функции `doSomething`, которая будет пересоздаваться только тогда, когда изменятся зависимости `a` или `b`.
 
-*`useCallback()` под капотом тот же `useMemo()` и по сути является синтаксическим сахаром.*
-
 *`useCallback()` не работает с классическими замыканиями, но прекрасно работает с замыканиями, созданными с помощью `useRef()`*
+
+Таким образом, одно из основных применений `useCallback()` - это оптимизация производительности рендеринга, путём кеширования функций, которые вы передаете дочерним компонентам.
+
+Если вы пишете кастомный хук, рекомендуется обернуть все функции, которые он возвращает, в `useCallback()`
+
+```jsx
+function useRouter() {  
+
+	const { dispatch } = useContext(RouterStateContext);  
+
+	const navigate = useCallback((url) => {  
+		dispatch({ type: 'navigate', url });  
+	}, [dispatch]);  
+
+	const goBack = useCallback(() => {  
+		dispatch({ type: 'back' });  
+	}, [dispatch]);  
+
+	return {  
+		navigate,  
+		goBack,  
+	};  
+}
+```
+
+Иногда вы можете захотеть вызвать функцию внутри [Effect:](https://reactdev.ru/learn/synchronizing-with-effects/) 
+
+```jsx
+function ChatRoom({ roomId }) {
+    const [message, setMessage] = useState('');
+
+    function createOptions() {
+        return {
+            serverUrl: 'https://localhost:1234',
+            roomId: roomId,
+        };
+    }
+
+    useEffect(() => {
+        const options = createOptions();
+        const connection = createConnection();
+        connection.connect();
+        // ...
+    });
+}
+```
+
+Это создает проблему. [Каждое реактивное значение должно быть объявлено зависимостью вашего Эффекта](https://reactdev.ru/learn/lifecycle-of-reactive-effects/) Однако, если вы объявите `createOptions` как зависимость, это заставит ваш Эффект постоянно переподключаться к чату:
+
+```jsx 
+useEffect(() => {
+    const options = createOptions();
+    const connection = createConnection();
+    connection.connect();
+    return () => connection.disconnect();
+}, [createOptions]); // 🔴 Problem: This dependency changes on every render
+// ...
+```
+
+Чтобы решить эту проблему, вы можете обернуть функцию, которую нужно вызвать из Effect, в `useCallback`:
+
+```jsx
+function ChatRoom({ roomId }) {
+    const [message, setMessage] = useState('');
+
+    const createOptions = useCallback(() => {
+        return {
+            serverUrl: 'https://localhost:1234',
+            roomId: roomId,
+        };
+    }, [roomId]); // ✅ Only changes when roomId changes
+
+    useEffect(() => {
+        const options = createOptions();
+        const connection = createConnection();
+        connection.connect();
+        return () => connection.disconnect();
+    }, [createOptions]); // ✅ Only changes when createOptions changes
+    // ...
+}
+```
+
+Это гарантирует, что функция `createOptions` будет одинаковой между повторными рендерингами, если `roomId` одинаков. **Однако, еще лучше устранить необходимость в зависимости от функции.** Переместите вашу функцию _внутрь_ Effect:
+
+```jsx
+function ChatRoom({ roomId }) {
+    const [message, setMessage] = useState('');
+
+    useEffect(() => {
+        function createOptions() {
+            // ✅ No need for useCallback or function dependencies!
+            return {
+                serverUrl: 'https://localhost:1234',
+                roomId: roomId,
+            };
+        }
+
+        const options = createOptions();
+        const connection = createConnection();
+        connection.connect();
+        return () => connection.disconnect();
+    }, [roomId]); // ✅ Only changes when roomId changes
+    // ...
+}
+```
+
+Теперь ваш код стал проще и не нуждается в `useCallback`. [Подробнее об удалении зависимостей от эффектов.](https://reactdev.ru/learn/removing-effect-dependencies/)
+
+Подробнее: [useCallback()](https://reactdev.ru/reference/useCallback/#usecallbackfn-dependencies)
 
 ##### *`useMemo()`:*
  
@@ -88,9 +197,18 @@ useImperativeHandle(ref, () => ({
 
 В этом примере, `useImperativeHandle()` позволяет определить функцию `focus()`, которая будет доступна родительскому компоненту через `ref`.
 
+##### `useDeferredValue()`
+
+`useDeferredValue()` - это хук, который позволяет отложить обновление части пользовательского интерфейса.
+
+```jsx
+const deferredValue = useDeferredValue(value);
+```
+
+Вызовите `useDeferredValue()` на верхнем уровне вашего компонента, чтобы получить отложенную версию этого значения. `value`: Значение, которое вы хотите отложить. Оно может иметь любой тип.
 
 ____
-#React #Hooks #useCallback #useMemo #useImperativeHandle #useLayoutEffect
+#React #Hooks #useCallback #useMemo #useImperativeHandle #useLayoutEffect #useDeferredValue
 
 ____
 

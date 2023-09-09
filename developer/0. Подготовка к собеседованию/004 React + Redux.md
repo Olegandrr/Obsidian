@@ -104,7 +104,7 @@ ___
 * [[065 Что такое портал (`Portal`)|Что такое портал (`Portal`)?]]
 
 ## React JSX #3 // Hooks
-
+	
 ### 01 Продвинутый DOM
 
 * [[066 Что такое React Fiber|Что такое React Fiber?]]
@@ -120,7 +120,7 @@ ___
 * [[073 Как реализовать однократное выполнение операции при начальном рендеринге|Как реализовать однократное выполнение операции при начальном рендеринге?]]
 * [[074 Когда происходит ререндер состояния|Когда данные нуждаются в изменении и происходит ререндер состояния?]]
 * [[075 Что такое `useReducer()`|Что такое `useReducer()`?]]
-* [[076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`|Расскажите о хуках `useCallback()`,  `useMemo()`,  `useImperativeHandle()`,  `useLayoutEffect()`?]]
+* [[076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()` и `useDeferredValue()`|Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()` и `useDeferredValue()`?]]
 * [[077 Разница между `memo` и `useMemo`|Разница между `memo` и `useMemo`?]]
 * [[078 В чем разница между createRef и useRef|В чем разница между createRef и useRef?]]
 * [[079 Что такое «опрос» (Polling) Как его реализовать в React|Что такое «опрос» (Polling)? Как его реализовать в React?]]

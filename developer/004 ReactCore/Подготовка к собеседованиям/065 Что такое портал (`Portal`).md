@@ -28,10 +28,51 @@ export default Modal;
 
 В этом примере компонент `Modal` создает портал, который отображает его дочерние компоненты в элементе с идентификатором `modal-root`. Этот элемент может быть создан где угодно на странице, и компонент `Modal` будет отображаться внутри него, независимо от того, где находится корневой элемент React-приложения.
 
-Подробнее: [createPortal()](https://ru.legacy.reactjs.org/docs/react-dom.html#createportal) , [Portal](https://habr.com/ru/companies/smartprogress/articles/306096/)
+##### `Portal` и `z-index`
+
+![](https://www.youtube.com/watch?v=w4CPbE_efWw)
+
+`Portals` предоставляют способ решения проблемы с `z-index` для элементов, которые должны быть размещены вне иерархии компонентов.
+
+Когда элементы рендерятся внутри компонента в React, они обычно наследуют свойства стилей и `z-index` от своих родительских компонентов. Это может вызвать проблемы, когда вам нужно разместить элемент поверх других элементов на странице.
+
+*С помощью порталов вы можете рендерить компонент в DOM-узле, который находится вне иерархии компонентов. Это позволяет вам контролировать положение элемента независимо от иерархии компонентов и перекрывать другие элементы с помощью стилей.*
+
+Вот пример использования порталов в React:
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const Modal = ({ children }) => {
+  return ReactDOM.createPortal(
+    <div className="modal">
+      {children}
+    </div>,
+    document.getElementById('modal-root') // DOM-узел, в который будет рендериться портал
+  );
+};
+
+const App = () => {
+  return (
+    <div>
+      <h1>My App</h1>
+      <Modal>
+        <p>This is a modal</p>
+      </Modal>
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+В приведенном примере мы создаем компонент `Modal`, который рендерит дочерние элементы в портале с помощью `createPortal()`. Мы указываем `document.getElementById('modal-root')` вторым аргументом `createPortal()`, чтобы портал был рендерен внутри элемента с id "modal-root", который мы предварительно создали в DOM.
+
+Подробнее: [createPortal()](https://ru.legacy.reactjs.org/docs/react-dom.html#createportal) , [Portal](https://habr.com/ru/companies/smartprogress/articles/306096/) , [Как мы решили проблемы с z-index](https://habr.com/ru/articles/553592/)
 
 ____
-#React #portal
+#React #portal #z-index 
 
 ____
 

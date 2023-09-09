@@ -30,7 +30,9 @@ import { createRoot } from 'react-dom/client';
 const root = createRoot(document.getElementById('root'));
 ~~~
 
-createRoot - корневой DOM-узел, т.к. через него мы управляем React содержимым.
+`createRoot` - корневой DOM-узел, т.к. через него мы управляем React содержимым.
+
+Подробнее: [N причин, чтобы использовать Create React App](https://habr.com/ru/companies/plarium/articles/326520/)
 
 ##### `<script/>`
 
@@ -71,8 +73,21 @@ createRoot - корневой DOM-узел, т.к. через него мы уп
 </html>
 ```
 
+##### Что делает `npm run eject`?
+
+Если вы опытный пользователь и вас не устраивает стандартная конфигурация, можете сделать `eject`. В таком случае `create-react-app` используется как генератор шаблонного кода.  
+  
+Команда `npm run eject` копирует все конфиги и транзитивные зависимости (Webpack, Babel, ESLint и т. д.) в ваш проект, чтобы вы могли их контролировать. Команды вроде `npm start` и `npm run build` не перестанут работать, но будут указывать на скопированные скрипты, чтобы их можно было модифицировать. После этого вы сами по себе.  
+  
+**Почему я хочу не делать eject?**
+
+Во-первых, потому что эту операцию нельзя отменить. Но дело не только в этом. Вот еще несколько причин.
+* Я хочу получать обновления Create React App
+* Не люблю, когда в package.json много зависимостей
+* Лишние конфиги и лишний код. После `eject` создаются директории [scripts](https://github.com/facebookincubator/create-react-app/tree/master/packages/react-scripts/scripts) и [config](https://github.com/facebookincubator/create-react-app/tree/master/packages/react-scripts/config). А с ними — около десяти новых файлов по 50–200 строчек кода в каждом. Причем в большинстве случаев eject делают, чтобы поменять всего около пяти строк кода (добавить один новый Webpack Loader).
+
 ____
-#React #create-react-app #script 
+#React #create-react-app #script #eject #npm #package-json 
 
 ____
 
