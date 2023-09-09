@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "004 ReactCore/Подготовка к собеседованиям/127 Что такое React Profiler и для чего он используется.md",
+                "file": "0. Подготовка к собеседованию/004 React + Redux.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a131c3c4620ed019",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "004 ReactCore/Подготовка к собеседованиям/019 Какие типы данных может возвращать `render`.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "004 ReactCore/Подготовка к собеседованиям/127 Что такое React Profiler и для чего он используется.md",
+                "file": "0. Подготовка к собеседованию/004 React + Redux.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "004 ReactCore/Подготовка к собеседованиям/127 Что такое React Profiler и для чего он используется.md",
+                "file": "0. Подготовка к собеседованию/004 React + Redux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "004 ReactCore/Подготовка к собеседованиям/127 Что такое React Profiler и для чего он используется.md"
+                "file": "0. Подготовка к собеседованию/004 React + Redux.md"
               }
             }
           },
@@ -143,7 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 619.5
+    "width": 637.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,12 +171,14 @@
   },
   "active": "dbf80328db357781",
   "lastOpenFiles": [
+    "004 ReactCore/Подготовка к собеседованиям/127 Что такое React Profiler и для чего он используется.md",
     "0. Подготовка к собеседованию/004 React + Redux.md",
     "004 ReactCore/Подготовка к собеседованиям/126 Лучшие практики безопасности в React.md",
     "004 ReactCore/Подготовка к собеседованиям/125 Как построить хорошую архитектуру React-проекта.md",
-    "004 ReactCore/Подготовка к собеседованиям/124 Как вы получаете доступ к параметрам запроса с помощью React Router.md",
-    "004 ReactCore/Подготовка к собеседованиям/123 Если вы создали в React элемент Twitter как в примере ниже, то как бы он выглядел.md",
-    "004 ReactCore/Подготовка к собеседованиям/122 React Router и redux-router.md",
+    "Pasted image 20230909132119.png",
+    "Pasted image 20230909125445.png",
+    "Pasted image 20230909125200.png",
+    "Pasted image 20230909124459.png",
     "004 ReactCore/Подготовка к собеседованиям/121 Какие хуки были добавлены в React Router версии 5.md",
     "004 ReactCore/Подготовка к собеседованиям/120 Как передавать пропсы в React Router.md",
     "004 ReactCore/Подготовка к собеседованиям/119 Что такое компонент-переключатель (Switching Component).md",
@@ -173,17 +188,27 @@
     "004 ReactCore/Подготовка к собеседованиям/115 Что такое Redux Toolkit.md",
     "004 ReactCore/Подготовка к собеседованиям/114 Что такое сайд-эффекты.md",
     "004 ReactCore/Подготовка к собеседованиям/113 На чём построена redux-saga и для чего она нужна.md",
-    "004 ReactCore/Подготовка к собеседованиям/112 Что такое Reselect и как он работает.md",
     "004 ReactCore/Подготовка к собеседованиям/111 Что такое Redux-thunk.md",
     "004 ReactCore/Подготовка к собеседованиям/110 Middleware.md",
     "004 ReactCore/Подготовка к собеседованиям/109 Что такое connect().md",
     "004 ReactCore/Подготовка к собеседованиям/108 Как выглядит поток данных в Redux-приложении.md",
     "004 ReactCore/Подготовка к собеседованиям/107 Разница между React State и Redux State.md",
-    "004 ReactCore/Подготовка к собеседованиям/106 Чистая функция в Redux.md",
-    "004 ReactCore/Подготовка к собеседованиям/105 Что такое редьюсер (Reducer).md",
-    "004 ReactCore/Подготовка к собеседованиям/104 Что такое Redux-actions.md",
-    "004 ReactCore/Подготовка к собеседованиям/103 Что такое «единственный источник истины» (Single Source of Truth).md",
     "004 ReactCore/Подготовка к собеседованиям/102 Плюсы и минусы Redux.md",
+    "004 ReactCore/Подготовка к собеседованиям/101 Ключевые концепции Redux.md",
+    "004 ReactCore/Подготовка к собеседованиям/103 Что такое «единственный источник истины» (Single Source of Truth).md",
+    "004 ReactCore/Подготовка к собеседованиям/099 Разница между Redux и Flux.md",
+    "004 ReactCore/Подготовка к собеседованиям/098 Что такое Flux.md",
+    "004 ReactCore/Подготовка к собеседованиям/097 Является ли React реактивным.md",
+    "004 ReactCore/Подготовка к собеседованиям/096 Что такое распределенный компонент.md",
+    "004 ReactCore/Подготовка к собеседованиям/095 Можете ли вы рассказать об отличиях между презентационным и контейнерным компонентами в React.md",
+    "Pasted image 20230909095929.png",
+    "img/Pasted image 20230908203745.png",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~100 Что такое Redux.sync-conflict-20230908-180913-2GIJL36.md.tmp",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~100 Что такое Redux.sync-conflict-20230908-180123-2GIJL36.md.tmp",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~098 Что такое Flux.sync-conflict-20230908-174721-2GIJL36.md.tmp",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~098 Что такое Flux.sync-conflict-20230908-174353-2GIJL36.md.tmp",
+    "img/Pasted image 20230908174244.png",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~098 Что такое Flux.sync-conflict-20230908-174050-2GIJL36.md.tmp",
     "img/Pasted image 20230904222547.png",
     "Без названия.canvas",
     "003 JSCore/Без названия.canvas",
@@ -192,23 +217,11 @@
     "img/Pasted image 20230816113950.png",
     "003 JSCore/Подготовка к собеседованию/~syncthing~193 Где исполняются асинхронные функции.md.tmp",
     "003 JSCore/Подготовка к собеседованию/~syncthing~192 Плюсы и минусы асинхронного программирования в JavaScript.md.tmp",
-    "img/Pasted image 20230814211600.png",
-    "img/Pasted image 20230814211537.png",
-    "img/Pasted image 20230814203023.png",
-    "img/Pasted image 20230814013009.png",
-    "img/Pasted image 20230814012710.png",
-    "img/Pasted image 20230814012620.png",
     "0. Подготовка к собеседованию/other themes/Собеседования",
-    "img/Pasted image 20230806001030.png",
     "000 Browser/Шпаргалка (Как работает интернет).canvas",
     "Без названия 1.canvas",
     "001 HTML/2 Семантическая разметка SEO. Доступность/~syncthing~Особенности кроссбраузерной вёрстки.sync-conflict-20230707-172327-2GIJL36.md.tmp",
     "001 HTML/2 Семантическая разметка SEO. Доступность/~syncthing~Используйте вендорные префиксы.md.tmp",
-    "Recording 20230704175921.webm",
-    "0. Подготовка к собеседованию/other themes/SoftSkills",
-    "000 Browser/Подготовка к собеседованию",
-    "000 Browser/Новая папка",
-    "Как работает boxing",
     "0.4 Вопросы к ревью React/Преимущества и недостатки HOC.canvas",
     "Без названия (2).canvas",
     "РАЗБОР СОДЕРЖИМОГО/Область видимости.canvas"

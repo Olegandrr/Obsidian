@@ -9,7 +9,7 @@ component.forceUpdate(callback);
 Рекомендуется избегать любого использования `forceUpdate()` и читать только из `this.props` и `this.state` в `render()`.
 
 ____
-#React #render #props #state
+#React #render #props #state #forceUpdate
 
 ____
 

@@ -4,11 +4,11 @@
 
 ![[Pasted image 20230814203023.png|600]]
 
-Отладка в AJAX происходит в консоли разработчик Chrome devTools.
+Отладка в AJAX происходит в консоли разработчик `Chrome devTools`.
 Вкладка network.
 
 ___
- #JavaScript  #AJAX 
+ #JavaScript  #AJAX #ChromeDevTools
 
 ___
 

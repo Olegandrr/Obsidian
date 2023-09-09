@@ -13,9 +13,9 @@
 5. *Порталы (Portals):* Метод `render()` может возвращать порталы, которые позволяют рендерить элементы React вне их обычного контекста DOM-дерева.
 6. `React.Fragment`: Метод `render()` может также возвращать компонент `React.Fragment`, который позволяет группировать несколько элементов вместе без создания лишних элементов в DOM-структуре.
 
-Таким образом, метод `render()` в React-компонентах может возвращать различные типы данных, но основным типом являются элементы React.
+*`Render Props` — это функция, которая сообщает компоненту что необходимо рендерить.*
 
-Подробнее: [Что такое Render Props](https://reactdev.ru/archive/react16/render-props/#be-careful-when-using-render-props-with-reactpurecomponent)
+Подробнее: [Что такое Render Props](https://reactdev.ru/archive/react16/render-props/#be-careful-when-using-render-props-with-reactpurecomponent),  [Рендер-пропсы](https://ru.reactjs.org/docs/render-props.html)
 
 ____
 #React #render #JSX #portals 

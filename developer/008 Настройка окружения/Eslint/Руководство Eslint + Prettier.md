@@ -61,7 +61,7 @@ npm install eslint-plugin-react --save-dev
 
 _.eslintrc.json_
 
-```
+```json
 {
     "env": { // где будет исполняться наш код
         "browser": true,
@@ -100,7 +100,7 @@ _.prettierrc.json_
 
 *Правила оформления кода. Полный список настроек вы можете найти [здесь](https://prettier.io/docs/en/options.html).
 
-```
+```json
 {
     "singleQuote": true,
     "jsxSingleQuote": true,
@@ -115,7 +115,7 @@ _.eslintignore_
 
 **Чтобы исключить из проверки директории/файлы указываем их в виде списка**
 
-```
+```json
 test/fixtures
 **/app/public
 node_modules
@@ -130,7 +130,7 @@ node_modules
 -   В строку поиска вписать — settings
 -   Выбрать пункт — _Preferences: Open Settings (JSON)_ В файле _settings.json_ добавляем:
 
-```
+```json
 {
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode" // Prettier, как форматтер по умолчанию
