@@ -4,49 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "93719d0e0db33778",
-        "type": "split",
+        "id": "a265b207a1950a35",
+        "type": "tabs",
         "children": [
           {
-            "id": "d80f61abf4fbfa0e",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "dc02a7a5087fbfc0",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "0. Подготовка к собеседованию/004 React + Redux.md",
-                    "mode": "preview",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
+            "id": "912ece23fa04cc2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "006 Node.js/013 Что такое модуль Cluster.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
               }
-            ]
-          },
-          {
-            "id": "a265b207a1950a35",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "912ece23fa04cc2a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "0. Подготовка к собеседованию/009 Тестирование.md",
-                    "mode": "preview",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "0. Подготовка к собеседованию/004 React + Redux.md",
+            "file": "006 Node.js/013 Что такое модуль Cluster.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -129,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "0. Подготовка к собеседованию/004 React + Redux.md",
+            "file": "006 Node.js/013 Что такое модуль Cluster.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -141,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "0. Подготовка к собеседованию/004 React + Redux.md"
+            "file": "006 Node.js/013 Что такое модуль Cluster.md"
           }
         }
       },
@@ -167,35 +141,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f9d4f2b7a76334e3",
+  "active": "912ece23fa04cc2a",
   "lastOpenFiles": [
-    "009 Тестирование/Подготовка к собеседованиям/Как можно оценить качество тестирования.md",
-    "0. Подготовка к собеседованию/009 Тестирование.md",
-    "004 ReactCore/Подготовка к собеседованиям/125 Как построить хорошую архитектуру React-проекта.md",
+    "0. Подготовка к собеседованию/006 Node.js.md",
+    "006 Node.js/018 Что такое циклические зависимости модулей в Node.md",
+    "006 Node.js/015 Что такое `npm`.md",
+    "006 Node.js/017 Почему в модулях переменные верхнего уровня не являются глобальными.md",
+    "006 Node.js/010 Что такое REPL в Node.js.md",
+    "006 Node.js/009 Разница между `createReadStream` и `readFile`.md",
+    "006 Node.js/008 Что такое поток (stream) Типы потоков в Node.js.md",
+    "006 Node.js/007 Преимущества однопоточного веб-сервера по сравнению с многопоточным.md",
+    "006 Node.js/006 Разница между асинхронной и неблокирующей функциями.md",
+    "006 Node.js/005 Что такое цикл событий (event loop).md",
+    "006 Node.js/003 Когда следует использовать Node.js.md",
+    "006 Node.js/002 Разница между Node.js и JavaScript.md",
+    "006 Node.js/001 Что такое Node.js.md",
     "0. Подготовка к собеседованию/004 React + Redux.md",
-    "004 ReactCore/Подготовка к собеседованиям/009 Разница между `createElement()` и `cloneElement()`. Что такое `React.isValidElement(object)`.md",
+    "004 ReactCore/Подготовка к собеседованиям/103 Что такое «единственный источник истины» (Single Source of Truth).md",
+    "004 ReactCore/Подготовка к собеседованиям/102 Плюсы и минусы Redux.md",
+    "004 ReactCore/Подготовка к собеседованиям/101 Ключевые концепции Redux.md",
     "004 ReactCore/Подготовка к собеседованиям/100 Что такое Redux.md",
-    "004 ReactCore/Подготовка к собеседованиям/100 Что такое Redux.sync-conflict-20230908-180123-2GIJL36.md",
     "004 ReactCore/Подготовка к собеседованиям/099 Разница между Redux и Flux.md",
     "004 ReactCore/Подготовка к собеседованиям/098 Что такое Flux.md",
-    "004 ReactCore/Подготовка к собеседованиям/098 Что такое Flux.sync-conflict-20230908-174721-2GIJL36.md",
-    "004 ReactCore/Подготовка к собеседованиям/098 Что такое Flux.sync-conflict-20230908-174353-2GIJL36.md",
-    "img/Pasted image 20230908174244.png",
-    "004 ReactCore/Подготовка к собеседованиям/098 Что такое Flux.sync-conflict-20230908-174050-2GIJL36.md",
     "004 ReactCore/Подготовка к собеседованиям/097 Является ли React реактивным.md",
+    "004 ReactCore/Подготовка к собеседованиям/096 Что такое распределенный компонент.md",
     "004 ReactCore/Подготовка к собеседованиям/095 Можете ли вы рассказать об отличиях между презентационным и контейнерным компонентами в React.md",
     "004 ReactCore/Подготовка к собеседованиям/093 Разница между компонентом и контейнером.md",
-    "004 ReactCore/Подготовка к собеседованиям/096 Что такое распределенный компонент.md",
-    "004 ReactCore/Подготовка к собеседованиям/103 Что такое «единственный источник истины» (Single Source of Truth).md",
-    "004 ReactCore/Подготовка к собеседованиям/085 Что такое события указателя (Pointer Events).md",
-    "004 ReactCore/Подготовка к собеседованиям/078 В чем разница между createRef и useRef.md",
-    "004 ReactCore/Подготовка к собеседованиям/077 Разница между `memo` и `useMemo`.md",
-    "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/080 Как предотвратить повторный рендеринг в React.md",
-    "004 ReactCore/Подготовка к собеседованиям/075 Что такое `useReducer()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/072 Разница между `useEffect()` и `componentDidMount()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
-    "004 ReactCore/Подготовка к собеседованиям/067 Назовите основную цель React Fiber.md",
+    "004 ReactCore/Подготовка к собеседованиям/074 Когда происходит ререндер состояния.md",
+    "004 ReactCore/Подготовка к собеседованиям/073 Как реализовать однократное выполнение операции при начальном рендеринге.md",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Собеседования в Компании",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Техническое собеседование",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Скрининг с HR",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Вопросы по легенде",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Вопросы по SoftSkills",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Вопросы о компании",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование",
+    "img/Pasted image 20230908174244.png",
     "500. Литература/TypeScript/Эффективный TypeScript. 62 способа улучшить код - Дэн Вандеркам (2020).pdf",
     "500. Литература/TypeScript/Профессиональный TypeScript - Черный Борис (2021).pdf",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",

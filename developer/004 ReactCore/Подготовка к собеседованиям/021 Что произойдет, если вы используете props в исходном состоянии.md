@@ -89,6 +89,7 @@ const [inputValue, setInputValue] = React.useState('Исходное значе�
 export default App;
 ```
 
+*Произойдёт ошибка, потому что нельзя изменять `Props`.*
 
 ____
 #React #props 

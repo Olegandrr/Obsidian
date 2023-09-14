@@ -1,5 +1,6 @@
 ![Что делает метод `shouldComponentUpdate`?](https://youtu.be/ngyOYuTrUk8?t=748)
 
+![](https://www.youtube.com/watch?v=Jw1zocLDnnc&t=2s)
 #### Ответ
 
 ![[Pasted image 20230704175627.png|600]]

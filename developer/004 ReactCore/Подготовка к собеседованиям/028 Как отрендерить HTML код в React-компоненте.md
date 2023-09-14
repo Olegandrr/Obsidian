@@ -25,7 +25,7 @@ class MyComponent extends React.Component {
 
 *Обратите внимание, что использование `dangerouslySetInnerHTML` может привести к уязвимостям безопасности, так как позволяет вставлять произвольный HTML-код в компонент. Поэтому, рекомендуется использовать этот способ только в тех случаях, когда это действительно необходимо и когда вы уверены в безопасности вставляемого HTML-кода.*
 
-Подробнее: [Protecting Against XSS Attacks in React](https://dev.to/t/react](https://dev.to/thawkin3/protecting-against-xss-attacks-in-react-441m)
+Подробнее: [Protecting Against XSS Attacks in React](https://dev.to/thawkin3/protecting-against-xss-attacks-in-react-441m)
 
 ____
 #React #dangerouslySetInnerHTML 

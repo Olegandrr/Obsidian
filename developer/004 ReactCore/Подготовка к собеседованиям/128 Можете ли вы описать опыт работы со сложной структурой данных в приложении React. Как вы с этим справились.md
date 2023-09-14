@@ -2,6 +2,8 @@
 
 #### Ответ
 
+##### `Lodash`
+
 Для работы со сложными структурами данных вам может потребоваться использовать такие методы, как сопоставление вложенных данных (маппинг, mapping), использование рекурсивных компонентов для визуализации данных с несколькими уровнями вложенности и оптимизация производительности с помощью таких методов, как `React.memo`. Также может быть полезно использовать библиотеки, такие как `lodash`, для управления и преобразования сложных структур данных. Например, функция `debounce` из библиотеки `lodash`, полезна для сокращения количества API запросов. 
 
 Очевидно, что в React существует множество способов обработки сложных структур данных. Вот несколько сценариев, в которых вам, возможно, придется более осторожно подходить к обработке и представлению данных.
@@ -67,8 +69,149 @@
 
 Подробнее: [Lo-Dash](https://habr.com/ru/companies/alawar/articles/157673/) , [Ссылка на методы Lodash](https://habr.com/ru/articles/217515/), [Хватит импортировать JavaScript-пакеты целиком](https://habr.com/ru/companies/ruvds/articles/502424/)
 
+##### `Debounce`
+
+Результатом декоратора `debounce(f, ms)` должна быть обёртка, которая передаёт вызов `f` не более одного раза в `ms` миллисекунд. Другими словами, когда мы вызываем `debounce`, это гарантирует, что все остальные вызовы будут игнорироваться в течение `ms`.
+
+```js
+let f = debounce(alert, 1000);
+
+f(1); // выполняется немедленно
+f(2); // проигнорирован
+
+setTimeout( () => f(3), 100); // проигнорирован (прошло только 100 мс)
+setTimeout( () => f(4), 1100); // выполняется
+setTimeout( () => f(5), 1500); // проигнорирован (прошло только 400 мс от последнего вызова)
+```
+
+Пример написания кастомного хука `debounce` на React:
+
+```jsx
+import { useState, useEffect } from 'react';
+
+const useDebounce = (value, delay) => {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
+};
+
+// Пример использования
+const MyComponent = () => {
+  const [inputValue, setInputValue] = useState('');
+  const debouncedInputValue = useDebounce(inputValue, 500);
+
+  useEffect(() => {
+    // Выполнять действия при изменении задержанного значения
+    console.log('Debounced value:', debouncedInputValue);
+  }, [debouncedInputValue]);
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  return (
+    <div>
+      <input type="text" value={inputValue} onChange={handleChange} />
+    </div>
+  );
+};
+```
+
+На практике `debounce` полезен для функций, которые получают/обновляют данные, и мы знаем, что повторный вызов в течение короткого промежутка времени не даст ничего нового. Так что лучше не тратить на него ресурсы.
+
+Подробнее: [debounce](https://learn.javascript.ru/task/debounce)
+
+##### `Throttle`
+
+Декоратор `throttle(f, ms)`, возвращает обёртку, передавая вызов в `f` не более одного раза в `ms` миллисекунд. Те вызовы, которые попадают в период «торможения», игнорируются.
+
+```js
+function f(a) {
+  console.log(a)
+}
+
+// f1000 передаёт вызовы f максимум раз в 1000 мс
+let f1000 = throttle(f, 1000);
+
+f1000(1); // показывает 1
+f1000(2); // (ограничение, 1000 мс ещё нет)
+f1000(3); // (ограничение, 1000 мс ещё нет)
+
+// когда 1000 мс истекли ...
+// ...выводим 3, промежуточное значение 2 было проигнорировано
+```
+
+Отличие от `debounce` – если проигнорированный вызов является последним во время «задержки», то он выполняется в конце.
+
+Пример написания кастомного хука `throttle` на React:
+
+```jsx
+import { useState, useEffect } from 'react';
+
+const useThrottle = (value, delay) => {
+  const [throttledValue, setThrottledValue] = useState(value);
+  const [lastExecTime, setLastExecTime] = useState(Date.now());
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      const now = Date.now();
+      const timeSinceLastExec = now - lastExecTime;
+
+      if (timeSinceLastExec >= delay) {
+        setThrottledValue(value);
+        setLastExecTime(now);
+      }
+    }, delay);
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [value, delay, lastExecTime]);
+
+  return throttledValue;
+};
+
+// Пример использования
+const MyComponent = () => {
+  const [inputValue, setInputValue] = useState('');
+  const throttledInputValue = useThrottle(inputValue, 500);
+
+  useEffect(() => {
+    // Выполнять действия при изменении ограниченного значения
+    console.log('Throttled value:', throttledInputValue);
+  }, [throttledInputValue]);
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  return (
+    <div>
+      <input type="text" value={inputValue} onChange={handleChange} />
+    </div>
+  );
+};
+```
+
+Обычно используется для ограничения частоты выполнения определенных действий или обработки событий в React-компонентах. Вот несколько распространенных примеров использования `useThrottle`:
+1. Обработка событий ввода
+2. Оптимизация обновлений компонента
+3. Отправка запросов к API
+
+Подробнее: [Throttle](https://learn.javascript.ru/task/throttle)
+
 ____
-#React #HOC #Lodash #Debounce 
+#React #HOC #Lodash #Debounce #Throttle
 
 ____
 

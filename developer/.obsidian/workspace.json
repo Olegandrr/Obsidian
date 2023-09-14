@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "13b868d8963a7ad2",
+        "id": "1767fd09df4891d3",
         "type": "tabs",
         "children": [
           {
-            "id": "dbf80328db357781",
+            "id": "564a5a8eae8fc5fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "0. Подготовка к собеседованию/004 React + Redux.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a131c3c4620ed019",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "004 ReactCore/Подготовка к собеседованиям/019 Какие типы данных может возвращать `render`.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -62,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#MobX",
+                "query": "tag:#Throttle",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -83,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 396.50418853759766
+    "width": 386.50418853759766
   },
   "right": {
     "id": "58407df49daf5547",
@@ -150,13 +137,23 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "9ef0472f49edb6f8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ],
         "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 641.5
+    "width": 643.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,59 +166,59 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "dbf80328db357781",
+  "active": "564a5a8eae8fc5fd",
   "lastOpenFiles": [
-    "004 ReactCore/Подготовка к собеседованиям/139 Redux и MobX - что лучше и для каких задач.md",
-    "0. Подготовка к собеседованию/004 React + Redux.md",
-    "004 ReactCore/Подготовка к собеседованиям/019 Какие типы данных может возвращать `render`.md",
+    "004 ReactCore/registerServiceWorker().md",
     "004 ReactCore/Подготовка к собеседованиям/115 Что такое Redux Toolkit.md",
-    "004 ReactCore/Подготовка к собеседованиям/128 Можете ли вы описать опыт работы со сложной структурой данных в приложении React. Как вы с этим справились.md",
-    "004 ReactCore/Подготовка к собеседованиям/132 Как вы укажите React работать в режиме Production и как это сделать.md",
+    "004 ReactCore/4 React-routing/4.10 Компонент Switch (обработка несуществующих адресов).md",
+    "004 ReactCore/4 React-routing/4.9 Авторизация и закрытые страницы.md",
+    "004 ReactCore/4 React-routing/4.8 Опциональные параметры.md",
+    "004 ReactCore/4 React-routing/4.7 Относительные пути.md",
+    "004 ReactCore/4 React-routing/4.6 withRouter.md",
+    "004 ReactCore/4 React-routing/4.5 Динамические пути.md",
+    "004 ReactCore/4 React-routing/4.3 Link.md",
+    "004 ReactCore/4 React-routing/4.4 Route.md",
+    "004 ReactCore/4 React-routing/4.2 Основы React-routing.md",
+    "Как происходило код-ревью.md",
+    "Настройки.md",
+    "Как обрабатывались инциденты.md",
+    "Как был устроен `deploy`.md",
+    "Без названия.canvas",
+    "0. Подготовка к собеседованию/004 React + Redux.md",
     "004 ReactCore/Подготовка к собеседованиям/131 Как вы справляетесь с управлением состоянием в большом React приложении.md",
-    "004 ReactCore/Подготовка к собеседованиям/130 Можете ли вы описать ситуацию, когда вам пришлось оптимизировать React приложение.md",
     "004 ReactCore/Подготовка к собеседованиям/129 Оптимизация React-приложений. Как измерить производительность программы.md",
-    "004 ReactCore/Подготовка к собеседованиям/126 Лучшие практики безопасности в React.md",
+    "004 ReactCore/Подготовка к собеседованиям/128 Можете ли вы описать опыт работы со сложной структурой данных в приложении React. Как вы с этим справились.md",
     "004 ReactCore/Подготовка к собеседованиям/127 Что такое React Profiler и для чего он используется.md",
-    "004 ReactCore/Подготовка к собеседованиям/010 Как добавить React на страницу.md",
-    "004 ReactCore/1.4 Состояния и события/1.4.19 Теория JSX - синтаксис . Передача контента.md",
-    "004 ReactCore/Подготовка к собеседованиям/024 Что такое «ленивая» (Lazy) функция.md",
-    "004 ReactCore/Подготовка к собеседованиям/065 Что такое портал (`Portal`).md",
-    "004 ReactCore/Подготовка к собеседованиям/076 Расскажите о хуках `useCallback()`, `useMemo()`, `useImperativeHandle()`, `useLayoutEffect()` и `useDeferredValue()`.md",
-    "004 ReactCore/Подготовка к собеседованиям/026 Для чего нужен атрибут `key` при рендере списков.md",
-    "004 ReactCore/Подготовка к собеседованиям/078 В чем разница между createRef и useRef.md",
-    "004 ReactCore/Подготовка к собеседованиям/068 Что такое React хуки (Hooks).md",
+    "004 ReactCore/Подготовка к собеседованиям/126 Лучшие практики безопасности в React.md",
     "004 ReactCore/Подготовка к собеседованиям/125 Как построить хорошую архитектуру React-проекта.md",
-    "Pasted image 20230909132119.png",
-    "Pasted image 20230909125445.png",
-    "Pasted image 20230909125200.png",
-    "Pasted image 20230909124459.png",
     "004 ReactCore/Подготовка к собеседованиям/121 Какие хуки были добавлены в React Router версии 5.md",
     "004 ReactCore/Подготовка к собеседованиям/120 Как передавать пропсы в React Router.md",
     "004 ReactCore/Подготовка к собеседованиям/119 Что такое компонент-переключатель (Switching Component).md",
     "004 ReactCore/Подготовка к собеседованиям/118 Чем React Router отличается от обычной маршрутизации.md",
-    "004 ReactCore/Подготовка к собеседованиям/117 Как вы обрабатываете роутинг на стороне клиента в приложении React.md",
-    "004 ReactCore/Подготовка к собеседованиям/116 Что такое React-routing.md",
-    "Pasted image 20230909095929.png",
-    "img/Pasted image 20230908203745.png",
-    "004 ReactCore/Подготовка к собеседованиям/~syncthing~100 Что такое Redux.sync-conflict-20230908-180913-2GIJL36.md.tmp",
-    "004 ReactCore/Подготовка к собеседованиям/~syncthing~100 Что такое Redux.sync-conflict-20230908-180123-2GIJL36.md.tmp",
-    "004 ReactCore/Подготовка к собеседованиям/~syncthing~098 Что такое Flux.sync-conflict-20230908-174721-2GIJL36.md.tmp",
-    "004 ReactCore/Подготовка к собеседованиям/~syncthing~098 Что такое Flux.sync-conflict-20230908-174353-2GIJL36.md.tmp",
-    "img/Pasted image 20230908174244.png",
-    "004 ReactCore/Подготовка к собеседованиям/~syncthing~098 Что такое Flux.sync-conflict-20230908-174050-2GIJL36.md.tmp",
-    "img/Pasted image 20230904222547.png",
-    "Без названия.canvas",
+    "006 Node.js/~syncthing~001 Что такое Node.js.md.tmp",
+    "006 Node.js/~syncthing~002 Разница между Node.js и JavaScript.md.tmp",
+    "img/Pasted image 20230913214827.png",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Собеседования в Компании",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Вопросы по SoftSkills",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Вопросы о компании",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Техническое собеседование",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Вопросы по легенде",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Скрининг с HR",
+    "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование",
+    "img/Pasted image 20230909095929.png",
+    "img/Pasted image 20230912214632.png",
+    "img/Pasted image 20230912214436.png",
+    "img/Pasted image 20230912172730.png",
+    "img/Pasted image 20230912171257.png",
+    "img/Pasted image 20230912171229.png",
+    "img/Pasted image 20230912171225.png",
+    "img/Pasted image 20230912160206.png",
+    "img/Pasted image 20230912160200.png",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~028 Как отрендерить HTML код в React-компоненте.md.tmp",
     "003 JSCore/Без названия.canvas",
-    "img/Pasted image 20230818025351.png",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
-    "img/Pasted image 20230816113950.png",
-    "003 JSCore/Подготовка к собеседованию/~syncthing~193 Где исполняются асинхронные функции.md.tmp",
-    "003 JSCore/Подготовка к собеседованию/~syncthing~192 Плюсы и минусы асинхронного программирования в JavaScript.md.tmp",
-    "0. Подготовка к собеседованию/other themes/Собеседования",
     "000 Browser/Шпаргалка (Как работает интернет).canvas",
     "Без названия 1.canvas",
-    "001 HTML/2 Семантическая разметка SEO. Доступность/~syncthing~Особенности кроссбраузерной вёрстки.sync-conflict-20230707-172327-2GIJL36.md.tmp",
-    "001 HTML/2 Семантическая разметка SEO. Доступность/~syncthing~Используйте вендорные префиксы.md.tmp",
     "0.4 Вопросы к ревью React/Преимущества и недостатки HOC.canvas",
     "Без названия (2).canvas",
     "РАЗБОР СОДЕРЖИМОГО/Область видимости.canvas"
