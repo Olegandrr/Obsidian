@@ -28,7 +28,8 @@ class Welcome extends React.Component {
 }
 ```
 
-Подробнее: [props.children в React](https://codeburst.io/a-quick-intro-to-reacts-props-children-cb3d2fce4891)
+Подробнее: [props.children в React](https://codeburst.io/a-quick-intro-to-reacts-props-children-cb3d2fce4891) , [Погружаемся в работу с children на React](https://stasonmars.ru/javascript/pogruzhaemsya-v-raboty-s-children-na-react/)
+
 
 ____
 #React #props #children 

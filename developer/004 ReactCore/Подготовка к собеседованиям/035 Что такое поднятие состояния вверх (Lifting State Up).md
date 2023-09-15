@@ -1,5 +1,7 @@
 ![Что такое поднятие состояния вверх (Lifting State Up)?](https://youtu.be/ngyOYuTrUk8?t=700)
 
+![](https://www.youtube.com/watch?v=dENUw979QiY)
+
 #### Ответ
 
 ![[Pasted image 20230704174346.png|600]]

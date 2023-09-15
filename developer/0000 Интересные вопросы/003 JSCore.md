@@ -1,6 +1,6 @@
 ![[Logo-javascript.webp|200]]
 
-# Подготовка к собеседованию:
+# Вопросы:
 
 1. [JavaScript](https://www.youtube.com/watch?v=DPfaa66OZj8&list=PLNkWIWHIRwMHKLotIS_d-wyj00pg0AnUg)
 2. [Паттерны. Полный курс: 1:42:38](https://www.youtube.com/watch?v=bTiAfLbmsnY&list=PLNkWIWHIRwMFKmmIPVaCPpusgloMMgxN2&index=7)

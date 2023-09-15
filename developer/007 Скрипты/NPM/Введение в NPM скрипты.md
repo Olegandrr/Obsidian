@@ -1,11 +1,6 @@
 ____
 
-tags:  #CSS #SCSS #NPM-скрипт #NPM #JSON #package-jsone #ESLint #
-
-links: [[]]
-
-youtube: 
-1. 
+tags:  #CSS #SCSS #NPM-скрипт #NPM #JSON #package-jsone #ESLint
 
 _____
 
@@ -17,7 +12,7 @@ NPM скрипты являются одними из моих любимых ф
 
 Мы будем проводить большую часть времени в файле `package.json`. Здесь будут все зависимости и скрипты. Вот урезанная версия стандартного проекта:
 
-```
+```json
 {
   "name": "npm-lesson",
   "version": "1.0.0",
@@ -41,13 +36,13 @@ NPM скрипты являются одними из моих любимых ф
 
 Я частый пользователь SCSS, так что начнем с него. Чтобы скомпилировать #SCSS в #CSS, я использую [node-sass](https://github.com/sass/node-sass). Для начала, нам нужно установить `node-sass`, запустив в командной строке следующее:
 
-```
+```node.js
 npm install --save-dev node-sass
 ```
 
 Он установит `node-sass` в текущий каталог и добавит его в объект `devDependencies` в `package.json`. После установки мы можем использовать его в командной строке:
 
-```
+```node.js
 node-sass --output-style compressed -o dist/css src/scss
 ```
 
@@ -55,7 +50,7 @@ node-sass --output-style compressed -o dist/css src/scss
 
 Теперь, давай переместим рабочий скрипт в npm `scripts` package.json:
 
-```
+```json
 "scripts": {
   "scss": "node-sass --output-style compressed -o dist/css src/scss"
 }
@@ -63,7 +58,7 @@ node-sass --output-style compressed -o dist/css src/scss
 
 Теперь запустим в командной строке:
 
-```
+```node.js
 npm run scss
 ```
 
@@ -73,7 +68,7 @@ npm run scss
 
 Большинство из инструментов командной строки, которые нам будут нужны, имеют множество опций, которые можно использовать, чтобы настроить его именно так, как удобно. Например, [список опций node-sass](https://github.com/sass/node-sass#command-line-interface). Вот другая настройка, показывающая, как передать несколько опций:
 
-```
+```json
 "scripts": {
   "scss": "node-sass --output-style nested --indent-type tab --indent-width 4 -o dist/css src/scss"
 }
@@ -83,7 +78,7 @@ npm run scss
 
 Когда компилируем Scss в CSS, мы можем автоматически добавлять префиксы вендоров, используя #Autoprefixer и #PostCSS. Установим несколько модулей одновременно, разделяя их пробелами:
 
-```
+```node.js
 npm install --save-dev postcss-cli autoprefixer
 ```
 
@@ -91,7 +86,7 @@ npm install --save-dev postcss-cli autoprefixer
 
 Добавим новую задачу в объект `scripts`:
 
-```
+```json
 "scripts": {
   ...
   "autoprefixer": "postcss -u autoprefixer -r dist/css/*"
@@ -100,7 +95,7 @@ npm install --save-dev postcss-cli autoprefixer
 
 Данная задача говорит `postcss`, используй (флаг `-u` это `use`) авторефикс для замены (флаг `-r` это `replace`) любых файлов `.css` в `dist/css` на код с префиксом. Вот и всё! Если нужно добавить поддержку браузера, по умолчанию, для автоматического префикса, мы можем сделать это так:
 
-```
+```json
 "scripts": {
   ...
   "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 9' -r dist/css/*"
@@ -113,13 +108,13 @@ npm install --save-dev postcss-cli autoprefixer
 
 При разработке кода важно придерживаться стандартного формата и стиля, чтобы свести ошибки к минимуму, и повысить эффективность работы разработчика. **Stylelint** помогает делать это автоматически для стилей, так что давай добавим linting стилей с помощью [stylelint](https://github.com/stylelint/stylelint).
 
-```
+```node.js
 npm install --save-dev stylelint
 ```
 
 Далее мы создадим файл `.stylelintrc` в корне директории. Мы можем использовать свою конфигурацию или использовать [общую конфигурацию](https://github.com/stylelint/stylelint#extend-a-shared-configuration). Как сделать свою конфигурацию смотри [здесь](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md). Добавим в файл `.stylelintrc`:
 
-```
+```json
 "rules": {
   "block-no-empty": true,
   "color-hex-case": "lower",
@@ -132,7 +127,7 @@ npm install --save-dev stylelint
 
 Теперь добавим задачу `lint:scss` в объект `scripts` package.json:
 
-```
+```json
 "scripts": {
   ...
   "lint:scss": "stylelint src/scss/*.scss --syntax scss",
@@ -147,25 +142,25 @@ npm install --save-dev stylelint
 
 Установим пакет, только на этот раз, используем ярлык:
 
-```
+```node.js
 npm i -D eslint
 ```
 
 Это тоже самое что:
 
-```
+```node.js
 npm install --save-dev eslint
 ```
 
 После установки настраиваем некоторые основные правила для запуска кода, используя `eslint`. Чтобы запустить настройку, запустим следующее:
 
-```
+```node.js
 ./node_modules/.bin/eslint --init
 ```
 
 Отвечаем на вопросы, которые он задает. Это создаст новый файл в корне проекта, с которым `eslint` будет проверять код. Например:
 
-```
+```json
 {
   "env": {
     "browser": true,
@@ -186,7 +181,7 @@ npm install --save-dev eslint
 
 Теперь давай добавим задачу `lint` в объект `scripts` package.json:
 
-```
+```json
 "scripts": {
   ...
   "lint": "eslint src/js"
@@ -199,13 +194,13 @@ npm install --save-dev eslint
 
 Давай поработаем над объединением и минимизацией файлов JavaScript с помощью [uglify-js](https://github.com/mishoo/UglifyJS2). Для начала установим `uglify-js`:
 
-```
+```node.js
 npm i -D uglify-js
 ```
 
 Затем мы можем настроить задачу `uglify` в package.json:
 
-```
+```json
 "scripts": {
   ...
   "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js"
@@ -220,7 +215,7 @@ npm i -D uglify-js
 
 Давай обновим задачу `uglify`, чтобы создать сжатую версию `dist/js/app.js`. Добавим цепочку для другой команды `uglifyjs` и передадим флаг «compress» (`-c`):
 
-```
+```json
 "scripts": {
   ...
   "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.min.js"
@@ -233,13 +228,13 @@ npm i -D uglify-js
 
 Установим [imagemin-cli](https://github.com/imagemin/imagemin-cli):
 
-```
+```node.js
 npm i -D imagemin-cli
 ```
 
 Imagemin хорош, так как он сжимает большинство типов изображений, включая GIF, JPG, PNG и SVG. Мы можем передать ему папку с изображениями, например:
 
-```
+```json
 "scripts": {
   ...
   "imagemin": "imagemin src/images/* --out-dir=dist/images",
@@ -254,13 +249,13 @@ Imagemin хорош, так как он сжимает большинство т
 
 Мы также можем автоматизировать процесс объединения и разбивки SVG-файлов в один SVG-файл (спрайт) ([подробнее об этом здесь](https://css-tricks.com/svg-sprites-use-better-icon-fonts/)). Чтобы автоматизировать этот процесс, можно установить [svg-sprite-generator](https://github.com/frexy/svg-sprite-generator).
 
-```
+```node.js
 npm i -D svgo svg-sprite-generator
 ```
 
 После установки добавь задачу в объект `scripts` в package.json:
 
-```
+```json
 "scripts": {
   ...
   "icons": "svgo -f src/images/icons -o dist/images/icons && svg-sprite-generate -d dist/images/icons -o dist/images/icons/sprite.svg"
@@ -273,11 +268,11 @@ npm i -D svgo svg-sprite-generator
 
 [BrowserSync](https://github.com/Browsersync/browser-sync) может делать несколько вещей: запускать локальный сервер, автоматически вставлять обновленные файлы в любой подключенный браузер и синхронизировать щелчки, и прокрутки между браузерами. Установим и добавим задачу:
 
-```
+```node.js
 npm i -D browser-sync
 ```
 
-```
+```json
 "scripts": {
   ...
   "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'"
@@ -340,11 +335,11 @@ npm i -D browser-sync
 
 Одна из самых полезных вещей, которые мы можем сделать - это добавить задачи, которые следят за изменениями и запускаются автоматически при изменении файлов. Для этого я рекомендую использовать [onchange](https://github.com/Qard/onchange). Установим как обычно:
 
-```
+```node.js
 npm i -D onchange
 ```
 
-```
+```json
 "scripts": {
   ...
   "watch:css": "onchange 'src/scss/*.scss' -- npm run build:css",
@@ -359,11 +354,11 @@ npm i -D onchange
 
 Установим ещё один пакет, [parallelshell](https://github.com/darkguy2008/parallelshell):
 
-```
+```node.js
 npm i -D parallelshell
 ```
 
-```
+```json
 "scripts": {
   ...
   "watch:all": "parallelshell 'npm run serve' 'npm run watch:css' 'npm run watch:js' 'npm run watch:images'"
@@ -382,7 +377,7 @@ npm i -D parallelshell
 
 Также, вместо `parallelshell` можно использовать [npm-run-all](https://github.com/mysticatea/npm-run-all). Он позволят запускать задачи последовательно или параллельно. В данном случае скрипт будет выглядеть так:
 
-```
+```json
 "scripts": {
   ...
   "watch": "run-p serve watch:*",
@@ -395,7 +390,7 @@ npm i -D parallelshell
 
 `npm` идёт с большим количеством [встроенных задач](https://docs.npmjs.com/misc/scripts#description). Давай напишем ещё одну задачу, используя один из этих встроенных скриптов.
 
-```
+```json
 "scripts": {
   ...
   "postinstall": "npm run watch:all"

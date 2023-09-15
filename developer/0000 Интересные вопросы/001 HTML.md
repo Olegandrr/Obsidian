@@ -1,6 +1,6 @@
 ![[Logo-html5.png|150]]
 
-# Подготовка к собеседованию
+# Вопросы:
 
 * [Основы HTML5. Полный курс: 1:58:29](https://www.youtube.com/watch?v=_J6hMLsscOo)
 

@@ -1,5 +1,5 @@
  ![Как отрендерить HTML код в React-компоненте?](https://youtu.be/GZUy2i6QN7o?t=572)
-
+ 
 #### Ответ
 
 ![[Pasted image 20230704174718.png|600]]
@@ -25,10 +25,10 @@ class MyComponent extends React.Component {
 
 *Обратите внимание, что использование `dangerouslySetInnerHTML` может привести к уязвимостям безопасности, так как позволяет вставлять произвольный HTML-код в компонент. Поэтому, рекомендуется использовать этот способ только в тех случаях, когда это действительно необходимо и когда вы уверены в безопасности вставляемого HTML-кода.*
 
-Подробнее: [Protecting Against XSS Attacks in React](https://dev.to/thawkin3/protecting-against-xss-attacks-in-react-441m)
+Подробнее: [Protecting Against XSS Attacks in React](https://dev.to/thawkin3/protecting-against-xss-attacks-in-react-441m) , [Using dangerouslySetInnerHTML in a React application](https://blog.logrocket.com/using-dangerouslysetinnerhtml-in-a-react-application/)
 
 ____
-#React #dangerouslySetInnerHTML 
+#React #dangerouslySetInnerHTML #XSS
 
 ____
 

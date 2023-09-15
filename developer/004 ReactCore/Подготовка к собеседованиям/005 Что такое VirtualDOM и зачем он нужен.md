@@ -10,7 +10,7 @@
 
 Также виртуальное DOM позволяет использовать React не только на стороне клиента, но и на стороне сервера. С помощью библиотеки `ReactDOMServer` можно использовать React для рендеринга пользовательского интерфейса на стороне сервера, что может повысить производительность и оптимизировать SEO.
 
-Подробнее: [Что такое VirtualDOM](https://habr.com/ru/post/256965/) ,  [Рендеринг элементов](https://ru.legacy.reactjs.org/docs/rendering-elements.html) , [Виртуальный DOM и детали его реализации в React](https://ru.legacy.reactjs.org/docs/faq-internals.html)
+Подробнее: [Что такое VirtualDOM](https://habr.com/ru/post/256965/) , [Немного о том, как работает виртуальный DOM в React](https://habr.com/ru/companies/macloud/articles/558682/) ,  [Виртуальный DOM и детали его реализации в React](https://ru.legacy.reactjs.org/docs/faq-internals.html) ,  [Рендеринг элементов](https://ru.legacy.reactjs.org/docs/rendering-elements.html)
 
 ____
 #React #DOM #VirtualDOM #reactDOMServer 

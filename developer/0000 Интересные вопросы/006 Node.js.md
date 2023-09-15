@@ -1,8 +1,8 @@
 ![[Logo-nodejs.png|400]]
 
-# Подготовка к собеседованию:
+# Вопросы:
 
-* [NodeJS. Полный курс: 2:43:47](https://www.youtube.com/watch?v=nu4PiyjAmAE&list=PLNkWIWHIRwMFKmmIPVaCPpusgloMMgxN2&index=16)
+![NodeJS. Полный курс: 2:43:47](https://www.youtube.com/watch?v=nu4PiyjAmAE&list=PLNkWIWHIRwMFKmmIPVaCPpusgloMMgxN2&index=16)
 
 ___
 ___
