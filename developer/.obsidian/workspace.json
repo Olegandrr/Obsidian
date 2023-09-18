@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f24a8736677e1947",
+        "id": "531ba6a474f59f2e",
         "type": "tabs",
         "children": [
           {
-            "id": "4ae8669ac0140ad2",
+            "id": "e5da36d28c96990e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/202306201732.md",
+                "file": "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 8. Модули.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "runtime",
+                "query": "tag:#intersection",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/202306201732.md",
+                "file": "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 8. Модули.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/202306201732.md",
+                "file": "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 8. Модули.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/202306201732.md"
+                "file": "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 8. Модули.md"
               }
             }
           },
@@ -153,7 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 647.5
+    "width": 640.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,34 +167,40 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2b9eca97f11fd816",
+  "active": "e5da36d28c96990e",
   "lastOpenFiles": [
-    "InBOX/202306211532.md",
-    "0000 Интересные вопросы/other themes/hh.md",
-    "InBOX/Вопросы итогового собеседования.md",
-    "InBOX/Без названия.md",
-    "0000 Интересные вопросы/009 Тестирование.md",
-    "0000 Интересные вопросы/007 Скрипты.md",
-    "0000 Интересные вопросы/006 Node.js.md",
     "0000 Интересные вопросы/005 TypeScript.md",
-    "0000 Интересные вопросы/004 React + Redux.md",
-    "0000 Интересные вопросы/003 JSCore.md",
-    "0000 Интересные вопросы/002 CSS.md",
-    "0000 Интересные вопросы/001 HTML.md",
-    "0000 Интересные вопросы/000 Browser.md",
-    "004 ReactCore/Подготовка к собеседованиям/053 Стадии жизненного цикла компонента в React.md",
-    "004 ReactCore/Подготовка к собеседованиям/038 Разница между управляемыми (controlled) и не управляемыми (uncontrolled) компонентами.md",
-    "004 ReactCore/Подготовка к собеседованиям/040 Зачем нужны eslint и prettier.md",
-    "004 ReactCore/Подготовка к собеседованиям/039 Что такое фрагмент (`Fragment`). Почему фрагмент лучше, чем `div`.md",
-    "004 ReactCore/Подготовка к собеседованиям/037 Можете ли вы принудительно выполнить повторный рендеринг компонента без вызова setState.md",
-    "004 ReactCore/Подготовка к собеседованиям/036 Как в React реализовать двустороннее связывание данных.md",
-    "004 ReactCore/Подготовка к собеседованиям/035 Что такое поднятие состояния вверх (Lifting State Up).md",
-    "004 ReactCore/Подготовка к собеседованиям/032 Как вы обновляете объект состояния в React.md",
-    "004 ReactCore/Подготовка к собеседованиям/031 Что делает setState.md",
-    "004 ReactCore/Подготовка к собеседованиям/030 Разница между состоянием(`state`) и пропсами(`props`).md",
-    "004 ReactCore/Подготовка к собеседованиям/029 Как отрендерить HTML код в React-компоненте.md",
-    "004 ReactCore/Подготовка к собеседованиям/028 Что такое синтетические события (SyntheticEvent) в React.md",
-    "004 ReactCore/Подготовка к собеседованиям/027 Для чего нужен атрибут `key` при рендере списков.md",
+    "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 7. Классы.md",
+    "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 6. Манипуляции с типами.md",
+    "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 5. Объектные типы.md",
+    "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 4. Подробнее о функциях.md",
+    "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 3. Сужение типов.md",
+    "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 2. Типы на каждый день.md",
+    "005 TypeScript/typescript. Часть 2/Карманная книга по TS. Часть 1. Основы.md",
+    "005 TypeScript/typescript. Часть 1/2.3 Работа с чужими типами данных.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/2.2 Использование своих типов данных.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Совместимость типов.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Утилиты - Partial, Required, NonNullable, Record, Readonly и ReadonlyArray.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Generics, Index Access Types, Keyof на простом примере.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Обобщенные и универсальные типы (generics).md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Union и TypeGuards, пользовательские проверки типов.md",
+    "005 TypeScript/typescript. Часть 1/2.1 Описание типов данных/2.1 Описание типов данных.md",
+    "005 TypeScript/typescript. Часть 1/2.1 Описание типов данных/Enums. Обзор и когда не надо использовать.md",
+    "005 TypeScript/typescript. Часть 1/2.1 Описание типов данных/Разница между interface и types.md",
+    "005 TypeScript/typescript. Часть 1/2.1 Описание типов данных/Типизация функций.md",
+    "005 TypeScript/typescript. Часть 1/2.1 Описание типов данных/Приведение, объединение и пересечение типов данных.md",
+    "005 TypeScript/typescript. Часть 1/2.1 Описание типов данных/Типизация массивов и объектов.md",
+    "005 TypeScript/typescript. Часть 1/2.1 Описание типов данных/Основные типы данных.md",
+    "005 TypeScript/typescript. Часть 1/1. Внутреннее устройство typescript/1. Внутреннее устройство typescript.md",
+    "005 TypeScript/typescript. Часть 1/1. Внутреннее устройство typescript/Настройка строгости.md",
+    "005 TypeScript/typescript. Часть 1/1. Внутреннее устройство typescript/Транспиляция и полифиллинг.md",
+    "005 TypeScript/typescript. Часть 1/1. Внутреннее устройство typescript/Явная и неявная типизация, указание типов.md",
+    "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
+    "Pasted image 20230916132451.png",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110644-2GIJL36.md.tmp",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110533-2GIJL36.md.tmp",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110323-2GIJL36.md.tmp",
+    "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110233-2GIJL36.md.tmp",
     "0. Подготовка к собеседованию/other themes/Собеседования/Собеседования в Компании/~syncthing~Технология доверия.sync-conflict-20230915-112139-2GIJL36.md.tmp",
     "0000 Интересные вопросы/other themes/Без названия.canvas",
     "006 Node.js/~syncthing~001 Что такое Node.js.md.tmp",
@@ -202,10 +209,6 @@
     "0000 Интересные вопросы/other themes/Собеседования/Собеседования в Компании",
     "0000 Интересные вопросы/other themes/Собеседования/Моё собеседование/Вопросы по SoftSkills",
     "0000 Интересные вопросы/other themes/Собеседования/Моё собеседование/Вопросы о компании",
-    "0000 Интересные вопросы/other themes/Собеседования/Моё собеседование/Техническое собеседование",
-    "0000 Интересные вопросы/other themes/Собеседования/Моё собеседование/Вопросы по легенде",
-    "0000 Интересные вопросы/other themes/Собеседования/Моё собеседование/Скрининг с HR",
-    "0000 Интересные вопросы/other themes/Собеседования/Моё собеседование",
     "img/Pasted image 20230909095929.png",
     "img/Pasted image 20230912214632.png",
     "img/Pasted image 20230912214436.png",
@@ -214,9 +217,7 @@
     "img/Pasted image 20230912171229.png",
     "img/Pasted image 20230912171225.png",
     "img/Pasted image 20230912160206.png",
-    "img/Pasted image 20230912160200.png",
     "003 JSCore/Без названия.canvas",
-    "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
     "000 Browser/Шпаргалка (Как работает интернет).canvas",
     "Без названия 1.canvas",
     "0.4 Вопросы к ревью React/Преимущества и недостатки HOC.canvas",

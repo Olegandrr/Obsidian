@@ -1,12 +1,12 @@
-____
-
-tags: #TypeScript #generic #keyof #index-access-types
-
-[[005 TypeScript|На главную]]
+### Ответ
 
 ![](https://www.youtube.com/watch?v=7XFPVJ4u8bc)
 
-keywords:
+
+
+___
+tags: #TypeScript #generic #keyof #index-access-types
 
 _____
 
+### [[005 TypeScript|Назад]]

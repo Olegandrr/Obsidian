@@ -1,12 +1,4 @@
-____
-
-tags: #TypeScript #class #
-
-[[005 TypeScript|На главную]]
-
-keywords:
-
-_____
+### Ответ
 
 Классы представляют собой общие поведения и атрибуты группы связанных объектов.
 
@@ -14,7 +6,7 @@ _____
 
 Вы объявляете классы с помощью ключевого слова `class`:
 
-```typescript
+```jsx
 class Student {
 	studCode: number;
 	studName: string;
@@ -27,7 +19,7 @@ class Student {
 
 В TypeScript, при объявлении свойств классов, нельзя использовать ключевое слово `const`. При попытке использования этого ключевого слова выводится следующее сообщение об ошибке: `A class member cannot have the ‘const’ keyword`. В TypeScript 2.0 имеется модификатор `readonly`, позволяющий создавать свойства класса, предназначенные только для чтения:
 
-```
+```jsx
 class MyClass {
     readonly myReadonlyProperty = 1;
 
@@ -65,14 +57,11 @@ class Snake extends Animal {
 }
 ```
 
-
 TypeScript позволяет объявлять множество вариантов методов, но реализация может быть лишь одна, и эта реализация должна иметь сигнатуру, совместимую со всеми вариантами перегруженных методов. Для перегрузки конструктора класса можно воспользоваться несколькими подходами:  
   
-
 - Можно воспользоваться необязательным параметром:  
       
-    
-    ```
+    ```tsx
     class Box {
         public x: number;
         public y: number;
@@ -92,8 +81,7 @@ TypeScript позволяет объявлять множество вариан
     
 - Можно воспользоваться параметрами по умолчанию:  
       
-    
-    ```
+    ```tsx
     class Box {
         public x: number;
         public y: number;
@@ -111,8 +99,7 @@ TypeScript позволяет объявлять множество вариан
     
 - Можно использовать дополнительные перегрузки в виде методов статической фабрики:  
       
-    
-    ```
+    ```tsx
     class Person {
         static fromData(data: PersonData) {
             let { first, last, birthday, gender = 'M' } = data 
@@ -148,8 +135,7 @@ TypeScript позволяет объявлять множество вариан
     
 - Можно использовать тип-объединение:  
       
-    
-    ```
+    ```tsx
     class foo {
         private _name: any;
         constructor(name: string | number) {
@@ -159,7 +145,12 @@ TypeScript позволяет объявлять множество вариан
     var f1 = new foo("bar");
     var f2 = new foo(1);
     ```
-    
-
-  
+   
 → [Источник](https://stackoverflow.com/questions/12702548/constructor-overload-in-typescript)
+
+___
+tags: #TypeScript #ООП #class #readonly #super #static #private 
+
+_____
+
+### [[005 TypeScript|Назад]]

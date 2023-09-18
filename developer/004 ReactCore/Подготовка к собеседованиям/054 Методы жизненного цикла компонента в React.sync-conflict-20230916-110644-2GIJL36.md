@@ -6,7 +6,7 @@
 
 Подробнее: [Жизненный цикл компонента](https://courses.arthur-nesterenko.dev/react/lifecycle/)
 
-##### `UNSAFE_componentWillMount()` 
+##### `componentWillMount()`
 
 `componentWillMount()` вызывается непосредственно перед монтированием. Он вызывается перед `render()`, поэтому синхронный вызов `setState()` в этом методе не вызовет дополнительную отрисовку. *Как правило, мы рекомендуем использовать `constructor()` вместо этого для инициализации состояния.*
 ##### `componentDidMount()`

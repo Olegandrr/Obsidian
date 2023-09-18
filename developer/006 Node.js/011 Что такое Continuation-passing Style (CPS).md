@@ -10,7 +10,7 @@
 
 Пример функции, написанной в CPS стиле на JavaScript:
 
-```
+```node.js
 function add(a, b, callback) {
   let result = a + b;
   callback(result);

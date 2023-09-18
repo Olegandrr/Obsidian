@@ -4,7 +4,7 @@
 
 #### Ответ
 
-Почитать документацию: [Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started)
+Почитать документацию: [Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started) , [Redux Toolkit - учебник](https://reactdev.ru/libs/redux-toolkit/)
 
 *Redux Toolkit* - это библиотека, которая предоставляет набор утилит для упрощения разработки Redux-приложений. Релиз библиотеки состоялся в 2019 году и официально поддерживается разработчиками Redux. 
 

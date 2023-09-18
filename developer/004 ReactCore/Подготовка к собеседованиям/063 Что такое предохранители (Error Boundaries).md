@@ -56,10 +56,45 @@ export default ErrorBoundary;
 
 ##### Библиотека `react-error-boundary`
 
+Позволяет обрабатывать ошибки в функциональном React-приложении.
 
 ![](https://www.youtube.com/watch?v=gyqAW0--0Tc)
 
+1. Установите библиотеку `react-error-boundary` с помощью npm или yarn
 
+2. Создайте компонент-ошибку, который будет отображаться при возникновении ошибки:
+
+```jsx
+const ErrorFallback = ({ error }) => {
+  return (
+    <div>
+      <h2>Что-то пошло не так</h2>
+      <p>{error.message}</p>
+    </div>
+  );
+};
+```
+
+3. Оберните ваш функциональный компонент в `ErrorBoundary` и передайте компонент-ошибку в качестве пропса `fallbackComponent`:
+
+```jsx
+import { ErrorBoundary } from 'react-error-boundary';
+
+const MyComponent = () => {
+  // Функция, которая может вызвать ошибку
+  const handleClick = () => {
+    throw new Error('Ошибка!');
+  };
+
+  return (
+    <ErrorBoundary fallbackComponent={ErrorFallback}>
+      <div>
+        <button onClick={handleClick}>Генерировать ошибку</button>
+      </div>
+    </ErrorBoundary>
+  );
+};
+```
 
 Подробнее: [react-error-boundary](https://kentcdodds.com/blog/use-react-error-boundary-to-handle-errors-in-react) , [Предохранители](https://reactdev.ru/archive/react16/error-boundaries/#introducing-error-boundaries)
 

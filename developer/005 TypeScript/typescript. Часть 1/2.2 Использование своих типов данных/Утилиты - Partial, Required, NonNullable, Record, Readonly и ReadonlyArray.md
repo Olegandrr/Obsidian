@@ -1,12 +1,6 @@
-____
-
-tags: #TypeScript #partial #required #nonnullable #record #readonly #readonlyArray
-
-[[005 TypeScript|На главную]]
+### Ответ
 
 ![](https://www.youtube.com/watch?v=BTB3VDkWiOQ)
-
-keywords:
 
 #Record Создает тип объекта, ключи свойств которого `Keys`, а значениями свойств - `Type`. 
 Эту утилиту можно использовать для сопоставления свойств одного типа с другим типом.
@@ -26,5 +20,10 @@ const cats: Record<CatName, CatInfo> = {
 };
 ```
 
+___
+
+tags: #TypeScript #partial #required #nonnullable #record #readonly #readonlyArray
+
 _____
 
+### [[005 TypeScript|Назад]]

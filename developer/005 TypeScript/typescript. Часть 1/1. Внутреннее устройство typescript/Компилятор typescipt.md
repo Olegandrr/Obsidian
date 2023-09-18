@@ -8,7 +8,7 @@ keywords:
 * #extends говорит о том, что наш config может быть разбит на части;
 * #files подходит для небольших проектов
 * #include #exclude - путь для компиляции // исключить из компиляции
-```
+```json
 "include": ["src"],
 "exclude": [
 	"node_modules",

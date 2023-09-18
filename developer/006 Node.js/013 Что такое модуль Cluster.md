@@ -10,7 +10,7 @@
 
 Пример использования модуля Cluster:
 
-```
+```node.js
 const cluster = require('cluster');
 const http = require('http');
 

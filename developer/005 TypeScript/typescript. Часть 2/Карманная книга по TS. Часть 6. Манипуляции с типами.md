@@ -16,7 +16,7 @@ _____
 
 Создадим функцию `identity`, которая будет возвращать переданное ей значение:
 
-```
+```tsx
 function identity(arg: number): number {
  return arg
 }
@@ -24,7 +24,7 @@ function identity(arg: number): number {
 
 Для того, чтобы сделать эту функцию более универсальной, можно использовать тип `any`:
 
-```
+```tsx
 function identity(arg: any): any {
  return arg
 }
@@ -34,7 +34,7 @@ function identity(arg: any): any {
 
 Нам нужен какой-то способ перехватывать тип аргумента для обозначения с его помощью типа возвращаемого значения. Для этого мы можем воспользоваться переменной типа, специальным видом переменных, которые работают с типами, а не со значениями:
 
-```
+```tsx
 function identity<Type>(arg: Type): Type {
  return arg
 }
@@ -46,7 +46,7 @@ function identity<Type>(arg: Type): Type {
 
 Мы можем вызывать такие функции двумя способами. Первый способ заключается в передаче всех аргументов, включая аргумент типа:
 
-```
+```tsx
 const output = identity<string>('myStr')
    // let output: string
 ```
@@ -55,7 +55,7 @@ const output = identity<string>('myStr')
 
 Второй способ заключается в делегировании типизации компилятору:
 
-```
+```tsx
 const output = identity('myStr')
    // let output: string
 ```
@@ -66,7 +66,7 @@ const output = identity('myStr')
 
 Что если мы захотим выводить в консоль длину аргумента `arg` перед его возвращением?
 
-```
+```tsx
 function loggingIdentity<Type>(arg: Type): Type {
  console.log(arg.length)
  // Property 'length' does not exist on type 'Type'.
@@ -79,7 +79,7 @@ function loggingIdentity<Type>(arg: Type): Type {
 
 Изменим сигнатуру функции таким образом, чтобы она работала с массивом `Type`:
 
-```
+```tsx
 function loggingIdentity<Type>(arg: Type[]): Type[] {
  console.log(arg.length)
  return arg
@@ -90,7 +90,7 @@ function loggingIdentity<Type>(arg: Type[]): Type[] {
 
 Мы можем сделать тоже самое с помощью такого синтаксиса:
 
-```
+```tsx
 function loggingIdentity<Type>(arg: Array<Type>): Array<Type> {
  console.log(arg.length)
  return arg
@@ -101,7 +101,7 @@ function loggingIdentity<Type>(arg: Array<Type>): Array<Type> {
 
 Тип общей функции (функции-дженерика) похож на тип обычной функции, в начале которого указывается тип параметра:
 
-```
+```tsx
 function identity<Type>(arg: Type): Type {
  return arg
 }
@@ -111,7 +111,7 @@ const myIdentity: <Type>(arg: Type) => Type = identity
 
 Мы можем использовать другое название для параметра общего типа:
 
-```
+```tsx
 function identity<Type>(arg: Type): Type {
  return arg
 }
@@ -121,7 +121,7 @@ const myIdentity: <Input>(arg: Input) => Input = identity
 
 Мы также можем создавать общие типы в виде сигнатуры вызова типа объектного литерала:
 
-```
+```tsx
 function identity<Type>(arg: Type): Type {
  return arg
 }
@@ -131,7 +131,7 @@ const myIdentity: { <Type>(arg: Type): Type } = identity
 
 Это приводит нас к общему интерфейсу:
 
-```
+```tsx
 interface GenericIdentityFn {
  <Type>(arg: Type): Type
 }
@@ -145,7 +145,7 @@ const myIdentity: GenericIdentityFn = identity
 
 Для того, чтобы сделать общий параметр видимым для всех членов интерфейса, его необходимо указать после названия интерфейса:
 
-```
+```tsx
 interface GenericIdentityFn<Type> {
  (arg: Type): Type
 }
@@ -165,7 +165,7 @@ _Обратите внимание_, что общие перечисления 
 
 Общий класс имеет такую же форму, что и общий интерфейс:
 
-```
+```tsx
 class GenericNumber<NumType> {
  zeroValue: NumType
  add: (x: NumType, y: NumType) => NumType
@@ -178,7 +178,7 @@ myGenericNum.add = (x, y) => x + y
 
 В случае с данным классом мы не ограничены числами. Мы вполне можем использовать строки или сложные объекты:
 
-```
+```tsx
 const stringNumeric = new GenericNumber<string>()
 stringNumeric.zeroValue = ''
 stringNumeric.add = (x, y) => x + y
@@ -192,7 +192,7 @@ console.log(stringNumeric.add(stringNumeric.zeroValue, 'test'))
 
 Иногда возникает необходимость в создании дженерика, работающего с набором типов, когда мы имеем некоторую информацию о возможностях, которыми будет обладать этот набор. В нашем примере `loggingIdentity` мы хотим получать доступ к свойству `length` аргумента `arg`, но компилятор знает, что не каждый тип имеет такое свойство, поэтому не позволяет нам делать так:
 
-```
+```tsx
 function loggingIdentity<Type>(arg: Type): Type {
  console.log(arg.length)
  // Property 'length' does not exist on type 'Type'.
@@ -204,7 +204,7 @@ function loggingIdentity<Type>(arg: Type): Type {
 
 Нам необходимо создать интерфейс, описывающий ограничение. В следующем примере мы создаем интерфейс с единственным свойством `length` и используем его с помощью ключевого слова `extends` для применения органичения:
 
-```
+```tsx
 interface Lengthwise {
  length: number
 }
@@ -218,7 +218,7 @@ function loggingIdentity<Type extends Lengthwise>(arg: Type): Type {
 
 Поскольку дженерик был ограничен, он больше не может работать с любым типом:
 
-```
+```tsx
 loggingIdentity(3)
 // Argument of type 'number' is not assignable to parameter of type 'Lengthwise'.
 // Аргумент типа 'number' не может быть присвоен параметру типа 'Lengthwise'
@@ -226,7 +226,7 @@ loggingIdentity(3)
 
 Мы должны передавать ему значения, отвечающие всем установленным требованиям:
 
-```
+```tsx
 loggingIdentity({ length: 10, value: 3 })
 ```
 
@@ -234,7 +234,7 @@ loggingIdentity({ length: 10, value: 3 })
 
 Мы можем определять типы параметров, ограниченные другими типами параметров. В следующем примере мы хотим получать свойства объекта по их названиям. При этом, мы хотим быть уверенными в том, что не извлекаем несуществующих свойств. Поэтому мы помещаем ограничение между двумя типами:
 
-```
+```tsx
 function getProperty<Type, Key extends keyof Type>(obj: Type, key: Key) {
  return obj[key]
 }
@@ -250,7 +250,7 @@ getProperty(x, 'm')
 
 При создании фабричных функций с помощью дженериков, необходимо ссылаться на типы классов через их функции-конструкторы. Например:
 
-```
+```tsx
 function create<Type>(c: { new (): Type }): Type {
  return new c()
 }
@@ -258,7 +258,7 @@ function create<Type>(c: { new (): Type }): Type {
 
 В более сложных случаях может потребоваться использование свойства `prototype` для вывода и ограничения отношений между функцией-конструктором и стороной экземляров типа класса:
 
-```
+```tsx
 class BeeKeeper {
  hasMask: boolean
 }
@@ -293,7 +293,7 @@ createInstance(Bee).keeper.hasMask
 
 Оператор `keyof` "берет" объектный тип и возвращает строковое или числовое литеральное объединение его ключей:
 
-```
+```tsx
 type Point = { x: number, y: number }
 type P = keyof Point
  // type P = keyof Point
@@ -301,7 +301,7 @@ type P = keyof Point
 
 Если типом сигнатуры индекса (index signature) типа является `string` или `number`, `keyof` возвращает эти типы:
 
-```
+```tsx
 type Arrayish = { [n: number]: unknown }
 type A = keyof Arrayish
  // type A = number
@@ -319,13 +319,13 @@ _Обратите внимание_, что типом `M` является `
 
 `JS` предоставляет оператор `typeof`, который можно использовать в контексте выражения:
 
-```
+```tsx
 console.log(typeof 'Привет, народ!') // string
 ```
 
 В `TS` оператор `typeof` используется в контексте типа для ссылки на тип переменной или свойства:
 
-```
+```tsx
 const s = 'привет'
 const n: typeof s
  // const n: string
@@ -333,7 +333,7 @@ const n: typeof s
 
 В сочетании с другими операторами типа мы можем использовать `typeof` для реализации нескольких паттернов. Например, давайте начнем с рассмотрения предопределенного типа `ReturnType<T>`. Он принимает тип функции и производит тип возвращаемого функцией значения:
 
-```
+```tsx
 type Predicate = (x: unknown) => boolean
 type K = ReturnType<Predicate>
  // type K = boolean
@@ -341,7 +341,7 @@ type K = ReturnType<Predicate>
 
 Если мы попытаемся использовать название функции в качестве типа параметра `ReturnType`, то получим ошибку:
 
-```
+```tsx
 function f() {
  return { x: 10, y: 3 }
 }
@@ -352,7 +352,7 @@ type P = ReturnType<f>
 
 _Запомните_: значения и типы — это не одно и тоже. Для ссылки на тип значения `f` следует использовать `typeof`:
 
-```
+```tsx
 function f() {
  return { x: 10, y: 3 }
 }
@@ -366,7 +366,7 @@ type P = ReturnType<typeof f>
 
 `typeof` можно использовать только в отношении идентификаторов (названий переменных) или их свойств. Это помогает избежать написания кода, который не выполняется:
 
-```
+```tsx
 // Должны были использовать ReturnType<typeof msgbox>, но вместо этого написали
 const shouldContinue: typeof msgbox('Вы уверены, что хотите продолжить?')
 // ',' expected
@@ -376,7 +376,7 @@ const shouldContinue: typeof msgbox('Вы уверены, что хотите п
 
 Мы можем использовать тип доступа по индексу для определения другого типа:
 
-```
+```tsx
 type Person = { age: number, name: string, alive: boolean }
 type Age = Person['age']
  // type Age = number
@@ -384,7 +384,7 @@ type Age = Person['age']
 
 Индексированный тип — это обычный тип, так что мы можем использовать объединения, `keyof` и другие типы:
 
-```
+```tsx
 type I1 = Person['age' | 'name']
  // type I1 = string | number
 
@@ -398,14 +398,14 @@ type I3 = Person[AliveOrName]
 
 При попытке доступа к несуществующему свойству возникает ошибка:
 
-```
+```tsx
 type I1 = Person['alve']
 // Property 'alve' does not exist on type 'Person'.
 ```
 
 Другой способ индексации заключается в использовании `number` для получения типов элементов массива. Мы также можем использовать `typeof` для перехвата типа элемента:
 
-```
+```tsx
 const MyArray = [
  { name: 'Alice', age: 15 },
  { name: 'Bob', age: 23 },
@@ -429,7 +429,7 @@ type Age2 = number
 
 _Обратите внимание_, что мы не можем использовать `const`, чтобы сослаться на переменную:
 
-```
+```tsx
 const key = 'age'
 type Age = Person[key]
 /*
@@ -444,7 +444,7 @@ type Age = Person[key]
 
 Однако, в данном случае мы можем использовать синоним типа (type alias):  
 
-```
+```tsx
 type key = 'age'
 type Age = Person[key]
 ```
@@ -453,7 +453,7 @@ type Age = Person[key]
 
 Обычно, в программе нам приходится принимать решения на основе некоторых входных данных. В `TS` решения также зависят от типов передаваемых аргументов. Условные типы помогают описывать отношения между типами входящих и выходящих данных.
 
-```
+```tsx
 interface Animal {
  live(): void
 }
@@ -470,7 +470,7 @@ type Example2 = RegExp extends Animal ? number : string
 
 Условные типы имеют форму, схожую с условными выражениями в `JS` (`условие ? истинноеВыражение : ложноеВыражение`).
 
-```
+```tsx
 SomeType extends OtherType ? TrueType : FalseType
 ```
 
@@ -480,7 +480,7 @@ SomeType extends OtherType ? TrueType : FalseType
 
 Рассмотрим такую функцию:
 
-```
+```tsx
 interface IdLabel {
  id: number /* некоторые поля */
 }
@@ -504,7 +504,7 @@ _Обратите внимание_ на следующее:
 
 Вместо этого, мы можем реализовать такую же логику с помощью условных типов:
 
-```
+```tsx
 type NameOrId<T extends number | string> = T extends number
  ? IdLabel
  : NameLabel
@@ -512,7 +512,7 @@ type NameOrId<T extends number | string> = T extends number
 
 Затем мы можем использовать данный тип для избавления от перегрузок:
 
-```
+```tsx
 function createLabel<T extends number | string>(idOrName: T): NameOrId<T> {
  throw 'не реализовано'
 }
@@ -533,7 +533,7 @@ let c = createLabel(Math.random() ? 'hello' : 42)
 
 Рассмотрим такой пример:
 
-```
+```tsx
 type MessageOf<T> = T['message']
 // Type '"message"' cannot be used to index type 'T'.
 // Тип '"message"' не может быть использован для индексации типа 'T'
@@ -541,7 +541,7 @@ type MessageOf<T> = T['message']
 
 В данном случае возникает ошибка, поскольку `TS` не знает о существовании у `T` свойства `message`. Мы можем ограничить `T`, и тогда `TS` перестанет "жаловаться":
 
-```
+```tsx
 type MessageOf<T extends { message: unknown }> = T['message']
 
 interface Email {
@@ -558,7 +558,7 @@ type EmailMessageContents = MessageOf<Email>
 
 Но что если мы хотим, чтобы `MessageOf` принимал любой тип, а его "дефолтным" значением был тип `never`? Мы можем "вынести" ограничение и использовать условный тип:
 
-```
+```tsx
 type MessageOf<T> = T extends { message: unknown } ? T['message'] : never
 
 interface Email {
@@ -580,7 +580,7 @@ type DogMessageContents = MessageOf<Dog>
 
 В качестве другого примера мы можем создать тип `Flatten`, который распаковывает типы массива на типы составляющих его элементов, но при этом сохраняет их в изоляции:
 
-```
+```tsx
 type Flatten<T> = T extends any[] ? T[number] : T
 
 // Извлекаем тип элемента
@@ -600,7 +600,7 @@ type Num = Flatten<number>
 
 Условные типы предоставляют возможность делать предположения на основе сравниваемых в истинной ветке типов с помощью ключевого слова `infer`. Например, мы можем сделать вывод относительно типа элемента во `Flatten` вместо его получения вручную через доступ по индексу:
 
-```
+```tsx
 type Flatten<Type> = Type extends Array<infer Item> ? Item : Type
 ```
 
@@ -608,7 +608,7 @@ type Flatten<Type> = Type extends Array<infer Item> ? Item : Type
 
 Мы можем создать несколько вспомогательных синонимов типа (type aliases) с помощью `infer`. Например, в простых случаях мы можем извлекать возвращаемый тип из функции:
 
-```
+```tsx
 type GetReturnType<Type> = Type extends (...args: never[]) => infer Return
  ? Return
  : never
@@ -625,7 +625,7 @@ type Bools = GetReturnType<(a: boolean, b: boolean) => boolean[]>
 
 При предположении на основе типа с помощью нескольких сигнатур вызова (такого как тип перегруженной функции), предположение выполняется на основе последней сигнатуры. Невозможно произвести разрешение перегрузки на основе списка типов аргументов.
 
-```
+```tsx
 declare function stringOrNum(x: string): number
 declare function stringOrNum(x: number): string
 declare function stringOrNum(x: string | number): string | number
@@ -638,13 +638,13 @@ type T1 = ReturnType<typeof stringOrNum>
 
 Когда условные типы применяются к дженерикам, они становятся распределенными при получении объединения (union). Рассмотрим следующий пример:
 
-```
+```tsx
 type ToArray<Type> = Type extends any ? Type[] : never
 ```
 
 Если мы изолируем объединение в `ToArray`, условный тип будет применяться к каждому члену объединения.
 
-```
+```tsx
 type ToArray<Type> = Type extends any ? Type[] : never
 
 type StrArrOrNumArr = ToArray<string | number>
@@ -653,25 +653,25 @@ type StrArrOrNumArr = ToArray<string | number>
 
 Здесь `StrOrNumArray` распределяется на:
 
-```
+```tsx
 string | number
 ```
 
 и применяется к каждому члену объединения:
 
-```
+```tsx
 ToArray<string> | ToArray<number>
 ```
 
 что приводит к следующему:
 
-```
+```tsx
 string[] | number[]
 ```
 
 Обычно, такое поведение является ожидаемым. Для его изменения можно обернуть каждую сторону `extends` в квадратные скобки:
 
-```
+```tsx
 type ToArrayNonDist<Type> = [Type] extends [any] ? Type[] : never
 
 // 'StrOrNumArr' больше не является объединением
@@ -683,7 +683,7 @@ type StrOrNumArr = ToArrayNonDist<string | number>
 
 Связанные типы основаны на синтаксисе сигнатуры доступа по индексу, который используется для определения типов свойств, которые не были определены заранее:
 
-```
+```tsx
 type OnlyBoolsAndHorses = {
  [key: string]: boolean | Horse
 }
@@ -696,7 +696,7 @@ const conforms: OnlyBoolsAndHorses = {
 
 Связанный тип — это общий тип, использующий объединение, созданное с помощью оператора `keyof`, для перебора ключей одного типа в целях создания другого:
 
-```
+```tsx
 type OptionsFlags<Type> = {
  [Property in keyof Type]: boolean
 }
@@ -704,7 +704,7 @@ type OptionsFlags<Type> = {
 
 В приведенном примере `OptionsFlag` получит все свойства типа `Type` и изменит их значения на `boolean`.
 
-```
+```tsx
 type FeatureFlags = {
  darkMode: () => void
  newUserProfile: () => void
@@ -720,7 +720,7 @@ type FeatureOptions = OptionsFlags<FeatureFlags>
 
 Эти модификаторы можно добавлять и удалять с помощью префиксов `-` или `+`. Если префикс отсутствует, предполагается `+`.
 
-```
+```tsx
 // Удаляем атрибуты `readonly` из свойств типа
 type CreateMutable<Type> = {
  -readonly [Property in keyof Type]: Type[Property]
@@ -735,7 +735,7 @@ type UnlockedAccount = CreateMutable<LockedAccount>
  // type UnlockedAccount = { id: string, name: string }
 ```
 
-```
+```tsx
 // Удаляем атрибуты `optional` из свойств типа
 type Concrete<Type> = {
  [Property in keyof Type]-?: Type[Property]
@@ -755,7 +755,7 @@ type User = Concrete<MaybeUser>
 
 В `TS` 4.1 и выше, можно использовать оговорку `as` для повторного связывания ключей в связанном типе:
 
-```
+```tsx
 type MappedTypeWithNewProperties<Type> = {
  [Properties in keyof Type as NewKeyType]: Type[Properties]
 }
@@ -763,7 +763,7 @@ type MappedTypeWithNewProperties<Type> = {
 
 Для создания новых названий свойств на основе предыдущих можно использовать продвинутые возможности, такие как типы шаблонных литералов (см. ниже):
 
-```
+```tsx
 type Getters<Type> = {
  [Property in keyof Type as `get${Capitalize<string & Property>}`]: () => Type[Property]
 }
@@ -780,7 +780,7 @@ type LazyPerson = Getters<Person>
 
 Ключи можно фильтровать с помощью `never` в условном типе:
 
-```
+```tsx
 // Удаляем свойство `kind`
 type RemoveKindField<Type> = {
    [Property in keyof Type as Exclude<Property, 'kind'>]: Type[Property]
@@ -797,7 +797,7 @@ type KindlessCircle = RemoveKindField<Circle>
 
 Связанные типы хорошо работают с другими возможностями по манипуляции типами, например, с условными типами. В следующем примере условный тип возвращает `true` или `false` в зависимости от того, содержит ли объект свойство `pii` с литерально установленным `true`:
 
-```
+```tsx
 type ExtractPII<Type> = {
  [Property in keyof Type]: Type[Property] extends { pii: true } ? true : false
 }
@@ -817,7 +817,7 @@ type ObjectsNeedingGDPRDeletion = ExtractPII<DBFields>
 
 Они имеют такой же синтаксис, что и шаблонные литералы в `JS`, но используются на позициях типа. При использовании с конкретным литеральным типом, шаблонный литерал возвращает новый строковый литерал посредством объединения содержимого:
 
-```
+```tsx
 type World = 'world'
 
 type Greeting = `hello ${World}`
@@ -826,7 +826,7 @@ type Greeting = `hello ${World}`
 
 Когда тип используется в интерполированной позиции, он является набором каждого возможного строкого литерала, который может быть представлен каждым членом объединения:
 
-```
+```tsx
 type EmailLocaleIDs = 'welcome_email' | 'email_heading'
 type FooterLocaleIDs = 'footer_title' | 'footer_sendoff'
 
@@ -838,7 +838,7 @@ type AllLocaleIDs = `${EmailLocaleIDs | FooterLocaleIDs}_id`
 
 Для каждой интерполированной позиции в шаблонном литерале объединения являются множественными:
 
-```
+```tsx
 type AllLocaleIDs = `${EmailLocaleIDs | FooterLocaleIDs}_id`
 type Lang = 'en' | 'ja' | 'pt'
 
@@ -856,7 +856,7 @@ type LocaleMessageIDs = `${Lang}_${AllLocaleIDs}`
 
 Например, обычной практикой в `JS` является расширение объекта на основе его свойства. Создадим определение типа для функции, добавляющей поддержку для функции `on`, которая позволяет регистрировать изменения значения:
 
-```
+```tsx
 const person = makeWatchedObject({
  firstName: 'John',
  lastName: 'Smith',
@@ -872,7 +872,7 @@ _Обратите внимание_, что `on` регистрирует со
 
 Шаблонные литералы предоставляют способ обработки такой операции внутри системы типов:
 
-```
+```tsx
 type PropEventSource<Type> = {
    on(eventName: `${string & keyof Type}Changed`, callback: (newValue: any) => void): void
 }
@@ -884,7 +884,7 @@ declare function makeWatchedObject<Type>(obj: Type): Type & PropEventSource<Type
 
 При передаче неправильного свойства возникает ошибка:
 
-```
+```tsx
 const person = makeWatchedObject({
  firstName: 'John',
  lastName: 'Smith',
@@ -907,7 +907,7 @@ person.on('frstNameChanged', () => {})
 
 Мы можем переписать последний пример с дженериком таким образом, что типы будут предполагаться на основе частей строки `eventName`:
 
-```
+```tsx
 type PropEventSource<Type> = {
  on<Key extends string & keyof Type>
    // (eventName: `${Key}Changed`, callback: (newValue: Type[Key]) => void ): void
@@ -944,7 +944,7 @@ person.on('ageChanged', newAge => {
 
 - `Uppercase<StringType>` — переводит каждый символ строки в верхний регистр
 
-```
+```tsx
 type Greeting = 'Hello, world'
 type ShoutyGreeting = Uppercase<Greeting>
  // type ShoutyGreeting = 'HELLO, WORLD'
@@ -956,7 +956,7 @@ type MainID = ASCIICacheKey<'my_app'>
 
 - `Lowercase<StringType>` — переводит каждый символ в строке в нижний регистр
 
-```
+```tsx
 type Greeting = 'Hello, world'
 type QuietGreeting = Lowercase<Greeting>
  // type QuietGreeting = 'hello, world'
@@ -968,7 +968,7 @@ type MainID = ASCIICacheKey<'MY_APP'>
 
 - `Capitilize<StringType>` — переводит первый символ строки в верхний регистр
 
-```
+```tsx
 type LowercaseGreeting = 'hello, world'
 type Greeting = Capitalize<LowercaseGreeting>
  // type Greeting = 'Hello, world'
@@ -976,7 +976,7 @@ type Greeting = Capitalize<LowercaseGreeting>
 
 - `Uncapitilize<StringType>` — переводит первый символ строки в нижний регистр
 
-```
+```tsx
 type UppercaseGreeting = 'HELLO WORLD'
 type UncomfortableGreeting = Uncapitalize<UppercaseGreeting>
  // type UncomfortableGreeting = 'hELLO WORLD'
@@ -984,7 +984,7 @@ type UncomfortableGreeting = Uncapitalize<UppercaseGreeting>
 
 Вот как эти типы реализованы:
 
-```
+```tsx
 function applyStringMapping(symbol: Symbol, str: string) {
  switch (intrinsicTypeKinds.get(symbol.escapedName as string)) {
    case IntrinsicTypeKind.Uppercase: return str.toUpperCase()

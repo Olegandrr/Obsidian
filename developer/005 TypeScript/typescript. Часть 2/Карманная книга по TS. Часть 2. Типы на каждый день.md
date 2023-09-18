@@ -4,8 +4,6 @@ tags: #TypeScript #tuple #string #number #boolean #any #unions #aliases #interfa
 
 links: [Карманная книга по TS. Часть 2. Типы на каждый день](https://habr.com/ru/companies/macloud/articles/559976/)
 
-keywords:
-
 _____
 
 ## Примитивы: `string`, `number` и `boolean`
@@ -27,7 +25,7 @@ _Обратите внимание_: `[number]` — это другой тип
 
 `TS` предоставляет специальный тип `any`, который может использоваться для отключения проверки типов:
 
-```
+```tsx
 let obj: any = { x: 0 }
 // Ни одна из строк ниже не приведет к возникновению ошибки на этапе компиляции
 // Использование `any` отключает проверку типов
@@ -51,13 +49,13 @@ const n: number = obj
 
 При объявлении переменной с помощью `const`, `let` или `var` опционально можно определить ее тип:
 
-```
+```tsx
 const myName: string = 'John'
 ```
 
 Однако, в большинстве случаев этого делать не требуется, поскольку `TS` пытается автоматически определить тип переменной на основе типа ее инициализатора, т.е. значения:
 
-```
+```tsx
 // В аннотации типа нет необходимости - `myName` будет иметь тип `string`
 const myName = 'John'
 ```
@@ -70,7 +68,7 @@ const myName = 'John'
 
 При определении функции можно указать, какие типы параметров она принимает:
 
-```
+```tsx
 function greet(name: string) {
  console.log(`Hello, ${name.toUpperCase()}!`)
 }
@@ -78,7 +76,7 @@ function greet(name: string) {
 
 Вот что произойдет при попытке вызвать функцию с неправильным аргументом:
 
-```
+```tsx
 greet(42)
 // Argument of type 'number' is not assignable to parameter of type 'string'. Аргумент типа 'number' не может быть присвоен параметру типа 'string'
 ```
@@ -89,7 +87,7 @@ _Обратите внимание_: количество передаваемы
 
 Также можно аннотировать тип возвращаемого функцией значения:
 
-```
+```tsx
 function getFavouriteNumber(): number {
  return 26
 }
@@ -102,7 +100,7 @@ function getFavouriteNumber(): number {
 Анонимные функции немного отличаются от обычных. Когда функция появляется в месте, где `TS` может определить способ ее вызова, типы параметров такой функции определяются автоматически.
 
 Вот пример:
-```
+```tsx
 // Аннотации типа отсутствуют, но это не мешает `TS` обнаруживать ошибки
 const names = ['Alice', 'Bob', 'John']
 
@@ -125,7 +123,7 @@ names.forEach((s) => {
 
 Объектный тип — это любое значение со свойствами. Для его определения мы просто перечисляем все свойства объекта и их типы. Например, так можно определить функцию, принимающую объект с координатами:
 
-```
+```tsx
 function printCoords(pt: { x: number, y: number }) {
  console.log(`Значение координаты 'x': ${pt.x}`)
  console.log(`Значение координаты 'y': ${pt.y}`)
@@ -140,7 +138,7 @@ printCoords({ x: 3, y: 7 })
 
 Для определения свойства в качестве опционального используется символ `?` после названия свойства:
 
-```
+```tsx
 function printName(obj: { first: string, last?: string }) {
  // ...
 }
@@ -151,7 +149,7 @@ printName({ first: 'Jane', last: 'Air' })
 
 В `JS` при доступе к несуществующему свойству возвращается `undefined`. По этой причине, при чтении опционального свойства необходимо выполнять проверку на `undefined`:
 
-```
+```tsx
 function printName(obj: { first: string, last?: string }) {
  // Ошибка - приложение может сломаться, если аргумент `last` не будет передан в функцию
  console.log(obj.last.toUpperCase()) // Object is possibly 'undefined'. Потенциальным значением объекта является 'undefined'
@@ -176,7 +174,7 @@ _Обратите внимание_: в литературе, посвященн
 
 Реализуем функцию, которая может оперировать строками или числами:
 
-```
+```tsx
 function printId(id: number | string) {
  console.log(`Ваш ID: ${id}`)
 }
@@ -194,7 +192,7 @@ printId({ myID: 22342 })
 
 В случае с объединениями, `TS` позволяет делать только такие вещи, которые являются валидными для каждого члена объединения. Например, если у нас имеется объединение `string | number`, мы не сможем использовать методы, которые доступны только для `string`:
 
-```
+```tsx
 function printId(id: number | string) {
  console.log(id.toUpperCase())
  // Property 'toUpperCase' does not exist on type 'string | number'. Property 'toUpperCase' does not exist on type 'number'.
@@ -203,7 +201,7 @@ function printId(id: number | string) {
 
 Решение данной проблемы заключается в сужении (narrowing) объединения. Например, `TS` знает, что только для `string` оператор `typeof` возвращает `'string'`:
 
-```
+```tsx
 function printId(id: number | string) {
  if (typeof id === 'string') {
    // В этой ветке `id` имеет тип 'string'
@@ -217,7 +215,7 @@ function printId(id: number | string) {
 
 Другой способ заключается в использовании функции, такой как `Array.isArray`:
 
-```
+```tsx
 function welcomePeople(x: string[] | string) {
  if (Array.isArray(x)) {
    // Здесь `x` - это 'string[]'
@@ -231,7 +229,7 @@ function welcomePeople(x: string[] | string) {
 
 В некоторых случаях все члены объединения будут иметь общие методы. Например, и массивы, и строки имеют метод `slice`. Если каждый член объединения имеет общее свойство, необходимость в сужении отсутствует:
 
-```
+```tsx
 function getFirstThree(x: number[] | string ) {
  return x.slice(0, 3)
 }
@@ -241,7 +239,7 @@ function getFirstThree(x: number[] | string ) {
 
 Что если мы хотим использовать один и тот же тип в нескольких местах? Для этого используются синонимы типов:
 
-```
+```tsx
 type Point = {
  x: number
  y: number
@@ -258,13 +256,13 @@ printCoords({ x: 3, y: 7 })
 
 Синонимы можно использовать не только для объектных типов, но и для любых других типов, например, для объединений:
 
-```
+```tsx
 type ID = number | string
 ```
 
 _Обратите внимание_: синонимы — это всего лишь синонимы, мы не можем создавать на их основе другие "версии" типов. Например, такой код может выглядеть неправильным, но `TS` не видит в нем проблем, поскольку оба типа являются синонимами одного и того же типа:
 
-```
+```tsx
 type UserInputSanitizedString = string
 
 function sanitizeInput(str: string): UserInputSanitizedString {
@@ -282,7 +280,7 @@ userInput = 'new input'
 
 Определение интерфейса #interface  — это другой способ определения типа объекта:
 
-```
+```tsx
 interface Point {
  x: number
  y: number
@@ -304,7 +302,7 @@ printCoords({ x: 3, y: 7 })
 
 Пример расширения интерфейса:
 
-```
+```tsx
 interface Animal {
  name: string
 }
@@ -320,7 +318,7 @@ bear.honey
 
 Пример расширения типа с помощью пересечения (intersection):
 
-```
+```tsx
 type Animal {
  name: string
 }
@@ -336,7 +334,7 @@ bear.honey
 
 Пример добавления новых полей в существующий интерфейс:
 
-```
+```tsx
 interface Window {
  title: string
 }
@@ -351,7 +349,7 @@ window.ts.transpileModule(src, {})
 
 Тип не может быть изменен после создания:
 
-```
+```tsx
 type Window = {
  title: string
 }
@@ -370,19 +368,19 @@ _Общее правило_: используйте `interface` до тех п
 
 Например, когда мы используем `document.getElementById`, `TS` знает лишь то, что данный метод возвращает какой-то `HTMLElement`, но мы знаем, например, что будет возвращен `HTMLCanvasElement`. В этой ситуации мы можем использовать утверждение типа для определения более конкретного типа:
 
-```
+```tsx
 const myCanvas = document.getElementById('main_canvas') as HTMLCanvasElement
 ```
 
 Для утверждения типа можно использовать другой синтаксис (е в TSX-файлах):
 
-```
+```tsx
 const myCanvas = <HTMLCanvasElement>document.getElementById('main_canvas')
 ```
 
 `TS` разрешает утверждения более или менее конкретных версий типа. Это означает, что преобразования типов выполнять нельзя:
 
-```
+```tsx
 const x = 'hello' as number
 // Conversion of type 'string' to type 'number' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
 // Преобразование типа 'string' в тип 'number' может быть ошибкой, поскольку эти типы не перекрываются. Если это было сделано намерено, то выражение сначала следует преобразовать в 'unknown'
@@ -390,7 +388,7 @@ const x = 'hello' as number
 
 Иногда это правило может быть слишком консервативным и мешать выполнению более сложных валидных преобразований. В этом случае можно использовать двойное утверждение: сначала привести тип к `any` (или `unknown`), затем к нужному типу:
 
-```
+```tsx
 const a = (expr as any) as T
 ```
 
@@ -400,7 +398,7 @@ const a = (expr as any) as T
 
 Вот как `TS` создает типы для литералов:
 
-```
+```tsx
 let changingString = 'Hello World'
 changingString = 'Olá Mundo'
 // Поскольку `changingString` может представлять любую строку, вот
@@ -417,7 +415,7 @@ constantString
 
 Сами по себе литеральные типы особой ценности не представляют:
 
-```
+```tsx
 let x: 'hello' = 'hello'
 // OK
 x = 'hello'
@@ -428,7 +426,7 @@ x = 'howdy'
 
 Но комбинация литералов с объединениями позволяет создавать более полезные вещи, например, функцию, принимающую только набор известных значений:
 
-```
+```tsx
 function printText(s: string, alignment: 'left' | 'right' | 'center') {
  // ...
 }
@@ -439,7 +437,7 @@ printText("G'day, mate", "centre")
 
 Числовые литеральные типы работают похожим образом:
 
-```
+```tsx
 function compare(a: string, b: string): -1 | 0 | 1 {
  return a === b ? 0 : a > b ? 1 : -1
 }
@@ -447,7 +445,7 @@ function compare(a: string, b: string): -1 | 0 | 1 {
 
 Разумеется, мы можем комбинировать литералы с нелитеральными типами:
 
-```
+```tsx
 interface Options {
  width: number
 }
@@ -464,7 +462,7 @@ configure('automatic')
 
 При инициализации переменной с помощью объекта, `TS` будет исходить из предположения о том, что значения свойств объекта в будущем могут измениться. Например, если мы напишем такой код:
 
-```
+```tsx
 const obj = { counter: 0 }
 if (someCondition) {
  obj.counter = 1
@@ -475,7 +473,7 @@ if (someCondition) {
 
 Тоже самое справедливо и в отношении строк:
 
-```
+```tsx
 const req = { url: 'https://example.com', method: 'GET' }
 handleRequest(req.url, req.method)
 // Argument of type 'string' is not assignable to parameter of type '"GET" | "POST"'.
@@ -486,7 +484,7 @@ handleRequest(req.url, req.method)
 Существует 2 способа решить эту проблему.
 1. Можно утвердить тип на каждой позиции:
 
-```
+```tsx
 // Изменение 1
 const req = { url: 'https://example.com', method: 'GET' as 'GET' }
 // Изменение 2
@@ -495,7 +493,7 @@ handleRequest(req.url, req.method as 'GET')
 
 2. Для преобразования объекта в литерал можно использовать `as const`:
 
-```
+```tsx
 const req = { url: 'https://example.com', method: 'GET' } as const
 handleRequest(req.url, req.method)
 ```
@@ -508,7 +506,7 @@ handleRequest(req.url, req.method)
 
 `TS` предоставляет специальный синтаксис для удаления `null` и `undefined` из типа без необходимости выполнения явной проверки. Указание `!` после выражения означает, что данное выражение не может быть нулевым, т.е. иметь значение `null` или `undefined`:
 
-```
+```tsx
 function liveDangerously(x?: number | undefined) {
  // Ошибки не возникает
  console.log(x!.toFixed())
@@ -525,7 +523,7 @@ function liveDangerously(x?: number | undefined) {
 
 Данный примитив используется для представления очень больших целых чисел `BigInt`:
 
-```
+```tsx
 // Создание `bigint` с помощью функции `BigInt`
 const oneHundred: bigint = BigInt(100)
 
@@ -539,7 +537,7 @@ const anotherHundred: bigint = 100n
 
 Данный примитив используется для создания глобально уникальных ссылок с помощью функции `Symbol()`:
 
-```
+```tsx
 const firstName = Symbol('name')
 const secondName = Symbol('name')
 

@@ -57,8 +57,47 @@ element.innerHTML = `<div class="${buttons.red} ${padding.large}">`;
 
 > *CSS in JS — описание стилей в JavaScript файлах.*
 
-###### Преимущества:
+```jsx
+import React from 'react';
+import styled from 'styled-components';
 
+// Создание стилизованного компонента с помощью Styled-components
+const Wrapper = styled.div`
+  background-color: #f2f2f2;
+  padding: 20px;
+`;
+
+const Title = styled.h1`
+  font-size: 24px;
+  color: #333;
+`;
+
+const Button = styled.button`
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
+const MyComponent = () => {
+  return (
+    <Wrapper>
+      <Title>Hello, Styled-components!</Title>
+      <Button>Click me</Button>
+    </Wrapper>
+  );
+};
+
+export default MyComponent;
+```
+
+Преимущества:
 1. **Никаких больше className.** Возможность передавать классы никуда не пропадает, но их использование опционально и бессмысленно, теперь мы можем прописывать все стили внутри стилизованных компонент, и классы будут генерироваться автоматически.
 2. **Простая динамическая стилизация.** Не нужно больше писать тернарные операторы и жонглировать className внутри компоненты, теперь все эти проблемы решаются благодаря прокидыванию пропсов внутрь стилизованных компонент.
 3. **Теперь это JS.** Так как теперь стили пишутся в экосистеме JavaScript, это упрощает навигацию по проекту и даёт различные возможности написания кода.
@@ -70,7 +109,7 @@ element.innerHTML = `<div class="${buttons.red} ${padding.large}">`;
 
 **Предпочитаю CSS-modules, но имел опыт работы со styled-components**
 
-Подробнее: [Styled Components — идеальная стилизация React-приложения](https://habr.com/ru/articles/591381/) , [[1.3.11 Как подключить CSS|Как подключить CSS? ]] , [linaria](https://github.com/callstack/linaria)
+Подробнее: [Styled Components — идеальная стилизация React-приложения](https://habr.com/ru/articles/591381/) , [[1.3.11 Как подключить CSS|Как подключить CSS? ]] , [linaria](https://github.com/callstack/linaria) , [[069 CSS-modules и styled-components|CSS-modules и styled-components]]
 
 ____
 #React #CSS-modules #styled-components #CSS-in-JS 

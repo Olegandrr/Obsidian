@@ -1,10 +1,4 @@
-____
-
-tags: #TypeScript #tuple #array 
-
-[[005 TypeScript|На главную]]
-
-_____
+### Ответ
 
 Обычно `tuple` представляет собой фиксированного размера массив, состоящий из элементов известного типа. Порядок элементов должен соблюдаться.
 
@@ -16,3 +10,11 @@ const primaryColors: [string, string, string] = [
 ];
 console.log(primaryColors);
 ```
+
+___
+
+tags: #TypeScript #tuple #array 
+
+_____
+
+### [[005 TypeScript|Назад]]

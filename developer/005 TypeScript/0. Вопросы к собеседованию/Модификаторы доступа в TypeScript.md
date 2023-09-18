@@ -1,20 +1,12 @@
-____
-
-tags: #TypeScript #public #private #protected 
-
-[[005 TypeScript|На главную]]
+### Ответ
 
 ![Модификаторы доступа в TypeScript?](https://youtu.be/TOn-1RrowKE?t=749)
-
-keywords:
-
-_____
 
 Модификаторы доступа в TypeScript используются для ограничения доступа к свойствам и методам классов. TypeScript поддерживает три типа модификаторов доступа: `public`, `private` и `protected`.
 
 1.  `public` - модификатор `public` означает, что свойство или метод доступен из любого места в коде, включая внутри класса, из других классов и извне класса.
 
-```
+```jsx
 class Person {
   public name: string;
   public age: number;
@@ -38,7 +30,7 @@ person.sayHello(); // Output: 'Hello, my name is John and I am 30 years old.'
 
 2.  `private` - модификатор `private` означает, что свойство или метод доступен только внутри класса, где оно было объявлено. Свойства и методы с модификатором `private` недоступны извне класса.
 
-```
+```jsx
 class Person {
   private name: string;
   private age: number;
@@ -62,7 +54,7 @@ person.sayHello(); // Output: 'Hello, my name is John and I am 30 years old.'
 
 3.  `protected` - модификатор`protected` означает, что свойство или метод доступен внутри класса и его наследников. Свойства и методы с модификатором `protected` недоступны извне класса и его наследников.
 
-```
+```jsx
 class Person {
   protected name: string;
   protected age: number;
@@ -97,3 +89,10 @@ student.study(); // Output: 'John is studying.'
 ```
 
 В этом примере свойства `name` и `age` имеют модификатор доступа `protected`, что означает, что они могут быть доступны внутри класса и его наследников. В классе `Student` мы можем получить доступ к свойствам `name` и `age`, так как `Student` наследует от класса `Person`. Свойство `studentId` имеет модификатор доступа `private`, что означает, что оно доступно только внутри класса `Student`. Метод `sayHello()` также доступен в классе `Student`, так как `Student` наследует его от класса `Person`. Метод `study()` является методом только класса `Student` и не доступен в классе `Person`.
+
+___
+tags: #TypeScript #public #private #protected 
+
+_____
+
+### [[005 TypeScript|Назад]]

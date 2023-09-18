@@ -1,12 +1,13 @@
-____
-
-tags: #TypeScript #parameters #constructorParameters #returnType #instanceType
-
-[[005 TypeScript|На главную]]
+### Ответ
 
 ![](https://www.youtube.com/watch?v=1ihVXpmOC5c)
 
-keywords:
+
+
+___
+
+tags: #TypeScript #parameters #constructorParameters #returnType #instanceType
 
 _____
 
+### [[005 TypeScript|Назад]]

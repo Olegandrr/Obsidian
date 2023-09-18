@@ -1,10 +1,4 @@
-____
-
-tags: #TypeScript 
-
-[[005 TypeScript|На главную]]
-
-_____
+### Ответ
 
 Вы можете создавать переменные тремя способами: `var`, `let` и `const`.
 
@@ -21,3 +15,11 @@ let num: number = 1;
 ```typescript
 const num: number = 100;
 ```
+
+___
+
+tags: #TypeScript #var #let #const
+
+_____
+
+### [[005 TypeScript|Назад]]

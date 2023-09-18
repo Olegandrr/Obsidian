@@ -12,7 +12,7 @@
 
 Пример использования атрибутов `async` и `defer`:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
