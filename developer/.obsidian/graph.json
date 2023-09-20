@@ -76,6 +76,13 @@
         "a": 1,
         "rgb": 16777215
       }
+    },
+    {
+      "query": "tag:#taskJS  ",
+      "color": {
+        "a": 1,
+        "rgb": 7667712
+      }
     }
   ],
   "collapse-display": true,
@@ -88,6 +95,6 @@
   "repelStrength": 12.4479166666667,
   "linkStrength": 1,
   "linkDistance": 300,
-  "scale": 0.08345923484279946,
+  "scale": 0.0828244850081648,
   "close": true
 }

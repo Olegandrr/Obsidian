@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiTask",
       "SiGit",
       "SiNodedotjs",
       "SiPurescript",
-      "IbInternetBrowser",
-      "SiCss3"
+      "IbInternetBrowser"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -94,5 +94,7 @@
   "0000 Интересные вопросы/006 Node.js.md": "SiNodedotjsWhite",
   "0000 Интересные вопросы/009 Тестирование.md": "SiSpeedtest",
   "0000 Интересные вопросы/007 Скрипты.md": "SiPurescript",
-  "0000 Интересные вопросы/other themes": "IbArchive"
+  "0000 Интересные вопросы/other themes": "IbArchive",
+  "0000 Интересные вопросы/011 Решение задач JS, TS и React.md": "SiTask",
+  "011 Решение задач": "SiTask"
 }

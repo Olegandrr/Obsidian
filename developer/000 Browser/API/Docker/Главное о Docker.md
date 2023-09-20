@@ -1,6 +1,6 @@
 ____
 
-tags: #Docker
+tags: #Docker #devOps
 
 ![](https://www.youtube.com/watch?v=_uZQtRyF6Eg)
 
