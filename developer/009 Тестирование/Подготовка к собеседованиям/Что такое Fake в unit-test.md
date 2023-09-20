@@ -24,7 +24,7 @@ Fake может быть реализован в виде заглушки (ан
 
 Мы можем создать Fake объект `UserRepository`, который будет имитировать работу базы данных. Для этого нам нужно создать класс `FakeUserRepository`, который будет иметь те же методы, что и реальный объект `UserRepository`, но будет возвращать фиктивные данные.
 
-```
+```jsx
 class FakeUserRepository {
   getUsers() {
     return [{ id: 1, name: "John" }, { id: 2, name: "Jane" }];
@@ -39,13 +39,13 @@ class FakeUserRepository {
 
 Затем мы можем создать объект `UserService` и передать ему в качестве зависимости Fake объект `FakeUserRepository`.
 
-```
+```jsx
 const userService = new UserService(new FakeUserRepository());
 ```
 
 Теперь мы можем вызвать метод `getUserNameById` на объекте `userService` и убедиться, что он возвращает правильное имя пользователя, используя данные из Fake объекта `FakeUserRepository`.
 
-```
+```jsx
 const userName = userService.getUserNameById(1);
 assert.equal(userName, "John");
 ```

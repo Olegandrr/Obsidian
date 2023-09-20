@@ -24,7 +24,7 @@ Stub может быть реализован как самостоятельн�
 
 Мы можем создать Stub объект `PaymentService`, который будет имитировать работу реального объекта, но будет возвращать фиктивный результат.
 
-```
+```jsx
 class PaymentServiceStub {
   processPayment(amount) {
     return true;
@@ -34,13 +34,13 @@ class PaymentServiceStub {
 
 Затем мы можем создать объект `OrderService` и передать ему в качестве зависимости Stub объект `PaymentServiceStub`.
 
-```
+```jsx
 const orderService = new OrderService(new PaymentServiceStub());
 ```
 
 Теперь мы можем вызвать метод `orderService.processOrder` и убедиться, что он работает правильно, используя Stub объект `PaymentServiceStub`.
 
-```
+```jsx
 const orderResult = orderService.processOrder({ amount: 100 });
 assert.equal(orderResult, true);
 ```

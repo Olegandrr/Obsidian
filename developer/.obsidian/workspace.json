@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Что такое `Scrum`.md",
+                "file": "0000 Интересные вопросы/other themes/SoftSkills/Что такое `Scrum`.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/Собеседования/0. FrontEnd Developer.md",
+                "file": "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,25 +34,12 @@
             }
           },
           {
-            "id": "fc69bd814b4be563",
+            "id": "3b02e63211fbd9ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/SoftSkills/004 Что такое CICD.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "79d9ae2a20252d10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0000 Интересные вопросы/other themes/Как был устроен `deploy`.md",
+                "file": "005 TypeScript/0. Вопросы к собеседованию/Типы в TypeScript.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -60,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "banco",
+                "query": "aliases",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -126,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/SoftSkills/004 Что такое CICD.md",
+                "file": "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -143,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/SoftSkills/004 Что такое CICD.md",
+                "file": "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -166,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/SoftSkills/004 Что такое CICD.md"
+                "file": "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md"
               }
             }
           },
@@ -193,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 644.5
+    "width": 658.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,35 +193,40 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fc69bd814b4be563",
+  "active": "2b9eca97f11fd816",
   "lastOpenFiles": [
-    "0000 Интересные вопросы/other themes/Как был устроен `deploy`.md",
-    "0000 Интересные вопросы/other themes/SoftSkills/004 Что такое CICD.md",
-    "0000 Интересные вопросы/other themes/Собеседования/0. FrontEnd Developer.md",
-    "0000 Интересные вопросы/other themes/Как обрабатывались инциденты.md",
-    "0000 Интересные вопросы/other themes/Как происходило код-ревью.md",
-    "0000 Интересные вопросы/other themes/202306201732.md",
-    "0000 Интересные вопросы/000 Browser.md",
-    "InBOX/202306211532.md",
-    "Что такое `Scrum`.md",
-    "0000 Интересные вопросы/other themes/Ситуации на работе.md",
-    "011 Решение задач/Task_eventloop - 2.md",
-    "011 Решение задач/Task_eventloop - 1.md",
-    "011 Решение задач/Task_eventloop - 15.md",
-    "011 Решение задач/Task_this - 3_completed !!!.md",
+    "0000 Интересные вопросы/003 JSCore.md",
+    "003 JSCore/Подготовка к собеседованию/165 Что такое прототип (Prototype) объекта.md",
+    "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md",
     "011 Решение задач/Task_this - 2_completed.md",
+    "011 Решение задач/Task_this - 3_completed !!!.md",
     "011 Решение задач/Task_this - 1_completed.md",
-    "011 Решение задач/Task_eventloop - 13.md",
-    "011 Решение задач/Task_array - bancomat()_completed.md",
-    "011 Решение задач/Task_array - foo2()_completed.md",
-    "011 Решение задач/Task_array - foo().md",
-    "0000 Интересные вопросы/006 Node.js.md",
-    "0000 Интересные вопросы/007 Скрипты.md",
-    "0000 Интересные вопросы/004 React + Redux.md",
-    "0000 Интересные вопросы/other themes/Собеседования/Собеседования в Компании/Сбербанк (2).md",
-    "0000 Интересные вопросы/other themes/SoftSkills/001 Что такое SDLC.md",
-    "0000 Интересные вопросы/other themes/Собеседования/Собеседования в Компании/Технология доверия.md",
-    "Pasted image 20230919161122.png",
+    "005 TypeScript/Собеседование по TypeScript. 42 Вопроса и ответа/4. Продвинутые знания TypeScript/Что делает тип Omit.md",
+    "005 TypeScript/Шпаргалка по TypeScript.pdf",
+    "005 TypeScript/mso63E1.tmp",
+    "005 TypeScript/mso61DC.tmp",
+    "0000 Интересные вопросы/005 TypeScript.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Утилиты - Pick, Extract, Exclude и Omit.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Утилиты - Partial, Required, NonNullable, Record, Readonly и ReadonlyArray.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Утилиты - Parameters, ConstructorParameters, ReturnType и InstanceType.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Generics, Index Access Types, Keyof на простом примере.md",
+    "005 TypeScript/0. Вопросы к собеседованию/Что такое общие типы (`generic`) в TypeScript.md",
+    "005 TypeScript/0. Вопросы к собеседованию/Разница между типом (`type`) и интерфейсом (`interface`).md",
+    "005 TypeScript/Собеседование по TypeScript. 42 Вопроса и ответа/1. Основы/Что такое (`interface`) в TypeScript.md",
+    "005 TypeScript/0. Вопросы к собеседованию/Поддерживает ли TypeScript перегрузку функций.md",
+    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Union и TypeGuards, пользовательские проверки типов.md",
+    "005 TypeScript/0. Вопросы к собеседованию/Что такое перечисление (`enum`).md",
+    "005 TypeScript/0. Вопросы к собеседованию/Конструкции в TypeScript.md",
+    "005 TypeScript/typescript. Часть 1/1. Внутреннее устройство typescript/Явная и неявная типизация, указание типов.md",
+    "005 TypeScript/0. Вопросы к собеседованию/Разница между типами “Объединение” и “Пересечение”.md",
+    "005 TypeScript/0. Вопросы к собеседованию/Разница между типами `void`, `never` и `unknown`.md",
+    "0000 Интересные вопросы/other themes/Собеседования/Собеседования в Компании/Тензор.md",
+    "005 TypeScript/0. Вопросы к собеседованию/Типы в TypeScript.md",
+    "005 TypeScript/Собеседование по TypeScript. 42 Вопроса и ответа/5. Дополнительные вопросы по знанию языка/В чем разница между tuple и массивом в TypeScript.md",
+    "005 TypeScript/Собеседование по TypeScript. 42 Вопроса и ответа/5. Дополнительные вопросы по знанию языка/Что такое пространство имен и как его использовать.md",
+    "img/Pasted image 20230920144342.png",
+    "img/Pasted image 20230920141938.png",
+    "img/Pasted image 20230919161122.png",
     "img/Pasted image 20230919132158.png",
     "img/Pasted image 20230919151636.png",
     "img/Pasted image 20230919151618.png",
@@ -242,8 +234,6 @@
     "img/Pasted image 20230919150801.png",
     "img/Pasted image 20230919144201.png",
     "img/Pasted image 20230919144035.png",
-    "img/Pasted image 20230919135520.png",
-    "img/Pasted image 20230919133852.png",
     "011 Решение задач/index.html",
     "011 Решение задач",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
@@ -253,9 +243,6 @@
     "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110233-2GIJL36.md.tmp",
     "0. Подготовка к собеседованию/other themes/Собеседования/Собеседования в Компании/~syncthing~Технология доверия.sync-conflict-20230915-112139-2GIJL36.md.tmp",
     "0000 Интересные вопросы/other themes/Без названия.canvas",
-    "006 Node.js/~syncthing~001 Что такое Node.js.md.tmp",
-    "006 Node.js/~syncthing~002 Разница между Node.js и JavaScript.md.tmp",
-    "0000 Интересные вопросы/other themes/Собеседования/Собеседования в Компании",
     "003 JSCore/Без названия.canvas",
     "000 Browser/Шпаргалка (Как работает интернет).canvas",
     "Без названия 1.canvas",
