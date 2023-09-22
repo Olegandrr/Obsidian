@@ -4,50 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "4956c695e0ff0720",
+        "id": "75a0478b013e0ca5",
         "type": "tabs",
         "children": [
           {
-            "id": "d3ea7b81a6313b94",
+            "id": "c191de136cfba7fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/SoftSkills/Что такое `Scrum`.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b0c71b3548cae9bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3b02e63211fbd9ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "005 TypeScript/0. Вопросы к собеседованию/Типы в TypeScript.md",
+                "file": "003 JSCore/Подготовка к собеседованию/068 Что происходит, когда пользователь вводит адрес сайта в адресную строку.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -76,12 +49,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "aliases",
+                "query": "repaint",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": true,
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabeticalReverse"
               }
             }
           },
@@ -113,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md",
+                "file": "003 JSCore/Подготовка к собеседованию/068 Что происходит, когда пользователь вводит адрес сайта в адресную строку.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -130,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md",
+                "file": "003 JSCore/Подготовка к собеседованию/068 Что происходит, когда пользователь вводит адрес сайта в адресную строку.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -153,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md"
+                "file": "003 JSCore/Подготовка к собеседованию/068 Что происходит, когда пользователь вводит адрес сайта в адресную строку.md"
               }
             }
           },
@@ -180,7 +153,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 658.5
+    "width": 674.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,37 +166,41 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2b9eca97f11fd816",
+  "active": "c191de136cfba7fd",
   "lastOpenFiles": [
-    "0000 Интересные вопросы/003 JSCore.md",
-    "003 JSCore/Подготовка к собеседованию/165 Что такое прототип (Prototype) объекта.md",
-    "003 JSCore/Подготовка к собеседованию/Что такое __proto__.md",
-    "011 Решение задач/Task_this - 2_completed.md",
-    "011 Решение задач/Task_this - 3_completed !!!.md",
-    "011 Решение задач/Task_this - 1_completed.md",
-    "005 TypeScript/Собеседование по TypeScript. 42 Вопроса и ответа/4. Продвинутые знания TypeScript/Что делает тип Omit.md",
+    "0000 Интересные вопросы/000 Browser.md",
+    "0000 Интересные вопросы/001 HTML.md",
+    "001 HTML/0. Подготовка к собеседованиям/096 Что такое кроссбраузерность.md",
+    "001 HTML/0. Подготовка к собеседованиям/001 Что такое HTML и для чего он используется.md",
+    "003 JSCore/Подготовка к собеседованию/068 Что происходит, когда пользователь вводит адрес сайта в адресную строку.md",
+    "000 Browser/Микрофронтенд.md",
+    "000 Browser/Подготовка к собеседованию/119 Что такое History API в браузере.md",
+    "000 Browser/Подготовка к собеседованию/118 Что такое feature inference (предположение возможностей) и анализ строки user-agent.md",
+    "000 Browser/Подготовка к собеседованию/117 Что такое feature detection.md",
+    "000 Browser/Подготовка к собеседованию/116 Расскажите о метриках Core Web Vitals.md",
+    "000 Browser/Подготовка к собеседованию/115 Что такое Core Web Vitals. Какие основные метрики туда входят.md",
+    "000 Browser/Подготовка к собеседованию/114 Какие инструменты используются для оптимизации производительности веб-приложений.md",
+    "000 Browser/Подготовка к собеседованию/113 Способы уменьшения времени загрузки веб-страницы.md",
+    "000 Browser/Подготовка к собеседованию/112 Назовите три способа уменьшения времени загрузки страницы (воспринимаемого или реального).md",
+    "000 Browser/Подготовка к собеседованию/111 Каково преимущество в подгрузке внешних ресурсов с нескольких доменов.md",
+    "000 Browser/Подготовка к собеседованию/110 Как можно оптимизировать загрузку внешних ресурсов на странице.md",
+    "000 Browser/Подготовка к собеседованию/109 Почему очищать кэш важно. Как это можно сделать.md",
+    "000 Browser/Подготовка к собеседованию/108 Как работает механизм кэширования в веб-браузере.md",
+    "000 Browser/Подготовка к собеседованию/107 Что такое CDN.md",
+    "000 Browser/Подготовка к собеседованию/106 Разница между `preload`, `prefetch`, `preconnect` и `prerender`.md",
+    "000 Browser/Подготовка к собеседованию/105 Что такое Flash Of Unstyled Content (FOUC). Как его избежать.md",
+    "000 Browser/Подготовка к собеседованию/104 Что такое Lazy Loading и как оно может помочь при оптимизации производительности.md",
+    "000 Browser/Подготовка к собеседованию/103 Для чего нужен паттерн PRPL.md",
+    "000 Browser/Подготовка к собеседованию/102 Что такое критический путь рендеринга веб-страниц.md",
+    "002 CSS/Подготовка к собеседованиям/101 Что такое Reflow и Repaint. Какие есть подводные камни в оптимизации производительности.md",
+    "000 Browser/Подготовка к собеседованию/101 Разница между layout, painting и compositing.md",
+    "000 Browser/Шпаргалка (Как работает интернет).canvas",
+    "Pasted image 20230921225433.png",
+    "011 Решение задач/React",
+    "011 Решение задач/JavaScript",
     "005 TypeScript/Шпаргалка по TypeScript.pdf",
     "005 TypeScript/mso63E1.tmp",
     "005 TypeScript/mso61DC.tmp",
-    "0000 Интересные вопросы/005 TypeScript.md",
-    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Утилиты - Pick, Extract, Exclude и Omit.md",
-    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Утилиты - Partial, Required, NonNullable, Record, Readonly и ReadonlyArray.md",
-    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Утилиты - Parameters, ConstructorParameters, ReturnType и InstanceType.md",
-    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Generics, Index Access Types, Keyof на простом примере.md",
-    "005 TypeScript/0. Вопросы к собеседованию/Что такое общие типы (`generic`) в TypeScript.md",
-    "005 TypeScript/0. Вопросы к собеседованию/Разница между типом (`type`) и интерфейсом (`interface`).md",
-    "005 TypeScript/Собеседование по TypeScript. 42 Вопроса и ответа/1. Основы/Что такое (`interface`) в TypeScript.md",
-    "005 TypeScript/0. Вопросы к собеседованию/Поддерживает ли TypeScript перегрузку функций.md",
-    "005 TypeScript/typescript. Часть 1/2.2 Использование своих типов данных/Union и TypeGuards, пользовательские проверки типов.md",
-    "005 TypeScript/0. Вопросы к собеседованию/Что такое перечисление (`enum`).md",
-    "005 TypeScript/0. Вопросы к собеседованию/Конструкции в TypeScript.md",
-    "005 TypeScript/typescript. Часть 1/1. Внутреннее устройство typescript/Явная и неявная типизация, указание типов.md",
-    "005 TypeScript/0. Вопросы к собеседованию/Разница между типами “Объединение” и “Пересечение”.md",
-    "005 TypeScript/0. Вопросы к собеседованию/Разница между типами `void`, `never` и `unknown`.md",
-    "0000 Интересные вопросы/other themes/Собеседования/Собеседования в Компании/Тензор.md",
-    "005 TypeScript/0. Вопросы к собеседованию/Типы в TypeScript.md",
-    "005 TypeScript/Собеседование по TypeScript. 42 Вопроса и ответа/5. Дополнительные вопросы по знанию языка/В чем разница между tuple и массивом в TypeScript.md",
-    "005 TypeScript/Собеседование по TypeScript. 42 Вопроса и ответа/5. Дополнительные вопросы по знанию языка/Что такое пространство имен и как его использовать.md",
     "img/Pasted image 20230920144342.png",
     "img/Pasted image 20230920141938.png",
     "img/Pasted image 20230919161122.png",
@@ -233,18 +210,14 @@
     "img/Pasted image 20230919151301.png",
     "img/Pasted image 20230919150801.png",
     "img/Pasted image 20230919144201.png",
-    "img/Pasted image 20230919144035.png",
     "011 Решение задач/index.html",
     "011 Решение задач",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
     "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110644-2GIJL36.md.tmp",
     "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110533-2GIJL36.md.tmp",
     "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110323-2GIJL36.md.tmp",
-    "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110233-2GIJL36.md.tmp",
-    "0. Подготовка к собеседованию/other themes/Собеседования/Собеседования в Компании/~syncthing~Технология доверия.sync-conflict-20230915-112139-2GIJL36.md.tmp",
     "0000 Интересные вопросы/other themes/Без названия.canvas",
     "003 JSCore/Без названия.canvas",
-    "000 Browser/Шпаргалка (Как работает интернет).canvas",
     "Без названия 1.canvas",
     "0.4 Вопросы к ревью React/Преимущества и недостатки HOC.canvas",
     "Без названия (2).canvas",

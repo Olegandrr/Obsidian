@@ -15,7 +15,7 @@ _____
 
 ![[Pasted image 20221201162812.png]]
 
-~~~
+~~~html
 <!DOCTYPE html>
 
 <html>

@@ -54,12 +54,13 @@ _____
 ## Доступ как к обычному объекту
 
 Также можно получать/записывать данные, как в обычный объект:
-~~~
-`// установить значение для ключа 
+~~~js
+// установить значение для ключа 
 localStorage.test = 2;  // получить значение по ключу 
 alert( localStorage.test ); // 2  
 delete localStorage.test;` // удалить ключ 
 ~~~
+
 Это возможно по историческим причинам и, как правило, работает, но обычно не рекомендуется, потому что:
 
 1.  Если ключ генерируется пользователем, то он может быть каким угодно, включая `length` или `toString` или другой встроенный метод `localStorage`. В этом случае `getItem/setItem` сработают нормально, а вот чтение/запись как свойства объекта не пройдут:
@@ -76,34 +77,38 @@ delete localStorage.test;` // удалить ключ
 К сожалению, объекты веб-хранилища нельзя перебрать в цикле, они не итерируемы.
 
 Но можно пройти по ним, как по обычным массивам:
-~~~
-``for(let i=0; i<localStorage.length; i++) {   
+~~~js
+for(let i=0; i<localStorage.length; i++) {   
 	let key = localStorage.key(i);   
 	alert(`${key}: 
 	${localStorage.getItem(key)}`); }``
 ~~~
+
 Другой способ – использовать цикл, как по обычному объекту `for key in localStorage`.
 
 Здесь перебираются ключи, но вместе с этим выводятся несколько встроенных полей, которые нам не нужны:
-~~~
-`// bad try for(let key in localStorage) {   
+~~~js
+// bad try for(let key in localStorage) {   
 	alert(key); // покажет getItem, setItem и другие встроенные свойства }`
 ~~~
+
 …Поэтому нам нужно либо отфильтровать поля из прототипа проверкой `hasOwnProperty`:
-~~~
-``for(let key in localStorage) {   
+~~~js
+for(let key in localStorage) {   
 	if (!localStorage.hasOwnProperty(key)) {     
 		continue; // пропустит такие ключи, как "setItem", "getItem" и так далее   }   
 		alert(`${key}: 
 		${localStorage.getItem(key)}`); }``
 ~~~
+
 …Либо просто получить «собственные» ключи с помощью Object.keys, а затем при необходимости вывести их при помощи цикла:
-~~~
+~~~js
 let keys = Object.keys(localStorage); 
 for(let key of keys) {   
 	alert(`${key}: 
 	${localStorage.getItem(key)}`); }``
 ~~~
+
 Последнее работает, потому что `Object.keys` возвращает только ключи, принадлежащие объекту, игнорируя прототип.
 
 ## Только строки
@@ -111,19 +116,21 @@ for(let key of keys) {
 Обратите внимание, что ключ и значение должны быть строками.
 
 Если мы используем любой другой тип, например число или объект, то он автоматически преобразуется в строку:
-~~~
+~~~js
 localStorage.user = {name: "John"}; 
 alert(localStorage.user); // [object Object]`
 ~~~
+
 Мы можем использовать `JSON` для хранения объектов:
-~~~
+~~~js
 localStorage.user = JSON.stringify({name: "John"});  // немного позже 
 let user = JSON.parse( localStorage.user ); 
 alert( user.name ); // John`
 ~~~
+
 Также возможно привести к строке весь объект хранилища, например для отладки:
-~~~
-`// для JSON.stringify добавлены параметры форматирования, чтобы объект выглядел лучше 
+~~~js
+// для JSON.stringify добавлены параметры форматирования, чтобы объект выглядел лучше 
 alert( JSON.stringify(localStorage, null, 2) );`
 ~~~
 ## sessionStorage
@@ -170,8 +177,8 @@ alert( JSON.stringify(localStorage, null, 2) );`
 Вы можете открыть эту страницу в двух окнах браузера, чтобы проверить приведённый ниже код.
 
 Теперь, если оба окна слушают `window.onstorage`, то каждое из них будет реагировать на обновления, произошедшие в другом окне.
-~~~
-`// срабатывает при обновлениях, сделанных в том же хранилище из других документов 
+~~~js
+// срабатывает при обновлениях, сделанных в том же хранилище из других документов 
 
 window.onstorage = event => { // можно также использовать 
 window.addEventListener('storage', event => {   
@@ -179,6 +186,7 @@ window.addEventListener('storage', event => {
 		return;   
 		alert(event.key + ':' + event.newValue + " at " + event.url); };  localStorage.setItem('now', Date.now());`
 ~~~
+
 Обратите внимание, что событие также содержит: `event.url` – url-адрес документа, в котором данные обновились.
 
 Также `event.storageArea` содержит объект хранилища – событие одно и то же для `sessionStorage` и `localStorage`, поэтому `event.storageArea` ссылается на то хранилище, которое было изменено. Мы можем захотеть что-то записать в ответ на изменения.

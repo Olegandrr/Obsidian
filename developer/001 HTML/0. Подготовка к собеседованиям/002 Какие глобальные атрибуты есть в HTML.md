@@ -20,7 +20,7 @@
 
 Пример использования глобальных атрибутов:
 
-```
+```html
 <div class="my-class" id="my-id" style="color: red;" title="Это мой элемент">
   Это мой элемент
 </div>
@@ -43,7 +43,7 @@
 В этом примере HTML-кода мы использовали различные глобальные атрибуты, такие как `class`, `id`, `style`, `title`, `lang`, `accesskey`, `tabindex`, `contenteditable` и `hidden`. Эти атрибуты могут быть использованы с любым элементом HTML на странице для управления их поведением и отображением.
 
 ___
-#HTML #HTML-атрибут 
+#HTML #HTML-атрибут #class #id #style #title #lang #dir #accesskey #tabindex #hidden
 
 ___
 

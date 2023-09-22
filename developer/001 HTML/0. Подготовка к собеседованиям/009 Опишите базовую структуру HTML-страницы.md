@@ -14,7 +14,7 @@
 
 Пример базовой структуры HTML-страницы:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>

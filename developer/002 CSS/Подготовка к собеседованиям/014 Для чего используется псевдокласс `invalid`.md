@@ -12,7 +12,7 @@
 
 Пример использования псевдокласса `:invalid`:
 
-```
+```css
 input:invalid {
   border: 2px solid red;
 }

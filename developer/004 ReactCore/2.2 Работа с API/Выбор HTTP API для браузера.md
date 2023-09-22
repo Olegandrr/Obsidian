@@ -1,6 +1,6 @@
 ____
 
-tags: #
+tags: #react #api #browser #fetch #axios #XMLHttpRequest 
 
 links: [[]]
 
