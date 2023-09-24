@@ -10,7 +10,7 @@
 
 Пример использования тега `label` и связывания его с элементом управления формы:
 
-```
+```html
 <label for="username">Имя пользователя:</label>
 <input type="text" id="username" name="username">
 ```

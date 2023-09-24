@@ -37,7 +37,7 @@ if ('serviceWorker' in navigator) {
 
 В данном примере мы регистрируем Service Worker в браузере при помощи метода `register()` из объекта `navigator.serviceWorker`. Если регистрация прошла успешно, то в консоли будет выведено сообщение "ServiceWorker registered". Если регистрация не удалась, то будет выведено сообщение "ServiceWorker registration failed".
 
-Подробнее: [[registerServiceWorker()]]
+Подробнее: [[registerServiceWorker()]] , [Service Workers. Инструкция по применению](https://habr.com/ru/companies/2gis/articles/345552/)
 
 ____
 #React #registerServiceWorker #serviceWorker #navigator 

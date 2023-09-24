@@ -1,6 +1,6 @@
 ____
 
-tags: #JavaScript #Jest #Jest-preview
+tags: #JavaScript #Jest #Jest-preview #testing
 
 links: [Jest](https://jestjs.io/ru/docs/getting-started)
 
@@ -11,7 +11,7 @@ keywords:
 #Jest - это среда для тестирования JavaScript.
 Для установки Jest в проект необходимо ввести команду в консоль:
 
-```
+```bash
 npm install --save-dev jest
 
 yarn add --dev jest
@@ -19,7 +19,7 @@ yarn add --dev jest
 
 После установки необходимо обновить секцию scripts вашего package.json:
 
-```
+```json
 “scripts” : {
      “test”: “jest”
 }
@@ -27,7 +27,7 @@ yarn add --dev jest
 
 С этого момента мы уже можем запустить наши тесты.
 Инициализируем Jest в корне проекта
-~~~
+~~~bash
 cd app
 jest --init
 ~~~
@@ -51,19 +51,19 @@ _____
 
 Для установки Jest в ваш проект выполните:  
 
-```
+```bash
 npm install --save-dev jest
 ```
 
 Если вы используете yarn:  
 
-```
+```bash
 yarn add --dev jest
 ```
 
 После установки можете обновить секцию scripts вашего package.json:  
   
-```
+```json
 “scripts” : {
      “test”: “jest”
 }
@@ -73,13 +73,13 @@ yarn add --dev jest
   
 Также можно установить глобально (но так делать я бы не рекомендовал, так как по мне глобальная установка модулей является плохой практикой):  
   
-```
+```bash
 npm install jest --global
 ```
 
 И соответственно для yarn:  
 
-```
+```bash
 yarn global add jest
 ```
 
@@ -91,7 +91,7 @@ yarn global add jest
 
 Давайте создадим файл first.test.js и напишем наш первый тест:  
   
-```
+```tsx
 //first.test.js
 test('My first test', () => {
     expect(Math.max(1, 5, 10)).toBe(10);
@@ -100,7 +100,7 @@ test('My first test', () => {
 
 И запустим наши тесты с помощью npm run test или непосредственно командой jest (если он установлен глобально). После запуска мы увидим отчет о прохождении тестов.  
   
-```
+```bash
  <b>PASS</b>  ./first.test.js
   ✓ My first test (1 ms)
 
@@ -112,7 +112,7 @@ Time:        0.618 s, estimated 1 s
 
 Давайте «сломаем» наш тест и запустим jest повторно:  
   
-```
+```tsx
 //first.test.js
 test('My first test', () => {
     expect(Math.max(1, 5, 10)).toBe(5);
@@ -138,7 +138,7 @@ test('My first test', () => {
 - **toBe()** — подходит, если нам надо сравнивать примитивные значения или является ли переданное значение ссылкой на тот же объект, что указан как ожидаемое значение. Сравниваются значения при помощи _Object.is()_. В отличие от === это дает возможность отличать 0 от -0, проверить равенство NaN c NaN.
 - **toEqual()** — подойдёт, если нам необходимо сравнить структуру более сложных типов. Он сравнит все поля переданного объекта с ожидаемым. Проверит каждый элемент массива. И сделает это рекурсивно по всей вложенности.  
       
-    ```
+    ```tsx
     test('toEqual with objects', () => {
         expect({ foo: 'foo', subObject: { baz: 'baz' } })
             .toEqual({ foo: 'foo', subObject: { baz: 'baz' } });  // Ок
@@ -154,7 +154,7 @@ test('My first test', () => {
     
 - **toContain()** — проверят содержит массив или итерируемый объект значение. Для сравнения используется оператор ===.  
       
-    ```
+    ```tsx
     const arr = ['apple', 'orange', 'banana'];
     expect(arr).toContain('banana');
     expect(new Set(arr)).toContain('banana');
@@ -163,13 +163,13 @@ test('My first test', () => {
     
 - **toContainEqual()** — проверяет или содержит массив элемент с ожидаемой структурой.  
     
-    ```
+    ```tsx
     expect([{a: 1}, {b: 2}]).toContainEqual({a: 1});
     ```
     
 - **toHaveLength()** — проверяет или свойство length у объекта соответствует ожидаемому.  
       
-    ```
+    ```tsx
     expect([1, 2, 3, 4]).toHaveLength(4);
     expect('foo').toHaveLength(3);
     expect({ length: 1 }).toHaveLength(1);
@@ -184,7 +184,7 @@ test('My first test', () => {
 - **toBeLessThan()** и **toBeLessThanOrEqual()** — противоположность _toBeGreaterThan()_ и _toBeGreaterThanOrEqual()_
 - **toBeCloseTo()** — удобно использовать для чисел с плавающей запятой, когда вам не важна точность и вы не хотите, чтобы тест зависел от незначительной разницы в дроби. Вторым аргументом можно передать до какого знака после запятой необходима точность при сравнении.  
       
-    ```
+    ```tsx
     const num = 0.1 + 0.2; // 0.30000000000000004
     expect(num).toBeCloseTo(0.3);
     expect(Math.PI).toBeCloseTo(3.14, 2);
@@ -192,13 +192,13 @@ test('My first test', () => {
     
 - **toMatch()** — проверяет соответствие строки регулярному выражению.  
     
-    ```
+    ```tsx
     expect('Banana').toMatch(/Ba/);
     ```
     
 - **toThrow()** — используется в случаях, когда надо проверить исключение. Можно проверить как сам факт ошибки, так и проверить на выброс исключения определенного класса, либо по сообщению ошибки, либо по соответствию сообщения регулярному выражению.  
       
-    ```
+    ```tsx
     function funcWithError() {
         throw new Error('some error');
     }   
@@ -210,7 +210,7 @@ test('My first test', () => {
     
 - **not** — это свойство позволяет сделать проверки на НЕравенство. Оно предоставляет объект, который имеет все методы перечисленные выше, но работать они будут наоборот.  
     
-    ```
+    ```tsx
     expect(true).not.toBe(false);
     expect({ foo: 'bar' }).not.toEqual({});
     
@@ -226,7 +226,7 @@ test('My first test', () => {
 
 Для начала создадим простой модуль, который будет содержать несколько методов для работы с окружностями.  
   
-```
+```tsx
 // src/circle.js
 const area = (radius) => Math.PI * radius ** 2;
 const circumference = (radius) => 2 * Math.PI * radius;
@@ -235,7 +235,7 @@ module.exports = { area, circumference };
 
 Далее добавим тесты:  
   
-```
+```tsx
 // tests/circle.test.js
 const circle = require('../src/circle');
 
@@ -256,7 +256,7 @@ test('Circumference', () => {
 
 Разберём ещё один пример. Создадим функцию, которая будет фильтровать массив продуктов по цене:  
 
-```
+```tsx
 // src/productFilter.js
 const byPriceRange = (products, min, max) =>
          products.filter(item => item.price >= min && item.price <= max);
@@ -265,7 +265,7 @@ module.exports = { byPriceRange };
 
 И добавим тест:  
   
-```
+```tsx
 // tests/product.test.js
 const productFilter = require('../src/producFilter');
 

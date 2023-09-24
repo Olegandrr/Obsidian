@@ -16,13 +16,13 @@
 
 Например, следующий код открывает в новом окне страницу `http://example.com/` при щелчке на ссылке:
 
-```
+```html
 <a href="http://example.com/" target="_blank">Go to Example.com</a>
 ```
 
 А этот код открывает страницу `http://example.com/` во фрейме с именем `myframe`:
 
-```
+```html
 <a href="http://example.com/" target="myframe">Go to Example.com</a>
 ```
 

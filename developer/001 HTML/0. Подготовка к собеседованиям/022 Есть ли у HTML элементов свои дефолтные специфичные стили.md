@@ -18,7 +18,7 @@
 Для их сброса используется Reset CSS , либо Normalize.css
 
 ___
-#HTML
+#HTML #reset #normalize 
 
 ___
 

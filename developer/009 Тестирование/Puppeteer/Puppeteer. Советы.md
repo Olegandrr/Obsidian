@@ -1,8 +1,6 @@
 ____
 
-tags: #pupperteer
-
-keywords:
+tags: #pupperteer #testing
 
 _____
 

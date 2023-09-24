@@ -1,13 +1,6 @@
 ____
 
-tags: #TDD 
-
-links: 
-
-youtube: 
-1. 
-
-keywords:
+tags: #TDD #testing 
 
 _____
 
@@ -75,7 +68,7 @@ _Вот как я выгляжу, когда программирую_
   
 Если бы я писал ту программу сегодня, я бы начал работу над ней примерно так:  
   
-```
+```tsx
 describe('clipReducer/setClipStopTime', async assert => {
   const stopTime = 5;
   const clipState = {
@@ -93,7 +86,7 @@ describe('clipReducer/setClipStopTime', async assert => {
 
 Возникает ощущение, что тут куда больше кода, чем в этой строчке:  
 
-```
+```tsx
 clip.stopTime = video.currentTime
 ```
 

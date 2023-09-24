@@ -1,6 +1,6 @@
 ____
 
-tags: #testing #vitest #react-testing-library 
+tags: #testing #vitest #react-testing-library #testing
 
 links: [[Обзор ViteJS]] , [Github- репозиторий с базовой настройкой Vitest](https://github.com/GizmoDevDev/vitest-tescting/blob/main/docs/basic-knowledge.md)
 [Используем react-testing-library вместе с Vitest](https://markus.oberlehner.net/blog/using-testing-library-jest-dom-with-vitest/), [React-testing-library with Vitest](https://www.robinwieruch.de/vitest-react-testing-library/)

@@ -1,10 +1,8 @@
 ____
 
-tags: #Jest #Babel #introscope #unit-test
+tags: #Jest #Babel #introscope #unit-test #testing
 
 links: [Introscope](https://github.com/peter-leonov/introscope)
-
-keywords:
 
 _____
 
