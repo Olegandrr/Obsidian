@@ -4,8 +4,6 @@ tags: #CDN #CDN-сервис #CDN-provider
 
 links: [Что такое CDN и как это работает?](https://habr.com/ru/companies/selectel/articles/463915/)
 
-keywords:
-
 _____
 
 ## Цифры и факты (вместо введения)

@@ -57,13 +57,6 @@
       }
     },
     {
-      "query": "path:\"007 Скрипты\"",
-      "color": {
-        "a": 1,
-        "rgb": 16777215
-      }
-    },
-    {
       "query": "path:\"008 Настройка окружения\"",
       "color": {
         "a": 1,
@@ -78,30 +71,51 @@
       }
     },
     {
-      "query": "tag:#taskJS  ",
-      "color": {
-        "a": 1,
-        "rgb": 7667712
-      }
-    },
-    {
       "query": "path:\"007 Скрипты/Git. Контроль версий и управление версионностью\"  ",
       "color": {
         "a": 1,
         "rgb": 15758643
       }
+    },
+    {
+      "query": "path:\"010 Архитектура Веб-приложений\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 1058114
+      }
+    },
+    {
+      "query": "tag:#hh  ",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:\"0000 Интересные вопросы/other themes/Собеседования/0. Моё собеседование\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 0
+      }
+    },
+    {
+      "query": "path:\"011 Решение задач\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 7667712
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": true,
-  "textFadeMultiplier": -1,
-  "nodeSizeMultiplier": 0.852864583333333,
-  "lineSizeMultiplier": 0.59765625,
+  "textFadeMultiplier": -1.5,
+  "nodeSizeMultiplier": 0.622420055551599,
+  "lineSizeMultiplier": 0.265066590698668,
   "collapse-forces": true,
-  "centerStrength": 0.596354166666667,
-  "repelStrength": 12.4479166666667,
+  "centerStrength": 0.649027847019443,
+  "repelStrength": 14.0744961185101,
   "linkStrength": 1,
-  "linkDistance": 300,
-  "scale": 0.09305636913733303,
-  "close": true
+  "linkDistance": 202,
+  "scale": 0.5618836579293611,
+  "close": false
 }

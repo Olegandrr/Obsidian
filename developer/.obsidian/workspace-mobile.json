@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 Контроль версий и deploy проекта/Автоматически генерировать и публиковать журнал изменений с помощью Node.js.md",
+                "file": "011 Решение задач/JavaScript/Task_object - optionalChaining_completed.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "010 Контроль версий и deploy проекта/Автоматически генерировать и публиковать журнал изменений с помощью Node.js.md",
+            "file": "011 Решение задач/JavaScript/Task_object - optionalChaining_completed.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "010 Контроль версий и deploy проекта/Автоматически генерировать и публиковать журнал изменений с помощью Node.js.md",
+            "file": "011 Решение задач/JavaScript/Task_object - optionalChaining_completed.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "010 Контроль версий и deploy проекта/Автоматически генерировать и публиковать журнал изменений с помощью Node.js.md"
+            "file": "011 Решение задач/JavaScript/Task_object - optionalChaining_completed.md"
           }
         }
       },
@@ -143,7 +143,19 @@
   },
   "active": "912ece23fa04cc2a",
   "lastOpenFiles": [
+    "011 Решение задач/JavaScript/Task_regExp - isBalanced()_completed.md",
+    "003 JSCore/Подготовка к собеседованию/211 Promise.all, Promise.allSettled, Promise.any, Promise.race.md",
+    "0000 Интересные вопросы/003 JSCore.md",
+    "011 Решение задач/JavaScript/Task_anagram - allAnagrams()_competed.md",
+    "011 Решение задач/JavaScript/KATA_TASK.md",
+    "011 Решение задач/JavaScript/Task_others - foo().md",
+    "011 Решение задач/JavaScript/Task_array - phoneNum().md",
+    "011 Решение задач/JavaScript/Task_array - sortArr().md",
+    "011 Решение задач/JavaScript/Task_array - sort().md",
+    "011 Решение задач/JavaScript/Task_currying - add()_completed.md",
+    "0000 Интересные вопросы/009 Тестирование.md",
     "0000 Интересные вопросы/007 Скрипты.md",
+    "007 Скрипты/Git. Контроль версий и управление версионностью/001 Git. Инструмент управления версиями.md",
     "010 Контроль версий и deploy проекта/Gitlab/Git Rebase.md",
     "010 Контроль версий и deploy проекта/Gitlab/Как создать Merge Request.md",
     "010 Контроль версий и deploy проекта/Gitlab/Как создать свою ветку gitlab, git, vsCode, webstorm.md",
@@ -157,18 +169,6 @@
     "007 Скрипты/Git/Git.md",
     "007 Скрипты/Git/Git. Инструмент управления версиями.md",
     "010 Контроль версий и deploy проекта/Автоматически генерировать и публиковать журнал изменений с помощью Node.js.md",
-    "0000 Интересные вопросы/other themes/Как был устроен `deploy`.md",
-    "0000 Интересные вопросы/011 Решение задач JS, TS и React.md",
-    "004 ReactCore/Подготовка к собеседованиям/071 Разница между `useEffect()` и `componentDidMount()`.md",
-    "0000 Интересные вопросы/004 React + Redux.md",
-    "0000 Интересные вопросы/003 JSCore.md",
-    "0000 Интересные вопросы/000 Browser.md",
-    "0000 Интересные вопросы/002 CSS.md",
-    "002 CSS/Подготовка к собеседованиям/052 Что такое CSS Grid.md",
-    "002 CSS/Подготовка к собеседованиям/046 Что такое flexbox.md",
-    "002 CSS/Подготовка к собеседованиям/024 Какие CSS-свойства могут быть обработаны непосредственно через GPU.md",
-    "004 ReactCore/Подготовка к собеседованиям/065 Что такое React Fiber.md",
-    "003 JSCore/Подготовка к собеседованию/220 Что возвращает fetch. Как получить содержимое ответа. Как обрабатывать ошибки.md",
     "0. Подготовка к собеседованию/other themes/Собеседования/Собеседования в Компании",
     "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Техническое собеседование",
     "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Скрининг с HR",

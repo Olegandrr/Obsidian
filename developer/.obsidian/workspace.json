@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "33ac974345118257",
+        "id": "09da30c81aefbfb0",
         "type": "tabs",
         "children": [
           {
-            "id": "9b7c683d862b5414",
+            "id": "d9c51224a1032931",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0000 Интересные вопросы/007 Git.md",
+                "file": "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only/Only №1 от 06.07.2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "connect",
+                "query": "сбербанк",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 393.50418853759766
+    "width": 552.5041885375977
   },
   "right": {
     "id": "58407df49daf5547",
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0000 Интересные вопросы/007 Git.md",
+                "file": "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only/Only №1 от 06.07.2023.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0000 Интересные вопросы/007 Git.md",
+                "file": "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only/Only №1 от 06.07.2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0000 Интересные вопросы/007 Git.md"
+                "file": "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only/Only №1 от 06.07.2023.md"
               }
             }
           },
@@ -147,13 +147,21 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "a4b12bd72b09f9ed",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
         "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 664.5
+    "width": 417.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,57 +174,57 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9b7c683d862b5414",
+  "active": "2b9eca97f11fd816",
   "lastOpenFiles": [
-    "0000 Интересные вопросы/007 Git.md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/007 Что такое Git CLI.md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/006 Как создать свою ветку gitlab, git, vsCode, webstorm.md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/005 GIT. Как создать ветку и как правильно писать коммиты (с примерами).md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/004 Как начать работать с проектом.md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/003 Как клонировать репозиторий с GitLab.md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/002 Git.md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/001 Git. Инструмент управления версиями.md",
+    "0000 Интересные вопросы.rar",
+    "011 Решение задач.rar",
+    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/IT One (Газпром)/IT One ___all.md",
+    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Детский мир/Детский мир №1 от 11.04.2023.md",
+    "Templates/TASK.md",
+    "0000 Интересные вопросы/011 Решение задач JS, TS и React.md",
+    "011 Решение задач/JavaScript/6_Pattern/currying/Task_currying - addSum()_0.md",
+    "011 Решение задач/JavaScript/7_Polyfil/Task_polyfill - bind()_0.md",
+    "011 Решение задач/JavaScript/7_Polyfil/Task_polyfil - isNaN()_0.md",
+    "011 Решение задач/JavaScript/7_Polyfil/Task_polyfil - promiseAll()_0.md",
+    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - getSnakedFlatArray()_0.md",
+    "011 Решение задач/JavaScript/6_Pattern/anagram/Task_anagram - allAnagrams()_1.md",
+    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - arraySubset()_0.md",
+    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - arrRandom()_0.md",
+    "011 Решение задач/JavaScript/6_Pattern/anagram/Task_anagram - anagram(str)_0.md",
+    "011 Решение задач/JavaScript/6_Pattern/anagram/Task_anagram - anagram()_1.md",
+    "011 Решение задач/JavaScript/6_Pattern/anagram/Task_anagram - aclean()_0.md",
+    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - highestFrequency()_0.md",
+    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - getUniqDigits()_1.md",
+    "011 Решение задач/JavaScript/2_String/Task_string - removeDupes()_1.md",
+    "011 Решение задач/JavaScript/2_String/Task_string - isUnique()_0.md",
+    "011 Решение задач/JavaScript/2_String/Task_string  - removeExclamation()_0.md",
+    "011 Решение задач/JavaScript/2_String/Task_string - camelCase()_1.md",
+    "011 Решение задач/JavaScript/2_String/Task_string - checkWord()_0.md",
+    "011 Решение задач/JavaScript/2_String/Task_string - isBalanced()_1.md",
+    "011 Решение задач/React/ReactTask - React.StrictMode_0.md",
+    "011 Решение задач/JavaScript/KATA_TASK.md",
+    "011 Решение задач/JavaScript/5_what if",
+    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only",
+    "011 Решение задач/React/Без названия",
+    "img/Pasted image 20231001012414.png",
+    "img/Pasted image 20231001011655.png",
+    "Pasted image 20231001002845.png",
+    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Промсвязьбанк",
+    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/ОТП Банк",
+    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Мой офис",
+    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Ланит",
+    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Инфовотч",
+    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Детский мир",
+    "0000 Интересные вопросы/other themes/Собеседования/Диаграмма.canvas",
+    "000 Browser/Интерактивное представление работы интернета.canvas",
+    "img/OeIPyCOr_Dg.png",
+    "img/Pasted image 20230928124759.png",
+    "img/Pasted image 20230924181351.png",
+    "img/web_solution.png",
     "img/Logo-git.png",
-    "Pasted image 20230924103427.png",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/016 Список популярных команд `Git`, которые ты использовал в работе и для чего.md",
-    "0000 Интересные вопросы/009 Тестирование.md",
-    "0000 Интересные вопросы/008 Настройка окружения.md",
-    "0000 Интересные вопросы/006 Node.js.md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/014 Что такое Git Flow.md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/011 Git Rebase.md",
-    "0000 Интересные вопросы/004 React + Redux.md",
-    "009 Тестирование/Подготовка к собеседованиям/138 Как вы подходите к тестированию приложения React.md",
-    "009 Тестирование/Подготовка к собеседованиям/019 Какие преимущества и недостатки в тестировании собственного кода.md",
-    "009 Тестирование/Подготовка к собеседованиям/018 Интеграция тестирования в процесс разработки.md",
-    "009 Тестирование/Подготовка к собеседованиям/017 Тестирование браузеров.md",
-    "009 Тестирование/Подготовка к собеседованиям/016 Тестирование производительности.md",
-    "009 Тестирование/Подготовка к собеседованиям/015 Паттерн написания unit-test.md",
-    "009 Тестирование/Подготовка к собеседованиям/014 Обязательно ли 100% покрытие кода тестами.md",
-    "009 Тестирование/Подготовка к собеседованиям/013 Инструменты оценки покрытия кода тестами.md",
-    "009 Тестирование/Подготовка к собеседованиям/012 Инструменты тестирования кода.md",
-    "009 Тестирование/Подготовка к собеседованиям/011 Как можно оценить качество тестирования.md",
-    "009 Тестирование/Подготовка к собеседованиям/010 Что такое UI-тестирование.md",
-    "009 Тестирование/React-Testing-Library",
-    "000 Browser/Шпаргалка (Как работает интернет).canvas",
-    "0000 Интересные вопросы/other themes/Собеседования/Собеседования в Компании/БФТ",
+    "img/Pasted image 20230924103427.png",
     "img/Pasted image 20230921225433.png",
-    "011 Решение задач/React",
-    "011 Решение задач/JavaScript",
-    "005 TypeScript/Шпаргалка по TypeScript.pdf",
-    "005 TypeScript/mso63E1.tmp",
-    "005 TypeScript/mso61DC.tmp",
-    "img/Pasted image 20230920144342.png",
-    "img/Pasted image 20230920141938.png",
-    "img/Pasted image 20230919161122.png",
-    "img/Pasted image 20230919132158.png",
-    "img/Pasted image 20230919151636.png",
-    "img/Pasted image 20230919151618.png",
-    "img/Pasted image 20230919151301.png",
-    "011 Решение задач/index.html",
-    "011 Решение задач",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
-    "004 ReactCore/Подготовка к собеседованиям/~syncthing~054 Методы жизненного цикла компонента в React.sync-conflict-20230916-110644-2GIJL36.md.tmp",
-    "0000 Интересные вопросы/other themes/Без названия.canvas",
     "003 JSCore/Без названия.canvas",
     "Без названия 1.canvas",
     "0.4 Вопросы к ревью React/Преимущества и недостатки HOC.canvas",

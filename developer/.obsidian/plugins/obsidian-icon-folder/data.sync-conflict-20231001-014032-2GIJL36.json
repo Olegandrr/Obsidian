@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "IbActivity",
-      "SiTypescript",
+      "SiWebpack",
+      "SiUbuntu",
+      "IbArrowThickDown",
       "SiReact",
-      "SiJavascript",
-      "SiAlpinelinux"
+      "IbAcademicBook"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -86,21 +86,13 @@
   "008 Настройка окружения/NPM": "SiNpm",
   "008 Настройка окружения/NPM/Введение в NPM скрипты.md": "SiNpm",
   "0000 Интересные вопросы/008 Настройка окружения.md": "IbAirplay",
+  "500. Литература": "IbAcademicBook",
+  "Входящие": "IbInboxTray",
   "009 Тестирование/React-Testing-Library": "SiReact",
   "0000 Интересные вопросы/007 Git.md": "SiGit",
   "008 Настройка окружения/Emmet": "IbArrowThickDown",
   "008 Настройка окружения/Исправление ошибки WslRegisterDistribution в Ubuntu.md": "SiUbuntu",
   "010 Архитектура Веб-приложений": "SiWebpack",
   "010 Архитектура Веб-приложений/webpack": "SiWebpack",
-  "0000 Интересные вопросы/010 Архитектура Веб-приложений.md": "SiWebpack",
-  "0000 Интересные вопросы/other themes/Собеседования/0. Моё собеседование": "IbBank",
-  "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования": "IbAcademicBook",
-  "10000 Входящие": "IbInboxTray",
-  "500 Литература": "IbAcademicBook",
-  "sidian": "SiAlpinelinux",
-  "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде": "SiUbuntu",
-  "011 Решение задач/JavaScript": "SiJavascript",
-  "011 Решение задач/React": "SiReact",
-  "011 Решение задач/TypeScript": "SiTypescript",
-  "0000 Интересные вопросы/other themes/Собеседования": "IbActivity"
+  "0000 Интересные вопросы/010 Архитектура Веб-приложений.md": "SiWebpack"
 }
