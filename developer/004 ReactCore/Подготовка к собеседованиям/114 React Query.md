@@ -118,7 +118,7 @@ const userQueries = useQueries(
   })
 ```
 
-Подробнее: [Кэш или стэйт, пробуем React-query](https://habr.com/ru/articles/557620/), [React Query](https://reactdev.ru/libs/react-query/)
+Подробнее: [Кэш или стэйт, пробуем React-query](https://habr.com/ru/articles/557620/), [React Query](https://reactdev.ru/libs/react-query/) , [react-query vs SWR и избавимся ли мы от Redux?](https://habr.com/ru/articles/758360/)
 
 ___
 #React #reactQuery #useQuery

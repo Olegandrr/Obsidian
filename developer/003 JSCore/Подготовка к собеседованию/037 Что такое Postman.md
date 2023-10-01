@@ -10,6 +10,8 @@ Postman предоставляет множество функций для те
 
 Postman доступен как приложение для Windows, macOS и Linux, а также как расширение для браузеров Chrome и Firefox. Postman также предоставляет возможность использовать его в качестве сервиса в облаке через Postman Cloud.
 
+Подробнее: [Postman как инструмент документации](https://habr.com/ru/companies/simbirsoft/articles/755382/) , [Postman для эффективного тестирования API](https://habr.com/ru/companies/otus/articles/740884/)
+
 ___
  #Postman #API #HTTP #HTTP-запрос #GET #POST #PUT #DELETE 
 

@@ -57,8 +57,9 @@ describe("Tests", () => {
  
   });
 });
-
 ```
+
+Подробнее: [Regular expressions in JavaScript](https://www.honeybadger.io/blog/javascript-regular-expressions/)
 
 ___
 #JavaScript #regularExpression

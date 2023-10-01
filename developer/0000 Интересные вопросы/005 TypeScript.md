@@ -1,6 +1,10 @@
 ![[Logo-typescript.png|100]]
 ## [[Практические вопросы по typescript|Вопросы:]]
 
+[Библиотека `TypeScript`](https://scriptdev.ru/guide/)
+[TypeScript и все что тебе нужно в разработке](https://habr.com/ru/articles/762902/)
+[TypeScrip texercises](https://typescript-exercises.github.io/)
+
 ![TypeScript. Полный курс: 1:20:14](https://www.youtube.com/watch?v=5QnZ9AyDW6c&list=PLNkWIWHIRwMFKmmIPVaCPpusgloMMgxN2&index=10)
 
 ![TypeScript & React. Полный курс: 1:13:09](https://www.youtube.com/watch?v=xL-a5Tox7Qw&list=PLNkWIWHIRwMFKmmIPVaCPpusgloMMgxN2&index=11)

@@ -27,7 +27,7 @@ NODE_ENV=production webpack
 Подробнее: [Развертывание React-приложения](https://habr.com/ru/companies/simbirsoft/articles/668622/)
 
 ____
-#React #DefinePlugin #Production 
+#React #DefinePlugin #Production #webpack 
 
 ____
 

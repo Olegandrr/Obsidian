@@ -1,3 +1,7 @@
+
+![](https://www.youtube.com/watch?v=WADswtZB-qg&list=PL6DxKON1uLOHcvuJLmgpOhwbktXLr7noj&index=2)
+
+![](https://www.youtube.com/watch?v=BGKbJ2aXCog&list=PL6DxKON1uLOHcvuJLmgpOhwbktXLr7noj&index=3)
 #### Ответ
 
 Работа с формами включает в себя *управление состоянием формы и обработку введенных данных.* Вот простой пример, демонстрирующий как работать с формами в React:
@@ -47,7 +51,7 @@ class MyForm extends React.Component {
 
 В итоге, работа с формами в React сводится к управлению состоянием формы и обработке введенных данных. Как и в обычном HTML, в React вы можете использовать различные типы полей ввода и обрабатывать данные с помощью обработчиков событий.
 
-Подробнее: [[1.4.12 Работа с формами|Работа с формами в React]] , [Как я работаю с формами в React](https://habr.com/ru/articles/746806/)
+Подробнее: [[1.4.12 Работа с формами|Работа с формами в React]] , [Как я работаю с формами в React](https://habr.com/ru/articles/746806/) , [React: интересная схема работы с формами](https://habr.com/ru/companies/timeweb/articles/722108/)
 
 ____
 #React #state #setState #bind 

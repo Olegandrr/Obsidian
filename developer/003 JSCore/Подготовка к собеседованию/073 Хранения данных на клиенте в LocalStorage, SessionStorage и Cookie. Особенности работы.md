@@ -26,7 +26,8 @@ LocalStorage, SessionStorage и Cookies - это три различных сп�
 - Объем данных, который можно хранить в Cookies, зависит от браузера и может быть ограничен;
 - Данные в Cookies могут быть удалены на сервере или на клиенте.
 
-Подробнее: [[6 LocalStorage, sessionStorage|LocalStorage & sessionStorage]]
+Подробнее: [[6 LocalStorage, sessionStorage|LocalStorage & sessionStorage]] . [localStorage для авторизации](https://habr.com/ru/articles/732864/) , [Как работает JS: системы хранения данных](https://habr.com/ru/companies/ruvds/articles/415505/)
+
 
 ___
  #LocalStorage #SessionStorage #Cookie

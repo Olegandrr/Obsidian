@@ -2,6 +2,8 @@ ____
 
 tags: #webpack #source-map #DevTools 
 
+links: [Analyzing the Bundle Size](https://create-react-app.dev/docs/analyzing-the-bundle-size/)
+
 _____
 
 ## Введение

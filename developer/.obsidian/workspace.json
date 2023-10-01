@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "09da30c81aefbfb0",
+        "id": "0a3cf5efcb91d99f",
         "type": "tabs",
         "children": [
           {
-            "id": "d9c51224a1032931",
+            "id": "35a2a13e2a0cc698",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only/Only №1 от 06.07.2023.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -49,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "сбербанк",
+                "query": "cors",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -70,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 552.5041885375977
+    "width": 587.5041885375977
   },
   "right": {
     "id": "58407df49daf5547",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only/Only №1 от 06.07.2023.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only/Only №1 от 06.07.2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only/Only №1 от 06.07.2023.md"
-              }
+              "state": {}
             }
           },
           {
@@ -161,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 417.5
+    "width": 390.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,35 +165,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2b9eca97f11fd816",
+  "active": "35a2a13e2a0cc698",
   "lastOpenFiles": [
+    "img/Pasted image 20231002001741.png",
+    "000 Browser/Подготовка к собеседованию/087 Что такое CORS.md",
+    "004 ReactCore/Подготовка к собеседованиям/051 Как работать с формами в React.md",
+    "0000 Интересные вопросы/004 React + Redux.md",
+    "004 ReactCore/Подготовка к собеседованиям/043 Как вы обрабатываете асинхронные действия в React приложении.md",
+    "003 JSCore/Подготовка к собеседованию/095 Как происходит авторизация. Что передаётся в заголовке авторизации.md",
+    "img/Pasted image 20231002012012.png",
+    "004 ReactCore/Подготовка к собеседованиям/013 Почему названия компонентов должны начинаться с заглавной буквы.md",
+    "005 TypeScript/Собеседование по TypeScript. 42 Вопроса и ответа/5. Дополнительные вопросы по знанию языка/Что такое пространство имен и как его использовать.md",
+    "003 JSCore/Подготовка к собеседованию/073 Хранения данных на клиенте в LocalStorage, SessionStorage и Cookie. Особенности работы.md",
+    "003 JSCore/Подготовка к собеседованию/219 Отладка AJAX.md",
+    "001 HTML/0. Подготовка к собеседованиям/009 Является ли, Drag and drop частью спецификации. Какие drag-события Вам известны.md",
+    "0000 Интересные вопросы/003 JSCore.md",
+    "0000 Интересные вопросы/002 CSS.md",
+    "002 CSS/Подготовка к собеседованиям/054 Разница между Reset.css и Normalize.css.md",
+    "0000 Интересные вопросы/005 TypeScript.md",
+    "003 JSCore/Подготовка к собеседованию/058 Что такое регулярное выражение (Regular Expression).md",
+    "011 Решение задач/__Алгоритмы.md",
+    "003 JSCore/Подготовка к собеседованию/201 Что такое Eventloop, очередь задач, микрозадача и макрозадача.md",
+    "003 JSCore/Подготовка к собеседованию/212 Что такое async и await.md",
+    "004 ReactCore/4 React-routing/4.9 Авторизация и закрытые страницы.md",
+    "004 ReactCore/Подготовка к собеседованиям/134 Как вы укажите React работать в режиме Production и как это сделать.md",
+    "004 ReactCore/Подготовка к собеседованиям/129 Что такое React Profiler и для чего он используется.md",
+    "004 ReactCore/Подготовка к собеседованиям/004 Разница между `React` и `ReactDOM`.md",
+    "0000 Интересные вопросы/010 Архитектура Веб-приложений.md",
+    "003 JSCore/Подготовка к собеседованию/043 Что такое DNS.md",
+    "003 JSCore/Подготовка к собеседованию/037 Что такое Postman.md",
+    "img/Pasted image 20231002003246.png",
+    "img/Pasted image 20231002001814.png",
+    "img/Pasted image 20231002001802.png",
+    "0000 Интересные вопросы/other themes/Собеседования/Диаграмма.canvas",
+    "010 Архитектура Веб-приложений/Webpack. Микрофронтенд",
+    "010 Архитектура Веб-приложений/Webpack/Module Federation",
+    "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде/Калушко В.А. - CV.pdf",
     "0000 Интересные вопросы.rar",
     "011 Решение задач.rar",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/IT One (Газпром)/IT One ___all.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Детский мир/Детский мир №1 от 11.04.2023.md",
-    "Templates/TASK.md",
-    "0000 Интересные вопросы/011 Решение задач JS, TS и React.md",
-    "011 Решение задач/JavaScript/6_Pattern/currying/Task_currying - addSum()_0.md",
-    "011 Решение задач/JavaScript/7_Polyfil/Task_polyfill - bind()_0.md",
-    "011 Решение задач/JavaScript/7_Polyfil/Task_polyfil - isNaN()_0.md",
-    "011 Решение задач/JavaScript/7_Polyfil/Task_polyfil - promiseAll()_0.md",
-    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - getSnakedFlatArray()_0.md",
-    "011 Решение задач/JavaScript/6_Pattern/anagram/Task_anagram - allAnagrams()_1.md",
-    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - arraySubset()_0.md",
-    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - arrRandom()_0.md",
-    "011 Решение задач/JavaScript/6_Pattern/anagram/Task_anagram - anagram(str)_0.md",
-    "011 Решение задач/JavaScript/6_Pattern/anagram/Task_anagram - anagram()_1.md",
-    "011 Решение задач/JavaScript/6_Pattern/anagram/Task_anagram - aclean()_0.md",
-    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - highestFrequency()_0.md",
-    "011 Решение задач/JavaScript/0_Object && Collections/Array/Task_array - getUniqDigits()_1.md",
-    "011 Решение задач/JavaScript/2_String/Task_string - removeDupes()_1.md",
-    "011 Решение задач/JavaScript/2_String/Task_string - isUnique()_0.md",
-    "011 Решение задач/JavaScript/2_String/Task_string  - removeExclamation()_0.md",
-    "011 Решение задач/JavaScript/2_String/Task_string - camelCase()_1.md",
-    "011 Решение задач/JavaScript/2_String/Task_string - checkWord()_0.md",
-    "011 Решение задач/JavaScript/2_String/Task_string - isBalanced()_1.md",
-    "011 Решение задач/React/ReactTask - React.StrictMode_0.md",
-    "011 Решение задач/JavaScript/KATA_TASK.md",
     "011 Решение задач/JavaScript/5_what if",
     "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only",
     "011 Решение задач/React/Без названия",
@@ -211,19 +211,9 @@
     "Pasted image 20231001002845.png",
     "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Промсвязьбанк",
     "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/ОТП Банк",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Мой офис",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Ланит",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Инфовотч",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Детский мир",
-    "0000 Интересные вопросы/other themes/Собеседования/Диаграмма.canvas",
     "000 Browser/Интерактивное представление работы интернета.canvas",
     "img/OeIPyCOr_Dg.png",
     "img/Pasted image 20230928124759.png",
-    "img/Pasted image 20230924181351.png",
-    "img/web_solution.png",
-    "img/Logo-git.png",
-    "img/Pasted image 20230924103427.png",
-    "img/Pasted image 20230921225433.png",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
     "003 JSCore/Без названия.canvas",
     "Без названия 1.canvas",

@@ -6,7 +6,8 @@ links: [https://www.sitepoint.com/vitejs-front-end-build-tool-introduction/](htt
 
 ![](https://www.youtube.com/watch?v=ndKgZRM7yjk)
 
-keywords:
+**keywords:**
+
 Vite - это инструмент сборки frontend-приложения. С его помощью создаётся среда разбработки #React #JavaScript #Vue - приложений без этапа пакетирования.
 Vite  предоставляет браузеру собственные модули #ES и Шаблоны (набор стартовых файлов) для ряда фреёмворков , ванильного JS , а также реализует поддержку #TypeScript , #JSX #Sass .
 
@@ -38,7 +39,7 @@ Bundle основанный на dev - server' е :
 * увеличилась разница окружений (тк файлы запускаются разными инструментами)
 
 Установка ViteJS
-~~~
+~~~shell
 npm init @vitejs/app
 cd vite-project
 npm install
@@ -46,7 +47,7 @@ npm install
 
 В документации #ViteJS говорится , что #TypeScript поддерживается по-умолчанию. Vite компилирует его автоматически. Для использования #Sass выполним команду в консоли :
 
-~~~
+~~~shell
 npm install sass --save-dev
 ~~~
 
@@ -62,14 +63,14 @@ ___
 Некоторые дополнения к описанию:
 
 Для установки #viteJS в действующий проект необходимо удалить и установить:
-~~~
+~~~shell
 yarn remove react-scripts
 
 yarn add vite @vitejs/plugin-react
 ~~~
 
 Изменяем команды запуска и билда приложения:
-~~~
+~~~json
 {
  "scripts": {
 	 "start": "vite",
@@ -79,7 +80,7 @@ yarn add vite @vitejs/plugin-react
 ~~~
 
 В vite необходимо добавить config и необходимо указать с какими технологиями придётся работать:
-~~~
+~~~json
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react'
 
@@ -91,7 +92,7 @@ export default () => {
 ~~~
 
 Далее необходимо извлечь файл index.html в корень проекта:
-~~~
+~~~json
 ./public/index.html   
 ./index.html
 ~~~
@@ -108,7 +109,8 @@ export default () => {
 Если там действительно используется .jsx .
 
 Причина почему Vite использует расширение .jsx заключается в том, что в большинстве случаев файлы .js не нуждаются в полном преобразовании AST для работы в браузере. Разрешая JSX код в файлах .js означает, что каждый обслуживаемый файл, должен полностью быть обработан на всякий случай, если он содержит JSX.
-~~~
+
+~~~json
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react'
 
@@ -126,12 +128,12 @@ export default () => {
 -- БЫСТРОЕ ГЛОБАЛЬНОЕ РЕДАКТИРОВАНИЕ КОДА
 
 Если в проекте используется стандартный конфиг для работы с SVG предоставляемый при инициализации проекта через Create React App , то необходимо дополнительно его установить для проекта на Vite :
-~~~
+~~~json
 yarn add vite-plugin-svgr
 ~~~
 
 Естественно, его необходимо добавить в config:
-~~~
+~~~json
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react'
 import svgr from 'vite-plugin-svgr'
@@ -149,14 +151,16 @@ export default () => {
 ~~~
 
 Запустим проект в консоли :
-~~~
+~~~json
 yarn dev // yarn start
 ~~~
+
 Проект запускается молниеносно ( в консоли указано время )
 
 После запуска проекта, вероятно, будут отображаться ошибки в консоли. Причина может быть в process.env (пробрасывает окружение в проект).
 РЕШЕНИЕ для этой проблемы в установке rollup плагина inject и с его помощью добавить переменную process.
-~~~
+
+~~~json
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react'
 import svgr from 'vite-plugin-svgr'

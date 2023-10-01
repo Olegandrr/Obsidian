@@ -24,8 +24,7 @@
 - Bootstrap, один из самых популярных CSS-фреймворков, использует Normalize.css в своей базовой установке.
 - HTML5 Boilerplate, шаблон для создания HTML5-проектов, также использует Normalize.css.
 
-[Сброс стилей с помощью CSS Reset](https://habr.com/ru/articles/45296/)
-[Нормальный сброс](https://habr.com/ru/companies/htmlacademy/articles/342052/)
+Подробнее: [Сброс стилей с помощью CSS Reset](https://habr.com/ru/articles/45296/) , [Нормальный сброс](https://habr.com/ru/companies/htmlacademy/articles/342052/) , [A (more) Modern CSS Reset](https://andy-bell.co.uk/a-more-modern-css-reset/)
 
 ___
 #CSS #reset #normalize 

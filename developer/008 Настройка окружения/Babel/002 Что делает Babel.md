@@ -2,13 +2,6 @@ ____
 
 tags: #Babel 
 
-links: [[]]
-
-youtube: 
-1. 
-
-keywords:
-
 _____
 
 
