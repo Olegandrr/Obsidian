@@ -66,7 +66,7 @@ render(
 
 А как проанализировать взаимодействия пользователей с компонентами?
 
-Подробнее: [Профилирование производительности React-приложений](https://habr.com/ru/companies/ruvds/articles/497988/), [React Profiler](https://ru.legacy.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html) , [React Profiler: A Step by step guide to measuring app performance](https://deadsimplechat.com/blog/react-profiler/)
+Подробнее: [Профилирование производительности React-приложений](https://habr.com/ru/companies/ruvds/articles/497988/), [React Profiler](https://ru.legacy.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html) , [React Profiler: A Step by step guide to measuring app performance](https://deadsimplechat.com/blog/react-profiler/) , [Как React 18 улучшает производительность приложения](https://my-js.org/blog/react-18/)
 
 ____
 #React #Profiler #onRender

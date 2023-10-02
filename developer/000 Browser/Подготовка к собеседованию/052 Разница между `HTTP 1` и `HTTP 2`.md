@@ -12,7 +12,7 @@
 4. *`Server Push`*: *позволяет серверу отправлять ресурсы на клиент до того, как они будут запрошены, что уменьшает задержку при загрузке страницы.*
 5. *`Приоритезация`*: *позволяет определять приоритеты для каждого запроса, что позволяет ускорить передачу наиболее важных ресурсов.*
 
-Подробнее:  [Разъяснение HTTP/2](https://habr.com/ru/articles/221427/), [HTTP/2: готовимся к переходу](https://habr.com/ru/companies/selectel/articles/278167/) , [[3.1 HTTP простым языком|HTTP]] , [[3.2 Обзор протокола HTTP|Обзор протокола HTTP]]  , [HTTP/3: прошлое, настоящее и будущее](https://ru.hexlet.io/blog/posts/http-3-proshloe-nastoyaschee-i-buduschee)
+Подробнее:  [Разъяснение HTTP/2](https://habr.com/ru/articles/221427/), [HTTP/2: готовимся к переходу](https://habr.com/ru/companies/selectel/articles/278167/) , [[3.1 HTTP простым языком|HTTP]] , [[3.2 Обзор протокола HTTP|Обзор протокола HTTP]]  , [HTTP/3: прошлое, настоящее и будущее](https://ru.hexlet.io/blog/posts/http-3-proshloe-nastoyaschee-i-buduschee) , [HTTP/3 от А до Я: основные концепции](https://habr.com/ru/companies/slurm/articles/575464/)
 
 ___
 #HTTP/1 #HTTP/2 #HTTP #browser #HTTP/3

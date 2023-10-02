@@ -19,7 +19,14 @@
 5. **Normal Priority**: Работы типа Normal Priority выполняются после всех задач, синхронных работ и работ с высоким приоритетом. *Они представляют типичные задачи перерисовки компонентов и обновления состояния.* Большинство обычных операций React выполняются с помощью работ нормального приоритета.
 6. **Low Priority**: Работы с низким приоритетом имеют наименьший приоритет и выполняются после всех других работ. *Они обычно используются для задач, которые не требуют мгновенной обработки и могут быть отложены до более подходящего момента.* Например, загрузка данных с сервера, предварительное вычисление или другие несрочные операции могут быть запланированы как работы с низким приоритетом.
 
-Подробнее: [React Fiber](https://habr.com/ru/articles/444276/) , [Что такое React Fiber](https://dev.to/jennypollard/chto-takoie-react-fiber-react-fiber-architecture-2cho), [React Fiber. Все только начинается](https://www.youtube.com/watch?v=TYEIovD-llI), [Fiber изнутри: Погружение в новый алгоритм согласования React](https://habr.com/ru/articles/662549/), [Как React 18 улучшает производительность приложения](https://my-js.org/blog/react-18/), [Как длительные задачи JavaScript повышают время Time to Interactive](https://web.dev/long-tasks-devtools/#what-are-long-tasks)
+Подробнее: 
+* [React Fiber](https://habr.com/ru/articles/444276/) , 
+* [Что такое React Fiber](https://dev.to/jennypollard/chto-takoie-react-fiber-react-fiber-architecture-2cho), 
+* [React Fiber. Все только начинается](https://www.youtube.com/watch?v=TYEIovD-llI),
+* [Fiber изнутри: Погружение в новый алгоритм согласования React](https://habr.com/ru/articles/662549/), 
+* [Как React 18 улучшает производительность приложения](https://my-js.org/blog/react-18/), 
+* [Как длительные задачи JavaScript повышают время Time to Interactive](https://web.dev/long-tasks-devtools/#what-are-long-tasks) , 
+
 
 ____
 #React #fiber #reconciliation #VirtualDOM 
