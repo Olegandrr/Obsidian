@@ -4,15 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "0f579c1a69821f1c",
+        "id": "0ddfb2960ef4b227",
         "type": "tabs",
         "children": [
           {
-            "id": "53806dcec8071ce7",
+            "id": "595e949364d9a519",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "003 JSCore/Подготовка к собеседованию/201 Что такое Eventloop, очередь задач, микрозадача и макрозадача.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b2782dccf273aac7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "011 Решение задач/JavaScript/0_Object && Collections/Object/Task_object - readOnlyObj()_1.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cache",
+                "query": "description",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -81,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "003 JSCore/Подготовка к собеседованию/201 Что такое Eventloop, очередь задач, микрозадача и макрозадача.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "003 JSCore/Подготовка к собеседованию/201 Что такое Eventloop, очередь задач, микрозадача и макрозадача.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "003 JSCore/Подготовка к собеседованию/201 Что такое Eventloop, очередь задач, микрозадача и макрозадача.md"
+              }
             }
           },
           {
@@ -152,7 +174,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.5
+    "width": 438.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,56 +187,56 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "53806dcec8071ce7",
+  "active": "595e949364d9a519",
   "lastOpenFiles": [
-    "0000 Интересные вопросы/010 Архитектура Веб-приложений.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Сбербанк/Сбербанк №1 от хх.хх.хххх_Идель Гатауллин.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Астон/Астон №1 от хх.хх.хххх_Идель Гатауллин.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/АстралСофт/Астрал Софт №1 от xx.xx.xxxx_Идель Гатауллин.md",
-    "000 Browser/Подготовка к собеседованию/016 Что такое паттерн, или шаблон проектирования.md",
-    "000 Browser/Подготовка к собеседованию/023 Что такое GOF паттерны.md",
-    "000 Browser/Подготовка к собеседованию/017 Типы паттернов.md",
-    "0000 Интересные вопросы/000 Browser.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Альфабанк/Альфабанк №1 от 02.06.2023_Влад Токарев.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/БКС/БКС №1 от 25.04.2023.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/БФТ/БФТ №1 от хх.хх.хххх_Данил Вонявкин.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Бэлл Интегратор/Бэлл Интегратор №1 от 13.07.2023.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/ВК/ВК от 27.03.2023.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Детский мир/Детский мир №1 от 11.04.2023.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/ДомКлик/ДомКлик №1 от 05.06.2023_Влад Токарев.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Инфовотч/Инфовотч №1 от 24.05.2023.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/КИТ МЕД/КИТ МЕД №1 от хх.хх.хххх_Идель Гатауллин.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Ланит/Ланит №1 от 18.05.2023.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Мой офис/Мой офис №1 от 23.03.2023.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/МТС Маркетолог/МТС Маркетолог №1 от 29.05.2023_Влад Токарев.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Открытые решения/Открытые решения №1 от 31.05.2023_Влад Токарев.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/ОТП Банк/ОТП Банк от 27.03.2023.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Промсвязьбанк/Промсвязьбанк №1 от 14.04.2023.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Сбербанк/Сбербанк №2 от хх.хх.хххх_Идель Гатауллин.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/СФЕРА/СФЕРА №1 от 30.05.2023_Влад Токарев.md",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/IT One (Газпром)/IT One ___all.md",
-    "img/Pasted image 20231002001741.png",
-    "img/Pasted image 20231002012012.png",
-    "img/Pasted image 20231002003246.png",
-    "img/Pasted image 20231002001814.png",
-    "img/Pasted image 20231002001802.png",
+    "0000 Интересные вопросы/other themes/002 Review - JavaScript.md",
+    "011 Решение задач/JavaScript/4_Async/Promise && async..await/Task_async - heavyJob()_1.md",
+    "011 Решение задач/JavaScript/4_Async/Promise && async..await/Task_async - makeManyReq()_1.md",
+    "0000 Интересные вопросы/other themes/003 Review - React.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 8_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 7_1.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 6_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 5_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 17_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 16_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 15_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 14_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 12_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 13_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 18_1.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 19_1.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 21_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 22_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 27_1.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 28_1.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 29_1.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 30_1.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 33_1.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 32_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 34_0.md",
+    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 31_0.md",
+    "img/Pasted image 20231004012424.png",
+    "img/Pasted image 20231004012411.png",
+    "img/Pasted image 20231004012351.png",
+    "img/Pasted image 20231004012249.png",
+    "img/Pasted image 20231004012058.png",
+    "img/Pasted image 20231004012045.png",
+    "img/Pasted image 20231004011249.png",
+    "img/Pasted image 20231004011236.png",
+    "img/Pasted image 20231004011219.png",
+    "img/Pasted image 20231004011205.png",
+    "011 Решение задач.rar",
+    "0000 Интересные вопросы/other themes/Собеседования/__rar_12384.23469",
+    "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде.rar",
+    "000 Browser/Подготовка к собеседованию/~syncthing~001 Основные принципы ООП.sync-conflict-20231002-142910-2GIJL36.md.tmp",
     "0000 Интересные вопросы/other themes/Собеседования/Диаграмма.canvas",
     "010 Архитектура Веб-приложений/Webpack. Микрофронтенд",
     "010 Архитектура Веб-приложений/Webpack/Module Federation",
     "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде/Калушко В.А. - CV.pdf",
     "0000 Интересные вопросы.rar",
-    "011 Решение задач.rar",
     "011 Решение задач/JavaScript/5_what if",
     "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only",
-    "011 Решение задач/React/Без названия",
-    "img/Pasted image 20231001012414.png",
-    "img/Pasted image 20231001011655.png",
-    "Pasted image 20231001002845.png",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Промсвязьбанк",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/ОТП Банк",
     "000 Browser/Интерактивное представление работы интернета.canvas",
-    "img/OeIPyCOr_Dg.png",
-    "img/Pasted image 20230928124759.png",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
     "003 JSCore/Без названия.canvas",
     "Без названия 1.canvas",

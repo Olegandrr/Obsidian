@@ -35,7 +35,6 @@
   "003 JSCore/0. Вопросы к ревью JSCore": "IbQuestionMarkWithCircle",
   "004 ReactCore": "SiReact",
   "004 ReactCore/0. Вопросы к ревью React-Redux": "IbQuestionMarkWithCircle",
-  "004 ReactCore/1. Настройка проекта React-Redux.md": "SiRedux",
   "005 TypeScript": "SiTypescript",
   "005 TypeScript/0. Вопросы к собеседованию": "IbQuestionMarkWithCircle",
   "006 Node.js": "SiNodedotjs",
@@ -101,5 +100,6 @@
   "010 Архитектура Веб-приложений/ВЗАИМОДЕЙСТВИЕ С BACKEND/Axios.md": "SiAxios",
   "010 Архитектура Веб-приложений/ВЗАИМОДЕЙСТВИЕ С BACKEND/Swagger.md": "SiSwagger",
   "010 Архитектура Веб-приложений/ВЗАИМОДЕЙСТВИЕ С BACKEND/Docker.md": "SiDocker",
-  "010 Архитектура Веб-приложений/ВЗАИМОДЕЙСТВИЕ С BACKEND/Коротко о SSH.md": "SiPowershell"
+  "010 Архитектура Веб-приложений/ВЗАИМОДЕЙСТВИЕ С BACKEND/Коротко о SSH.md": "SiPowershell",
+  "004 ReactCore/0. Вопросы к ревью React-Redux/1. Настройка проекта React-Redux.md": "SiRedux"
 }

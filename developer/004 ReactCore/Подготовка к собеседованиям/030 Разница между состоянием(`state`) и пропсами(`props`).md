@@ -59,7 +59,7 @@ ReactDOM.render(<MyComponent />, document.getElementById("root"));
 | **данные**    | могут изменяться и являются приватными для компонента | не могут изменяться                                                   |
 | **создаются** | в компоненте, где необходимо изменить состояние       | в родительском компоненте и передаются в дочерний, где и используются | 
 
-Подробнее: [Состояние компонента](https://ru.legacy.reactjs.org/docs/faq-state.html)
+Подробнее: [Состояние компонента](https://ru.legacy.reactjs.org/docs/faq-state.html) , [Зачем нужен `state` в React?](https://habr.com/ru/companies/timeweb/articles/597109/)
 
 ____
 #React #state #props 

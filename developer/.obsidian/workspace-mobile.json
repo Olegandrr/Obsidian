@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001 HTML/0.1 Вопросы к ревью/WebCore3.md",
+                "file": "004 ReactCore/Подготовка к собеседованиям/065 Что такое React Fiber.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "001 HTML/0.1 Вопросы к ревью/WebCore3.md",
+            "file": "004 ReactCore/Подготовка к собеседованиям/065 Что такое React Fiber.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "001 HTML/0.1 Вопросы к ревью/WebCore3.md",
+            "file": "004 ReactCore/Подготовка к собеседованиям/065 Что такое React Fiber.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "001 HTML/0.1 Вопросы к ревью/WebCore3.md"
+            "file": "004 ReactCore/Подготовка к собеседованиям/065 Что такое React Fiber.md"
           }
         }
       },
@@ -143,32 +143,36 @@
   },
   "active": "912ece23fa04cc2a",
   "lastOpenFiles": [
-    "001 HTML/0.1 Вопросы к ревью/WebCore4.md",
-    "0000 Интересные вопросы/008 Настройка окружения.md",
-    "0000 Интересные вопросы/007 Git.md",
-    "0000 Интересные вопросы/other themes/001 Review - WebCore.md",
-    "002 CSS/Подготовка к собеседованиям/008 Что такое специфичность селектора. Как считать вес селектора.md",
-    "000 Browser/Подготовка к собеседованию/072 Что такое веб-хранилище (web storage).md",
-    "011 Решение задач/React/ReactTask - SomeComponent_0.md",
-    "0000 Интересные вопросы/011 Решение задач JS, TS и React.md",
-    "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде/017 Опиши процесс, когда вы загрумили задачу, как она дойдет до конечного пользователя.md",
-    "0000 Интересные вопросы/other themes/Собеседования/0. Моё собеседование/0. FrontEnd Developer.md",
-    "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде/__Ситуации на работе.md",
-    "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде/054 С какими библиотеками для форм работал.md",
-    "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде/053 Работал ли с Redux Saga или Redux Thunk.md",
-    "011 Решение задач/JavaScript/Task_regExp - isBalanced()_completed.md",
-    "003 JSCore/Подготовка к собеседованию/211 Promise.all, Promise.allSettled, Promise.any, Promise.race.md",
+    "0000 Интересные вопросы/other themes/003 Review - React.md",
+    "004 ReactCore/Подготовка к собеседованиям/027 Для чего нужен атрибут `key` при рендере списков.md",
+    "004 ReactCore/Подготовка к собеседованиям/016 Разница между DOM и VirtualDOM.md",
+    "004 ReactCore/Подготовка к собеседованиям/004 Разница между `React` и `ReactDOM`.md",
+    "0000 Интересные вопросы/004 React + Redux.md",
+    "004 ReactCore/Подготовка к собеседованиям/118 Что такое RTK Query.md",
+    "004 ReactCore/Подготовка к собеседованиям/067 Что такое React хуки (Hooks).md",
+    "004 ReactCore/Подготовка к собеседованиям/065 Что такое React Fiber.md",
+    "004 ReactCore/Подготовка к собеседованиям/063 Что такое предохранители (Error Boundaries).md",
+    "004 ReactCore/Подготовка к собеседованиям/062 Что такое React-ссылка (`ref`).md",
+    "004 ReactCore/Подготовка к собеседованиям/044 Разница между классовым и функциональным компонентами.md",
+    "004 ReactCore/Подготовка к собеседованиям/043 Как вы обрабатываете асинхронные действия в React приложении.md",
+    "004 ReactCore/Подготовка к собеседованиям/038 Разница между управляемыми (controlled) и не управляемыми (uncontrolled) компонентами.md",
+    "004 ReactCore/Подготовка к собеседованиям/028 Что такое синтетические события (SyntheticEvent) в React.md",
+    "004 ReactCore/Подготовка к собеседованиям/026 Как React обрабатывает, или ограничивает использование пропсов определенного типа.md",
+    "004 ReactCore/Подготовка к собеседованиям/019 Какие типы данных может возвращать `render`.md",
+    "004 ReactCore/Подготовка к собеседованиям/009 Разница между `createElement()` и `cloneElement()`. Что такое `React.isValidElement(object)`.md",
+    "004 ReactCore/Подготовка к собеседованиям/001 Что такое React.md",
     "0000 Интересные вопросы/003 JSCore.md",
-    "011 Решение задач/JavaScript/Task_anagram - allAnagrams()_competed.md",
-    "011 Решение задач/JavaScript/KATA_TASK.md",
-    "011 Решение задач/JavaScript/Task_others - foo().md",
-    "011 Решение задач/JavaScript/Task_array - phoneNum().md",
-    "011 Решение задач/JavaScript/Task_array - sortArr().md",
-    "011 Решение задач/JavaScript/Task_array - sort().md",
-    "011 Решение задач/JavaScript/Task_currying - add()_completed.md",
-    "0000 Интересные вопросы/009 Тестирование.md",
-    "0000 Интересные вопросы/007 Скрипты.md",
-    "007 Скрипты/Git. Контроль версий и управление версионностью/001 Git. Инструмент управления версиями.md",
+    "003 JSCore/Подготовка к собеседованию/076 Что такое чистая функция.md",
+    "003 JSCore/Подготовка к собеседованию/075 Что такое каррирование (Currying).md",
+    "003 JSCore/Подготовка к собеседованию/071 Правила задания имён для переменных и функций в JavaScript.md",
+    "003 JSCore/Подготовка к собеседованию/070 В чём разница между стрелочными и обычными функциями.md",
+    "003 JSCore/Подготовка к собеседованию/069 Разница между function declaration и function expression.md",
+    "003 JSCore/Подготовка к собеседованию/066 Cпособы создания функции. Что такое анонимная самовызывающаяся функция.md",
+    "003 JSCore/Подготовка к собеседованию/065 Что такое дескрипторы свойств объектов.md",
+    "img/Pasted image 20231003002533.png",
+    "011 Решение задач.rar",
+    "img/Pasted image 20231003002442.png",
+    "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде.rar",
     "0. Подготовка к собеседованию/other themes/Собеседования/Собеседования в Компании",
     "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Техническое собеседование",
     "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование/Скрининг с HR",
@@ -178,7 +182,6 @@
     "0. Подготовка к собеседованию/other themes/Собеседования/Моё собеседование",
     "img/Pasted image 20230908174244.png",
     "500. Литература/TypeScript/Эффективный TypeScript. 62 способа улучшить код - Дэн Вандеркам (2020).pdf",
-    "500. Литература/TypeScript/Профессиональный TypeScript - Черный Борис (2021).pdf",
     "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
     "000 Browser/Шпаргалка (Как работает интернет).canvas",
     "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/WordpressWhite.svg",
@@ -187,8 +190,6 @@
     "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Bmw.svg",
     "sidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Codersrank.svg",
     "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Authy.svg",
-    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Invoiceninja.svg",
-    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Abstract.svg",
-    "sidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Exordo.svg"
+    "Templates/Obsidian/plugi.obns/obsidian-icon-folder/icons/simple-icons/Invoiceninja.svg"
   ]
 }

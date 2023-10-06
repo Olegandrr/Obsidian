@@ -70,7 +70,7 @@ function App() {
 Подробнее: [Разделение кода](https://ru.legacy.reactjs.org/docs/code-splitting.html) , [Suspense](https://reactdev.ru/reference/Suspense/)
 
 ____
-#React #lazy #suspense #bundle 
+#React #lazy #suspense #bundle #code-splitting
 
 ____
 

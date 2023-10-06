@@ -86,6 +86,8 @@ function MyComponent() {
 
 В этом примере при клике на кнопку будет вызван обработчик `handleClick`. Внутри обработчика мы вызываем `event.persist()`, чтобы сохранить объект SyntheticEvent после завершения обработчика. Затем через 1 секунду мы выводим тип события в консоль, используя сохраненный объект SyntheticEvent.
 
+Примечание: Начиная с 17 версии, вызов e.persist() не имеет смысла, потому что объекты событий SyntheticEvent больше не добавляются в пул.
+
 ____
 #React #SyntheticEvent #eventDelegation #eventBubbling #eventPersist
 

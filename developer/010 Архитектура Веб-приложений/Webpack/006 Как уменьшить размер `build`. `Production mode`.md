@@ -9,12 +9,12 @@
 
 *`Webpack-dev-server` позволяет автоматически запускать сборку и выдавать нужный файлик.*
 
-[[009 Что такое Source maps|`Source maps`]] - позволяет увидеть, где в коде произошла ошибка, прописываем инструкцию в `webpack.config.js` - `inline-source-map`
+[[014 Что такое Source maps|`Source maps`]] - позволяет увидеть, где в коде произошла ошибка, прописываем инструкцию в `webpack.config.js` - `inline-source-map`
 
 Таким образом, мы разграничиваем сборки в `production` и `development`, соответственно формируются текущие `bundle.js` с меньшим весом для `production` - версии . Отличие в том, что в режиме `development` мы указываем `Source maps`.
 
 
-Подробнее: [[010 Зависимости для разработки|010 Зависимости для разработки]]
+Подробнее: [[003 Зависимости для разработки|003 Зависимости для разработки]]
 
 ____
 tags: #webpack #bundle #production-bundle #development-bundle #webpack-dev-server 
