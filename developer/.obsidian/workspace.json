@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0ddfb2960ef4b227",
+        "id": "45f708ab34fa6493",
         "type": "tabs",
         "children": [
           {
-            "id": "595e949364d9a519",
+            "id": "adfe277cae950ab0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "003 JSCore/Подготовка к собеседованию/201 Что такое Eventloop, очередь задач, микрозадача и макрозадача.md",
+                "file": "011 Решение задач/TypeScript/Практические вопросы по typescript.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "b2782dccf273aac7",
+            "id": "cf5e2ba5d586ca63",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "011 Решение задач/JavaScript/0_Object && Collections/Object/Task_object - readOnlyObj()_1.md",
+                "file": "003 JSCore/200 Курсы/KATA/006 Стили в JS/Таблица стилей. Переопределение и вычисление.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -62,12 +62,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "description",
+                "query": "tag:#void",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": true,
-                "sortOrder": "alphabeticalReverse"
+                "sortOrder": "alphabetical"
               }
             }
           },
@@ -78,12 +78,25 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "1cf772ad52ed4c33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/IT One (Газпром)/IT One ___all.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 587.5041885375977
+    "width": 585.5041885375977
   },
   "right": {
     "id": "58407df49daf5547",
@@ -99,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "003 JSCore/Подготовка к собеседованию/201 Что такое Eventloop, очередь задач, микрозадача и макрозадача.md",
+                "file": "011 Решение задач/TypeScript/Практические вопросы по typescript.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "003 JSCore/Подготовка к собеседованию/201 Что такое Eventloop, очередь задач, микрозадача и макрозадача.md",
+                "file": "011 Решение задач/TypeScript/Практические вопросы по typescript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "003 JSCore/Подготовка к собеседованию/201 Что такое Eventloop, очередь задач, микрозадача и макрозадача.md"
+                "file": "011 Решение задач/TypeScript/Практические вопросы по typescript.md"
               }
             }
           },
@@ -174,7 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 438.5
+    "width": 421.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,58 +200,58 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "595e949364d9a519",
+  "active": "adfe277cae950ab0",
   "lastOpenFiles": [
-    "0000 Интересные вопросы/other themes/002 Review - JavaScript.md",
-    "011 Решение задач/JavaScript/4_Async/Promise && async..await/Task_async - heavyJob()_1.md",
-    "011 Решение задач/JavaScript/4_Async/Promise && async..await/Task_async - makeManyReq()_1.md",
-    "0000 Интересные вопросы/other themes/003 Review - React.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 8_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 7_1.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 6_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 5_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 17_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 16_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 15_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 14_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 12_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 13_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 18_1.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 19_1.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 21_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 22_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 27_1.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 28_1.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 29_1.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 30_1.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 33_1.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 32_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 34_0.md",
-    "011 Решение задач/JavaScript/4_Async/EventLoop/Task_eventloop - 31_0.md",
+    "001 HTML/200 Курсы/KATA/003 SEO. Доступность/0012 Особенности кроссбраузерной вёрстки.md",
+    "003 JSCore/200 Курсы/KATA/006 Стили в JS/Таблица стилей. Переопределение и вычисление.md",
+    "003 JSCore/200 Курсы/KATA/006 Стили в JS/Почему некоторые анимации медленные.md",
+    "003 JSCore/200 Курсы/KATA/006 Стили в JS/Как создавать высокопроизводительные CSS-анимации.md",
+    "003 JSCore/200 Курсы/KATA/006 Стили в JS/Инклюзивные компоненты - переключатели.md",
+    "003 JSCore/200 Курсы/KATA/006 Стили в JS/Динамические стили элементов.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0025 JSDoc.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0024 IIFE.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0023 Приоритет операторов.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0022 Условия.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0021 Условия и создание элементов.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/020 Управление памятью. JS101. Сильные и слабые ссылки, FinalizationRegistry.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0019 Замыкание.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0018 Область видимости.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0017 Поднятие.md",
+    "003 JSCore/200 Курсы/KATA/002 Основные концепции/001 Примитивные типы данных/1.1 Типы данных.md",
+    "003 JSCore/200 Курсы/KATA/002 Основные концепции/001 Примитивные типы данных/О структуре кода.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0016 Var, let или const.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0015 Зачем нужен метод preventdefault.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0015 Действия браузера по умолчанию.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0014 Прокрутка и операторы.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0013 Использование data-.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0012 Коллекция и свойства элементов.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0011 Виды событий.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0010 Объект события.md",
+    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0009 Всплытие и погружение событий.md",
+    "002 CSS/200 Курсы/KATA/001 Что такое CSS",
+    "002 CSS/200 Курсы/KATA/008 UI/Без названия",
+    "009 Тестирование/500 Технологии и библиотеки",
+    "009 Тестирование/400 Заметки",
+    "009 Тестирование/300 Интересные статьи",
+    "009 Тестирование/200 Курсы",
+    "007 Скрипты/Git. Контроль версий и управление версионностью/400 Заметки",
+    "007 Скрипты/Git. Контроль версий и управление версионностью/300 Интересные статьи",
+    "007 Скрипты/Git. Контроль версий и управление версионностью/200 Курсы",
+    "003 JSCore/Без названия.canvas",
+    "003 JSCore/400 Заметки",
+    "003 JSCore/100 Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
+    "img/Pasted image 20231008140112.png",
+    "img/Pasted image 20231008133326.png",
+    "000 Browser/Интерактивное представление работы интернета.canvas",
+    "img/Pasted image 20231008124439.png",
+    "img/Pasted image 20231008122839.png",
+    "img/Pasted image 20231008122607.png",
+    "img/Pasted image 20231007155438.png",
     "img/Pasted image 20231004012424.png",
     "img/Pasted image 20231004012411.png",
     "img/Pasted image 20231004012351.png",
     "img/Pasted image 20231004012249.png",
-    "img/Pasted image 20231004012058.png",
-    "img/Pasted image 20231004012045.png",
-    "img/Pasted image 20231004011249.png",
-    "img/Pasted image 20231004011236.png",
-    "img/Pasted image 20231004011219.png",
-    "img/Pasted image 20231004011205.png",
-    "011 Решение задач.rar",
-    "0000 Интересные вопросы/other themes/Собеседования/__rar_12384.23469",
-    "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде.rar",
-    "000 Browser/Подготовка к собеседованию/~syncthing~001 Основные принципы ООП.sync-conflict-20231002-142910-2GIJL36.md.tmp",
     "0000 Интересные вопросы/other themes/Собеседования/Диаграмма.canvas",
-    "010 Архитектура Веб-приложений/Webpack. Микрофронтенд",
-    "010 Архитектура Веб-приложений/Webpack/Module Federation",
-    "0000 Интересные вопросы/other themes/Собеседования/Вопросы по легенде/Калушко В.А. - CV.pdf",
-    "0000 Интересные вопросы.rar",
-    "011 Решение задач/JavaScript/5_what if",
-    "0000 Интересные вопросы/other themes/Собеседования/1. КАТА Собеседования/Only",
-    "000 Browser/Интерактивное представление работы интернета.canvas",
-    "003 JSCore/Подготовка к собеседованию/Алгоритм использования ключевого слова `this`.canvas",
-    "003 JSCore/Без названия.canvas",
     "Без названия 1.canvas",
     "0.4 Вопросы к ревью React/Преимущества и недостатки HOC.canvas",
     "Без названия (2).canvas",
