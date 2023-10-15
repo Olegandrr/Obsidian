@@ -112,7 +112,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "011 Решение задач/TypeScript/Практические вопросы по typescript.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -129,7 +128,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "011 Решение задач/TypeScript/Практические вопросы по typescript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -152,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "011 Решение задач/TypeScript/Практические вопросы по typescript.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -200,8 +198,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "adfe277cae950ab0",
+  "active": "2b9eca97f11fd816",
   "lastOpenFiles": [
+    "011 Решение задач/TypeScript/Практические вопросы по typescript.md",
+    "conflict-files-obsidian-git.md",
     "001 HTML/200 Курсы/KATA/003 SEO. Доступность/0012 Особенности кроссбраузерной вёрстки.md",
     "003 JSCore/200 Курсы/KATA/006 Стили в JS/Таблица стилей. Переопределение и вычисление.md",
     "003 JSCore/200 Курсы/KATA/006 Стили в JS/Почему некоторые анимации медленные.md",
@@ -226,8 +226,6 @@
     "003 JSCore/200 Курсы/KATA/001 Введение в JS/0013 Использование data-.md",
     "003 JSCore/200 Курсы/KATA/001 Введение в JS/0012 Коллекция и свойства элементов.md",
     "003 JSCore/200 Курсы/KATA/001 Введение в JS/0011 Виды событий.md",
-    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0010 Объект события.md",
-    "003 JSCore/200 Курсы/KATA/001 Введение в JS/0009 Всплытие и погружение событий.md",
     "002 CSS/200 Курсы/KATA/001 Что такое CSS",
     "002 CSS/200 Курсы/KATA/008 UI/Без названия",
     "009 Тестирование/500 Технологии и библиотеки",
